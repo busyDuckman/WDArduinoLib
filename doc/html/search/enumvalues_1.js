@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['catblack',['CatBlack',['../_line_apperance_8h.html#a1e42ce190c01f4415b1ea96e3f113c84acae0ac2530188df63690dcd0d0a0a54a',1,'LineApperance.h']]],
+  ['catblue',['CatBlue',['../_line_apperance_8h.html#a1e42ce190c01f4415b1ea96e3f113c84a1a9418c1e4aac923ecb5fc5548fc336e',1,'LineApperance.h']]],
+  ['catbrown',['CatBrown',['../_line_apperance_8h.html#a1e42ce190c01f4415b1ea96e3f113c84ac5fc93880c53a737c3a228b95bee3c80',1,'LineApperance.h']]],
+  ['catgreen',['CatGreen',['../_line_apperance_8h.html#a1e42ce190c01f4415b1ea96e3f113c84a9b65d9bcc4db6c2a24778314e7cb4c37',1,'LineApperance.h']]],
+  ['catlilac',['CatLilac',['../_line_apperance_8h.html#a1e42ce190c01f4415b1ea96e3f113c84a014046f688feffd3f6591673a81faa75',1,'LineApperance.h']]],
+  ['catorange',['CatOrange',['../_line_apperance_8h.html#a1e42ce190c01f4415b1ea96e3f113c84a3f4130e385423518e90cb274b184a025',1,'LineApperance.h']]],
+  ['catpurple',['CatPurple',['../_line_apperance_8h.html#a1e42ce190c01f4415b1ea96e3f113c84a0b8d04fef18528d896567798258a652a',1,'LineApperance.h']]],
+  ['catred',['CatRed',['../_line_apperance_8h.html#a1e42ce190c01f4415b1ea96e3f113c84a6e667d9b44d00fc7abc60ccd48c49ce3',1,'LineApperance.h']]],
+  ['catyellow',['CatYellow',['../_line_apperance_8h.html#a1e42ce190c01f4415b1ea96e3f113c84a10f43e0111c8a83718b09808a40ac86b',1,'LineApperance.h']]],
+  ['circlemarker',['CircleMarker',['../_line_apperance_8h.html#a68bf945a0195e285b96ed51e814a6286a994829e0aaea0862619f232517a1e22a',1,'LineApperance.h']]],
+  ['colblind1',['ColBlind1',['../_line_apperance_8h.html#abc59bc8bf0930be7e1ced4a6ca602688a17ca29f5d99b99a6deb1168c8d85ffd5',1,'LineApperance.h']]],
+  ['colblind2',['ColBlind2',['../_line_apperance_8h.html#abc59bc8bf0930be7e1ced4a6ca602688a0da75f914c3de0050469ec4c6a4f8f80',1,'LineApperance.h']]],
+  ['colblind3',['ColBlind3',['../_line_apperance_8h.html#abc59bc8bf0930be7e1ced4a6ca602688acb5eaccdcfa9258dedbfc2eaf6d3d074',1,'LineApperance.h']]],
+  ['colblind4',['ColBlind4',['../_line_apperance_8h.html#abc59bc8bf0930be7e1ced4a6ca602688a58548f04beee362a2bd5069148f70bea',1,'LineApperance.h']]],
+  ['colblind5',['ColBlind5',['../_line_apperance_8h.html#abc59bc8bf0930be7e1ced4a6ca602688a8fc087984bebed2086a546e5a1cc04d2',1,'LineApperance.h']]],
+  ['colblind6',['ColBlind6',['../_line_apperance_8h.html#abc59bc8bf0930be7e1ced4a6ca602688ac0b0eda68f4d94a86348347a731559e4',1,'LineApperance.h']]],
+  ['colblind7',['ColBlind7',['../_line_apperance_8h.html#abc59bc8bf0930be7e1ced4a6ca602688ae4dceb1194dce94363d36c3f0833a2dd',1,'LineApperance.h']]],
+  ['comportsafe',['ComPortSafe',['../_string_validation_8h.html#a41ca5bd265fe45732965add3e9a154eeaddf41d1dabf98f0db09db7ba513ed534',1,'StringValidation.h']]],
+  ['crossmarker',['CrossMarker',['../_line_apperance_8h.html#a68bf945a0195e285b96ed51e814a6286a7701895659e4a281cd9c66189dc9224e',1,'LineApperance.h']]]
+];

@@ -1,0 +1,406 @@
+\hypertarget{_line_apperance_8h}{}\section{W\+D\+Arduino\+Lib/src/\+Line\+Apperance.h File Reference}
+\label{_line_apperance_8h}\index{W\+D\+Arduino\+Lib/src/\+Line\+Apperance.\+h@{W\+D\+Arduino\+Lib/src/\+Line\+Apperance.\+h}}
+{\ttfamily \#include \char`\"{}W\+Program.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bit\+Arithmatic.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_line_apperance}{Line\+Apperance}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008}{Graph\+Colors\+Scheme\+Grey\+Scale} \{ \\*
+\hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008adbb2d611c1388cf4fde8211c82f9f3a4}{Grey\+Scale5} =0xf7f7f7, 
+\hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008acf7ae77b68bee10423a64540d13776c5}{Grey\+Scale4} =0xcccccc, 
+\hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008a685c6616e00ad543993f25e2a4f0ab9d}{Grey\+Scale3} =0x969696, 
+\hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008a00fd820203567ca8de81dc57534305c0}{Grey\+Scale2} =0x636363, 
+\\*
+\hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008a8f5c64fb3ae38023d24a1ce3c74c3341}{Grey\+Scale1} =0x252525
+ \}
+\item 
+enum \hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33}{Graph\+Colors\+Scheme\+Red\+Scale} \{ \\*
+\hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a42a05e810448c009b39c1339f1b62017}{Red5} =0xfee5d9, 
+\hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a22d6586e2a83ef4344823a05d3c67ccc}{Red4} =0xfcae91, 
+\hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a37bd25cf1e1fe1eeb8e4840dbc863dac}{Red3} =0xfb6a4a, 
+\hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a5ffc16932c6f29ba31ab92878a6d1802}{Red2} =0xde2d26, 
+\\*
+\hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a62acd44726f02a17ba2a17c1cf253639}{Red1} =0xa50f15
+ \}
+\item 
+enum \hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36}{Graph\+Colors\+Scheme\+Green\+Scale} \{ \\*
+\hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36a1fd8d83a0572ab5759e02b9a85865952}{Green5} =0xedf8e9, 
+\hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36a36b7f9cbbb6e3d6d5e9df9abcbf348c3}{Green4} =0xbae4b3, 
+\hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36aa061b2388532ed2cf150f5ef83646ae2}{Green3} =0x74c476, 
+\hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36a342644b979ceffaf70c587e453790275}{Green2} =0x31a354, 
+\\*
+\hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36a8db72e307df54b6fd021fd0eff7d5a5f}{Green1} =0x006d2c
+ \}
+\item 
+enum \hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7f}{Graph\+Colors\+Scheme\+Blue\+Scale} \{ \\*
+\hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7faa1fef896fbf57dca27435186d972477a}{Blue5} =0xeff3ff, 
+\hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7fa4a10cbe71b41df826bc2c5b465978fe4}{Blue4} =0xbdd7e7, 
+\hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7fa910d98e6c6282c1c8133f53438beb7ca}{Blue3} =0x6baed6, 
+\hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7fa8e7d1454248015544f671503ee4879f8}{Blue2} =0x3182bd, 
+\\*
+\hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7fa9eafa8db807f9452108cd02b80cd4adc}{Blue1} =0x08519c
+ \}
+\item 
+enum \hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9}{Graph\+Colors\+Scheme\+Orange\+Scale} \{ \\*
+\hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a831f97b46205160d031360037e295a9e}{Orange5} =0xfeedde, 
+\hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a89cffa8b9f4fee6609397ae4070f9d6d}{Orange4} =0xfdbe85, 
+\hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a00cd573911b5b30d18a11a33c6fc522b}{Orange3} =0xfd8d3c, 
+\hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a939ba09e84586298fd533123b5f66523}{Orange2} =0xe6550d, 
+\\*
+\hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a204b0d328d6009cf3947fee021fd8f9e}{Orange1} =0xa63603
+ \}
+\item 
+enum \hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793}{Graph\+Colors\+Scheme\+Purple\+Scale} \{ \\*
+\hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793a5dac535e8b1188f40519826a68417c55}{Purple5} =0xf2f0f7, 
+\hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793acb508ce5a099dbfa4e04cd59530f7f0c}{Purple4} =0xcbc9e2, 
+\hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793a3ba6254f6df4ad7c05ee0be4ccd4bce0}{Purple3} =0x9e9ac8, 
+\hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793aa1dd30e00955bc5c91cf70bcee098c0f}{Purple2} =0x756bb1, 
+\\*
+\hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793a0020c6ec216a9abfbf98597fc3236b0d}{Purple1} =0x54278f
+ \}
+\item 
+enum \hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041f}{Graph\+Colors\+Scheme\+Spectral} \{ \\*
+\hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa6419dd029625970f67539aca09590eba}{Spectral1} =0xc00000, 
+\hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa196f52db837705332db2868698334c73}{Spectral2} =0xc04800, 
+\hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa7ab9d9d5b586c0a4ff2c8f0810c0e125}{Spectral3} =0xc09000, 
+\hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa2ce9062dbff15432687ecb263276eea9}{Spectral4} =0xa8c000, 
+\\*
+\hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041faafba36800341f843707dde3817de7ab8}{Spectral5} =0x60c000, 
+\hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041faf95b7de91298251e542918c0b1b0c706}{Spectral6} =0x18c000, 
+\hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa8cd29f93a2c6437fab9bd70d7a5a8b5f}{Spectral7} =0x00c030, 
+\hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa99c2079ecb8bab84d62ffa2b1ac260f6}{Spectral8} =0x00c078, 
+\\*
+\hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041faeea6311467a210f42b61650f529e200c}{Spectral9} =0x00c0c0, 
+\hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fadf5e3ed98b7f776d7e5465b9d5b181ac}{Spectral10} =0x0078c0, 
+\hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa3b304ffd7e21aebebcf9836def2489cd}{Spectral11} =0x0030c0, 
+\hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa569d9dd5641d1cc43da434bd62647acf}{Spectral12} =0x1800c0
+ \}
+\item 
+enum \hyperlink{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84}{Categorical\+Scheme\+Strong} \{ \\*
+\hyperlink{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84acae0ac2530188df63690dcd0d0a0a54a}{Cat\+Black} =0x000000, 
+\hyperlink{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a6e667d9b44d00fc7abc60ccd48c49ce3}{Cat\+Red} =0xe41a1c, 
+\hyperlink{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a1a9418c1e4aac923ecb5fc5548fc336e}{Cat\+Blue} =0x377eb8, 
+\hyperlink{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a9b65d9bcc4db6c2a24778314e7cb4c37}{Cat\+Green} =0x4daf4a, 
+\\*
+\hyperlink{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a0b8d04fef18528d896567798258a652a}{Cat\+Purple} =0x984ea3, 
+\hyperlink{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a3f4130e385423518e90cb274b184a025}{Cat\+Orange} =0xff7f00, 
+\hyperlink{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a10f43e0111c8a83718b09808a40ac86b}{Cat\+Yellow} =0xffff33, 
+\hyperlink{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84ac5fc93880c53a737c3a228b95bee3c80}{Cat\+Brown} =0xa65628, 
+\\*
+\hyperlink{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a014046f688feffd3f6591673a81faa75}{Cat\+Lilac} =0xf781bf
+ \}
+\item 
+enum \hyperlink{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688}{Color\+Blind\+Safe} \{ \\*
+\hyperlink{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688a17ca29f5d99b99a6deb1168c8d85ffd5}{Col\+Blind1} =0xb2182b, 
+\hyperlink{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688a0da75f914c3de0050469ec4c6a4f8f80}{Col\+Blind2} =0xef8a62, 
+\hyperlink{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688acb5eaccdcfa9258dedbfc2eaf6d3d074}{Col\+Blind3} =0xfddbc7, 
+\hyperlink{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688a58548f04beee362a2bd5069148f70bea}{Col\+Blind4} =0x67a9cf, 
+\\*
+\hyperlink{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688a8fc087984bebed2086a546e5a1cc04d2}{Col\+Blind5} =0x2166ac, 
+\hyperlink{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688ac0b0eda68f4d94a86348347a731559e4}{Col\+Blind6} =0x000000, 
+\hyperlink{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688ae4dceb1194dce94363d36c3f0833a2dd}{Col\+Blind7} =0xd1e5f0
+ \}
+\item 
+enum \hyperlink{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9}{Line\+Styles} \{ \hyperlink{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9aa093aac47201f487076a14536d7d232e}{Solid\+Line} =0, 
+\hyperlink{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9acae47cc0c6fb8b2fd78960321b3af3e6}{Dashed\+Line}, 
+\hyperlink{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9a4fe473485f77246f8a6a7b7908c1cb29}{Doted\+Line}, 
+\hyperlink{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9a090a9f999b11add4d84265b73f7aa55d}{Dash\+Dot\+Line}
+ \}
+\item 
+enum \hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286}{Line\+Markers} \{ \\*
+\hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a2bd1feb72e88164f7affaef48f8980c7}{No\+Marker} =0, 
+\hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a994829e0aaea0862619f232517a1e22a}{Circle\+Marker}, 
+\hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a14ff0127b2411b4696b705e6bdc88bf5}{Square\+Marker}, 
+\hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a9a9b82d3e21118fd09695b6bb4e46acc}{Diamond\+Marker}, 
+\\*
+\hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a7701895659e4a281cd9c66189dc9224e}{Cross\+Marker}, 
+\hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a166e1831b8ee347b2b520f1a286b541a}{Solid\+Circle\+Marker}, 
+\hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a522d7e8a4d70417e6069ed0bd2ae917f}{Solid\+Square\+Marker}, 
+\hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a7680d2a7ac12d6d646c9491b6562a9f5}{Solid\+Diamond\+Marker}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84}{}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Categorical\+Scheme\+Strong@{Categorical\+Scheme\+Strong}}
+\index{Categorical\+Scheme\+Strong@{Categorical\+Scheme\+Strong}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}
+\subsubsection[{Categorical\+Scheme\+Strong}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Categorical\+Scheme\+Strong}}\label{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84}
+These colours look equally strong, for when no category is more important. N\+B\+: working from information at \href{https://www.perceptualedge.com/articles/b-eye/choosing_colors.pdf}{\tt https\+://www.\+perceptualedge.\+com/articles/b-\/eye/choosing\+\_\+colors.\+pdf} and \href{http://colorbrewer2.org/}{\tt http\+://colorbrewer2.\+org/} \begin{DoxyNote}{Note}
+Not designed for use with the Graph\+Colors\+Scheme$\ast$\+Scale colour schemes. 
+\end{DoxyNote}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Cat\+Black@{Cat\+Black}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Cat\+Black@{Cat\+Black}}\item[{\em 
+\hypertarget{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84acae0ac2530188df63690dcd0d0a0a54a}{}Cat\+Black\label{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84acae0ac2530188df63690dcd0d0a0a54a}
+}]\index{Cat\+Red@{Cat\+Red}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Cat\+Red@{Cat\+Red}}\item[{\em 
+\hypertarget{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a6e667d9b44d00fc7abc60ccd48c49ce3}{}Cat\+Red\label{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a6e667d9b44d00fc7abc60ccd48c49ce3}
+}]\index{Cat\+Blue@{Cat\+Blue}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Cat\+Blue@{Cat\+Blue}}\item[{\em 
+\hypertarget{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a1a9418c1e4aac923ecb5fc5548fc336e}{}Cat\+Blue\label{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a1a9418c1e4aac923ecb5fc5548fc336e}
+}]\index{Cat\+Green@{Cat\+Green}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Cat\+Green@{Cat\+Green}}\item[{\em 
+\hypertarget{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a9b65d9bcc4db6c2a24778314e7cb4c37}{}Cat\+Green\label{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a9b65d9bcc4db6c2a24778314e7cb4c37}
+}]\index{Cat\+Purple@{Cat\+Purple}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Cat\+Purple@{Cat\+Purple}}\item[{\em 
+\hypertarget{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a0b8d04fef18528d896567798258a652a}{}Cat\+Purple\label{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a0b8d04fef18528d896567798258a652a}
+}]\index{Cat\+Orange@{Cat\+Orange}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Cat\+Orange@{Cat\+Orange}}\item[{\em 
+\hypertarget{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a3f4130e385423518e90cb274b184a025}{}Cat\+Orange\label{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a3f4130e385423518e90cb274b184a025}
+}]\index{Cat\+Yellow@{Cat\+Yellow}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Cat\+Yellow@{Cat\+Yellow}}\item[{\em 
+\hypertarget{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a10f43e0111c8a83718b09808a40ac86b}{}Cat\+Yellow\label{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a10f43e0111c8a83718b09808a40ac86b}
+}]\index{Cat\+Brown@{Cat\+Brown}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Cat\+Brown@{Cat\+Brown}}\item[{\em 
+\hypertarget{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84ac5fc93880c53a737c3a228b95bee3c80}{}Cat\+Brown\label{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84ac5fc93880c53a737c3a228b95bee3c80}
+}]\index{Cat\+Lilac@{Cat\+Lilac}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Cat\+Lilac@{Cat\+Lilac}}\item[{\em 
+\hypertarget{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a014046f688feffd3f6591673a81faa75}{}Cat\+Lilac\label{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84a014046f688feffd3f6591673a81faa75}
+}]\end{description}
+\end{Desc}
+\hypertarget{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688}{}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Color\+Blind\+Safe@{Color\+Blind\+Safe}}
+\index{Color\+Blind\+Safe@{Color\+Blind\+Safe}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}
+\subsubsection[{Color\+Blind\+Safe}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Color\+Blind\+Safe}}\label{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688}
+Compromising aesthetics, for a scheme that anyone should be able to make out. N\+B\+: working from information at \href{http://colorbrewer2.org/}{\tt http\+://colorbrewer2.\+org/} \begin{DoxyNote}{Note}
+Not designed for use with the Graph\+Colors\+Scheme$\ast$\+Scale colour schemes. 
+\end{DoxyNote}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Col\+Blind1@{Col\+Blind1}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Col\+Blind1@{Col\+Blind1}}\item[{\em 
+\hypertarget{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688a17ca29f5d99b99a6deb1168c8d85ffd5}{}Col\+Blind1\label{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688a17ca29f5d99b99a6deb1168c8d85ffd5}
+}]\index{Col\+Blind2@{Col\+Blind2}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Col\+Blind2@{Col\+Blind2}}\item[{\em 
+\hypertarget{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688a0da75f914c3de0050469ec4c6a4f8f80}{}Col\+Blind2\label{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688a0da75f914c3de0050469ec4c6a4f8f80}
+}]\index{Col\+Blind3@{Col\+Blind3}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Col\+Blind3@{Col\+Blind3}}\item[{\em 
+\hypertarget{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688acb5eaccdcfa9258dedbfc2eaf6d3d074}{}Col\+Blind3\label{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688acb5eaccdcfa9258dedbfc2eaf6d3d074}
+}]\index{Col\+Blind4@{Col\+Blind4}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Col\+Blind4@{Col\+Blind4}}\item[{\em 
+\hypertarget{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688a58548f04beee362a2bd5069148f70bea}{}Col\+Blind4\label{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688a58548f04beee362a2bd5069148f70bea}
+}]\index{Col\+Blind5@{Col\+Blind5}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Col\+Blind5@{Col\+Blind5}}\item[{\em 
+\hypertarget{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688a8fc087984bebed2086a546e5a1cc04d2}{}Col\+Blind5\label{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688a8fc087984bebed2086a546e5a1cc04d2}
+}]\index{Col\+Blind6@{Col\+Blind6}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Col\+Blind6@{Col\+Blind6}}\item[{\em 
+\hypertarget{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688ac0b0eda68f4d94a86348347a731559e4}{}Col\+Blind6\label{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688ac0b0eda68f4d94a86348347a731559e4}
+}]\index{Col\+Blind7@{Col\+Blind7}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Col\+Blind7@{Col\+Blind7}}\item[{\em 
+\hypertarget{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688ae4dceb1194dce94363d36c3f0833a2dd}{}Col\+Blind7\label{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688ae4dceb1194dce94363d36c3f0833a2dd}
+}]\end{description}
+\end{Desc}
+\hypertarget{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7f}{}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Graph\+Colors\+Scheme\+Blue\+Scale@{Graph\+Colors\+Scheme\+Blue\+Scale}}
+\index{Graph\+Colors\+Scheme\+Blue\+Scale@{Graph\+Colors\+Scheme\+Blue\+Scale}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}
+\subsubsection[{Graph\+Colors\+Scheme\+Blue\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Graph\+Colors\+Scheme\+Blue\+Scale}}\label{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7f}
+
+
+
+
+Part of the Graph\+Colors\+Scheme$\ast$\+Scale colour schemes. They should be used to with data where the colour signifies importance.(N\+B\+: Green1 is bolder than Green2 etc.) seealso \hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008}{Graph\+Colors\+Scheme\+Grey\+Scale}, \hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33}{Graph\+Colors\+Scheme\+Red\+Scale}, \hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36}{Graph\+Colors\+Scheme\+Green\+Scale}, \hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7f}{Graph\+Colors\+Scheme\+Blue\+Scale}, \hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9}{Graph\+Colors\+Scheme\+Orange\+Scale}, \hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793}{Graph\+Colors\+Scheme\+Purple\+Scale} N\+B\+: Used a tool at \href{http://colorbrewer2.org/}{\tt http\+://colorbrewer2.\+org/} to create Graph\+Colors\+Scheme$\ast$\+Scale shemes. \begin{DoxyNote}{Note}
+Red1 is balanced to work with Green1, Blue1, Purple1 etc. This is a method to find colors that work together. 
+\end{DoxyNote}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Blue5@{Blue5}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Blue5@{Blue5}}\item[{\em 
+\hypertarget{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7faa1fef896fbf57dca27435186d972477a}{}Blue5\label{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7faa1fef896fbf57dca27435186d972477a}
+}]\index{Blue4@{Blue4}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Blue4@{Blue4}}\item[{\em 
+\hypertarget{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7fa4a10cbe71b41df826bc2c5b465978fe4}{}Blue4\label{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7fa4a10cbe71b41df826bc2c5b465978fe4}
+}]\index{Blue3@{Blue3}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Blue3@{Blue3}}\item[{\em 
+\hypertarget{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7fa910d98e6c6282c1c8133f53438beb7ca}{}Blue3\label{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7fa910d98e6c6282c1c8133f53438beb7ca}
+}]\index{Blue2@{Blue2}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Blue2@{Blue2}}\item[{\em 
+\hypertarget{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7fa8e7d1454248015544f671503ee4879f8}{}Blue2\label{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7fa8e7d1454248015544f671503ee4879f8}
+}]\index{Blue1@{Blue1}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Blue1@{Blue1}}\item[{\em 
+\hypertarget{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7fa9eafa8db807f9452108cd02b80cd4adc}{}Blue1\label{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7fa9eafa8db807f9452108cd02b80cd4adc}
+}]\end{description}
+\end{Desc}
+\hypertarget{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36}{}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Graph\+Colors\+Scheme\+Green\+Scale@{Graph\+Colors\+Scheme\+Green\+Scale}}
+\index{Graph\+Colors\+Scheme\+Green\+Scale@{Graph\+Colors\+Scheme\+Green\+Scale}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}
+\subsubsection[{Graph\+Colors\+Scheme\+Green\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Graph\+Colors\+Scheme\+Green\+Scale}}\label{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36}
+
+
+
+
+Part of the Graph\+Colors\+Scheme$\ast$\+Scale colour schemes. They should be used to with data where the colour signifies importance.(N\+B\+: Green1 is bolder than Green2 etc.) seealso \hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008}{Graph\+Colors\+Scheme\+Grey\+Scale}, \hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33}{Graph\+Colors\+Scheme\+Red\+Scale}, \hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36}{Graph\+Colors\+Scheme\+Green\+Scale}, \hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7f}{Graph\+Colors\+Scheme\+Blue\+Scale}, \hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9}{Graph\+Colors\+Scheme\+Orange\+Scale}, \hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793}{Graph\+Colors\+Scheme\+Purple\+Scale} N\+B\+: Used a tool at \href{http://colorbrewer2.org/}{\tt http\+://colorbrewer2.\+org/} to create Graph\+Colors\+Scheme$\ast$\+Scale shemes. \begin{DoxyNote}{Note}
+Red1 is balanced to work with Green1, Blue1, Purple1 etc. This is a method to find colors that work together. 
+\end{DoxyNote}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Green5@{Green5}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Green5@{Green5}}\item[{\em 
+\hypertarget{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36a1fd8d83a0572ab5759e02b9a85865952}{}Green5\label{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36a1fd8d83a0572ab5759e02b9a85865952}
+}]\index{Green4@{Green4}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Green4@{Green4}}\item[{\em 
+\hypertarget{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36a36b7f9cbbb6e3d6d5e9df9abcbf348c3}{}Green4\label{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36a36b7f9cbbb6e3d6d5e9df9abcbf348c3}
+}]\index{Green3@{Green3}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Green3@{Green3}}\item[{\em 
+\hypertarget{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36aa061b2388532ed2cf150f5ef83646ae2}{}Green3\label{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36aa061b2388532ed2cf150f5ef83646ae2}
+}]\index{Green2@{Green2}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Green2@{Green2}}\item[{\em 
+\hypertarget{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36a342644b979ceffaf70c587e453790275}{}Green2\label{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36a342644b979ceffaf70c587e453790275}
+}]\index{Green1@{Green1}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Green1@{Green1}}\item[{\em 
+\hypertarget{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36a8db72e307df54b6fd021fd0eff7d5a5f}{}Green1\label{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36a8db72e307df54b6fd021fd0eff7d5a5f}
+}]\end{description}
+\end{Desc}
+\hypertarget{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008}{}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Graph\+Colors\+Scheme\+Grey\+Scale@{Graph\+Colors\+Scheme\+Grey\+Scale}}
+\index{Graph\+Colors\+Scheme\+Grey\+Scale@{Graph\+Colors\+Scheme\+Grey\+Scale}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}
+\subsubsection[{Graph\+Colors\+Scheme\+Grey\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Graph\+Colors\+Scheme\+Grey\+Scale}}\label{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008}
+Part of the Graph\+Colors\+Scheme$\ast$\+Scale colour schemes. They should be used to with data where the colour signifies importance.(N\+B\+: Green1 is bolder than Green2 etc.) seealso \hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008}{Graph\+Colors\+Scheme\+Grey\+Scale}, \hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33}{Graph\+Colors\+Scheme\+Red\+Scale}, \hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36}{Graph\+Colors\+Scheme\+Green\+Scale}, \hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7f}{Graph\+Colors\+Scheme\+Blue\+Scale}, \hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9}{Graph\+Colors\+Scheme\+Orange\+Scale}, \hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793}{Graph\+Colors\+Scheme\+Purple\+Scale} N\+B\+: Used a tool at \href{http://colorbrewer2.org/}{\tt http\+://colorbrewer2.\+org/} to create Graph\+Colors\+Scheme$\ast$\+Scale shemes. \begin{DoxyNote}{Note}
+Red1 is balanced to work with Green1, Blue1, Purple1 etc. This is a method to find colors that work together. 
+\end{DoxyNote}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Grey\+Scale5@{Grey\+Scale5}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Grey\+Scale5@{Grey\+Scale5}}\item[{\em 
+\hypertarget{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008adbb2d611c1388cf4fde8211c82f9f3a4}{}Grey\+Scale5\label{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008adbb2d611c1388cf4fde8211c82f9f3a4}
+}]\index{Grey\+Scale4@{Grey\+Scale4}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Grey\+Scale4@{Grey\+Scale4}}\item[{\em 
+\hypertarget{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008acf7ae77b68bee10423a64540d13776c5}{}Grey\+Scale4\label{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008acf7ae77b68bee10423a64540d13776c5}
+}]\index{Grey\+Scale3@{Grey\+Scale3}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Grey\+Scale3@{Grey\+Scale3}}\item[{\em 
+\hypertarget{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008a685c6616e00ad543993f25e2a4f0ab9d}{}Grey\+Scale3\label{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008a685c6616e00ad543993f25e2a4f0ab9d}
+}]\index{Grey\+Scale2@{Grey\+Scale2}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Grey\+Scale2@{Grey\+Scale2}}\item[{\em 
+\hypertarget{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008a00fd820203567ca8de81dc57534305c0}{}Grey\+Scale2\label{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008a00fd820203567ca8de81dc57534305c0}
+}]\index{Grey\+Scale1@{Grey\+Scale1}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Grey\+Scale1@{Grey\+Scale1}}\item[{\em 
+\hypertarget{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008a8f5c64fb3ae38023d24a1ce3c74c3341}{}Grey\+Scale1\label{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008a8f5c64fb3ae38023d24a1ce3c74c3341}
+}]\end{description}
+\end{Desc}
+\hypertarget{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9}{}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Graph\+Colors\+Scheme\+Orange\+Scale@{Graph\+Colors\+Scheme\+Orange\+Scale}}
+\index{Graph\+Colors\+Scheme\+Orange\+Scale@{Graph\+Colors\+Scheme\+Orange\+Scale}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}
+\subsubsection[{Graph\+Colors\+Scheme\+Orange\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Graph\+Colors\+Scheme\+Orange\+Scale}}\label{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9}
+
+
+
+
+Part of the Graph\+Colors\+Scheme$\ast$\+Scale colour schemes. They should be used to with data where the colour signifies importance.(N\+B\+: Green1 is bolder than Green2 etc.) seealso \hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008}{Graph\+Colors\+Scheme\+Grey\+Scale}, \hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33}{Graph\+Colors\+Scheme\+Red\+Scale}, \hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36}{Graph\+Colors\+Scheme\+Green\+Scale}, \hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7f}{Graph\+Colors\+Scheme\+Blue\+Scale}, \hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9}{Graph\+Colors\+Scheme\+Orange\+Scale}, \hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793}{Graph\+Colors\+Scheme\+Purple\+Scale} N\+B\+: Used a tool at \href{http://colorbrewer2.org/}{\tt http\+://colorbrewer2.\+org/} to create Graph\+Colors\+Scheme$\ast$\+Scale shemes. \begin{DoxyNote}{Note}
+Red1 is balanced to work with Green1, Blue1, Purple1 etc. This is a method to find colors that work together. 
+\end{DoxyNote}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Orange5@{Orange5}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Orange5@{Orange5}}\item[{\em 
+\hypertarget{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a831f97b46205160d031360037e295a9e}{}Orange5\label{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a831f97b46205160d031360037e295a9e}
+}]\index{Orange4@{Orange4}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Orange4@{Orange4}}\item[{\em 
+\hypertarget{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a89cffa8b9f4fee6609397ae4070f9d6d}{}Orange4\label{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a89cffa8b9f4fee6609397ae4070f9d6d}
+}]\index{Orange3@{Orange3}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Orange3@{Orange3}}\item[{\em 
+\hypertarget{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a00cd573911b5b30d18a11a33c6fc522b}{}Orange3\label{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a00cd573911b5b30d18a11a33c6fc522b}
+}]\index{Orange2@{Orange2}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Orange2@{Orange2}}\item[{\em 
+\hypertarget{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a939ba09e84586298fd533123b5f66523}{}Orange2\label{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a939ba09e84586298fd533123b5f66523}
+}]\index{Orange1@{Orange1}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Orange1@{Orange1}}\item[{\em 
+\hypertarget{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a204b0d328d6009cf3947fee021fd8f9e}{}Orange1\label{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9a204b0d328d6009cf3947fee021fd8f9e}
+}]\end{description}
+\end{Desc}
+\hypertarget{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793}{}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Graph\+Colors\+Scheme\+Purple\+Scale@{Graph\+Colors\+Scheme\+Purple\+Scale}}
+\index{Graph\+Colors\+Scheme\+Purple\+Scale@{Graph\+Colors\+Scheme\+Purple\+Scale}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}
+\subsubsection[{Graph\+Colors\+Scheme\+Purple\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Graph\+Colors\+Scheme\+Purple\+Scale}}\label{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793}
+
+
+
+
+Part of the Graph\+Colors\+Scheme$\ast$\+Scale colour schemes. They should be used to with data where the colour signifies importance.(N\+B\+: Green1 is bolder than Green2 etc.) seealso \hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008}{Graph\+Colors\+Scheme\+Grey\+Scale}, \hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33}{Graph\+Colors\+Scheme\+Red\+Scale}, \hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36}{Graph\+Colors\+Scheme\+Green\+Scale}, \hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7f}{Graph\+Colors\+Scheme\+Blue\+Scale}, \hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9}{Graph\+Colors\+Scheme\+Orange\+Scale}, \hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793}{Graph\+Colors\+Scheme\+Purple\+Scale} N\+B\+: Used a tool at \href{http://colorbrewer2.org/}{\tt http\+://colorbrewer2.\+org/} to create Graph\+Colors\+Scheme$\ast$\+Scale shemes. \begin{DoxyNote}{Note}
+Red1 is balanced to work with Green1, Blue1, Purple1 etc. This is a method to find colors that work together. 
+\end{DoxyNote}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Purple5@{Purple5}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Purple5@{Purple5}}\item[{\em 
+\hypertarget{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793a5dac535e8b1188f40519826a68417c55}{}Purple5\label{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793a5dac535e8b1188f40519826a68417c55}
+}]\index{Purple4@{Purple4}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Purple4@{Purple4}}\item[{\em 
+\hypertarget{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793acb508ce5a099dbfa4e04cd59530f7f0c}{}Purple4\label{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793acb508ce5a099dbfa4e04cd59530f7f0c}
+}]\index{Purple3@{Purple3}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Purple3@{Purple3}}\item[{\em 
+\hypertarget{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793a3ba6254f6df4ad7c05ee0be4ccd4bce0}{}Purple3\label{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793a3ba6254f6df4ad7c05ee0be4ccd4bce0}
+}]\index{Purple2@{Purple2}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Purple2@{Purple2}}\item[{\em 
+\hypertarget{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793aa1dd30e00955bc5c91cf70bcee098c0f}{}Purple2\label{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793aa1dd30e00955bc5c91cf70bcee098c0f}
+}]\index{Purple1@{Purple1}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Purple1@{Purple1}}\item[{\em 
+\hypertarget{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793a0020c6ec216a9abfbf98597fc3236b0d}{}Purple1\label{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793a0020c6ec216a9abfbf98597fc3236b0d}
+}]\end{description}
+\end{Desc}
+\hypertarget{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33}{}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Graph\+Colors\+Scheme\+Red\+Scale@{Graph\+Colors\+Scheme\+Red\+Scale}}
+\index{Graph\+Colors\+Scheme\+Red\+Scale@{Graph\+Colors\+Scheme\+Red\+Scale}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}
+\subsubsection[{Graph\+Colors\+Scheme\+Red\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Graph\+Colors\+Scheme\+Red\+Scale}}\label{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33}
+
+
+
+
+Part of the Graph\+Colors\+Scheme$\ast$\+Scale colour schemes. They should be used to with data where the colour signifies importance.(N\+B\+: Green1 is bolder than Green2 etc.) seealso \hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008}{Graph\+Colors\+Scheme\+Grey\+Scale}, \hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33}{Graph\+Colors\+Scheme\+Red\+Scale}, \hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36}{Graph\+Colors\+Scheme\+Green\+Scale}, \hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7f}{Graph\+Colors\+Scheme\+Blue\+Scale}, \hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9}{Graph\+Colors\+Scheme\+Orange\+Scale}, \hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793}{Graph\+Colors\+Scheme\+Purple\+Scale} N\+B\+: Used a tool at \href{http://colorbrewer2.org/}{\tt http\+://colorbrewer2.\+org/} to create Graph\+Colors\+Scheme$\ast$\+Scale shemes. \begin{DoxyNote}{Note}
+Red1 is balanced to work with Green1, Blue1, Purple1 etc. This is a method to find colors that work together. 
+\end{DoxyNote}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Red5@{Red5}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Red5@{Red5}}\item[{\em 
+\hypertarget{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a42a05e810448c009b39c1339f1b62017}{}Red5\label{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a42a05e810448c009b39c1339f1b62017}
+}]\index{Red4@{Red4}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Red4@{Red4}}\item[{\em 
+\hypertarget{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a22d6586e2a83ef4344823a05d3c67ccc}{}Red4\label{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a22d6586e2a83ef4344823a05d3c67ccc}
+}]\index{Red3@{Red3}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Red3@{Red3}}\item[{\em 
+\hypertarget{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a37bd25cf1e1fe1eeb8e4840dbc863dac}{}Red3\label{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a37bd25cf1e1fe1eeb8e4840dbc863dac}
+}]\index{Red2@{Red2}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Red2@{Red2}}\item[{\em 
+\hypertarget{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a5ffc16932c6f29ba31ab92878a6d1802}{}Red2\label{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a5ffc16932c6f29ba31ab92878a6d1802}
+}]\index{Red1@{Red1}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Red1@{Red1}}\item[{\em 
+\hypertarget{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a62acd44726f02a17ba2a17c1cf253639}{}Red1\label{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33a62acd44726f02a17ba2a17c1cf253639}
+}]\end{description}
+\end{Desc}
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041f}{}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Graph\+Colors\+Scheme\+Spectral@{Graph\+Colors\+Scheme\+Spectral}}
+\index{Graph\+Colors\+Scheme\+Spectral@{Graph\+Colors\+Scheme\+Spectral}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}
+\subsubsection[{Graph\+Colors\+Scheme\+Spectral}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Graph\+Colors\+Scheme\+Spectral}}\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041f}
+12 points of the spectrum from red to blue at full saturation with 37.\+5\% luminosity. This configuration is intended to produce good results printing spectral colours against white, because the yellow comes out olive, and the aqua comes out teal. The down side being no vibrant orange. It\textquotesingle{}s a trade off that makes sense for graphs. If you are looking for colors that specificaly don\textquotesingle{}t imply one catagory is more important see \hyperlink{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84}{Categorical\+Scheme\+Strong} instead. N\+B\+: This is an original pallate design by the author.
+
+\begin{DoxyNote}{Note}
+Not designed for use with the Graph\+Colors\+Scheme$\ast$\+Scale colour schemes. 
+\end{DoxyNote}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Spectral1@{Spectral1}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Spectral1@{Spectral1}}\item[{\em 
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa6419dd029625970f67539aca09590eba}{}Spectral1\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa6419dd029625970f67539aca09590eba}
+}]\index{Spectral2@{Spectral2}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Spectral2@{Spectral2}}\item[{\em 
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa196f52db837705332db2868698334c73}{}Spectral2\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa196f52db837705332db2868698334c73}
+}]\index{Spectral3@{Spectral3}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Spectral3@{Spectral3}}\item[{\em 
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa7ab9d9d5b586c0a4ff2c8f0810c0e125}{}Spectral3\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa7ab9d9d5b586c0a4ff2c8f0810c0e125}
+}]\index{Spectral4@{Spectral4}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Spectral4@{Spectral4}}\item[{\em 
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa2ce9062dbff15432687ecb263276eea9}{}Spectral4\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa2ce9062dbff15432687ecb263276eea9}
+}]\index{Spectral5@{Spectral5}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Spectral5@{Spectral5}}\item[{\em 
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041faafba36800341f843707dde3817de7ab8}{}Spectral5\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041faafba36800341f843707dde3817de7ab8}
+}]\index{Spectral6@{Spectral6}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Spectral6@{Spectral6}}\item[{\em 
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041faf95b7de91298251e542918c0b1b0c706}{}Spectral6\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041faf95b7de91298251e542918c0b1b0c706}
+}]\index{Spectral7@{Spectral7}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Spectral7@{Spectral7}}\item[{\em 
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa8cd29f93a2c6437fab9bd70d7a5a8b5f}{}Spectral7\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa8cd29f93a2c6437fab9bd70d7a5a8b5f}
+}]\index{Spectral8@{Spectral8}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Spectral8@{Spectral8}}\item[{\em 
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa99c2079ecb8bab84d62ffa2b1ac260f6}{}Spectral8\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa99c2079ecb8bab84d62ffa2b1ac260f6}
+}]\index{Spectral9@{Spectral9}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Spectral9@{Spectral9}}\item[{\em 
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041faeea6311467a210f42b61650f529e200c}{}Spectral9\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041faeea6311467a210f42b61650f529e200c}
+}]\index{Spectral10@{Spectral10}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Spectral10@{Spectral10}}\item[{\em 
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fadf5e3ed98b7f776d7e5465b9d5b181ac}{}Spectral10\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fadf5e3ed98b7f776d7e5465b9d5b181ac}
+}]\index{Spectral11@{Spectral11}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Spectral11@{Spectral11}}\item[{\em 
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa3b304ffd7e21aebebcf9836def2489cd}{}Spectral11\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa3b304ffd7e21aebebcf9836def2489cd}
+}]\index{Spectral12@{Spectral12}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Spectral12@{Spectral12}}\item[{\em 
+\hypertarget{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa569d9dd5641d1cc43da434bd62647acf}{}Spectral12\label{_line_apperance_8h_a250826c1d27d3626eb24afa95310041fa569d9dd5641d1cc43da434bd62647acf}
+}]\end{description}
+\end{Desc}
+\hypertarget{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286}{}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Line\+Markers@{Line\+Markers}}
+\index{Line\+Markers@{Line\+Markers}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}
+\subsubsection[{Line\+Markers}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Line\+Markers}}\label{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286}
+The type of point markers that can be plotted. Not aplicable to bar graphs. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{No\+Marker@{No\+Marker}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!No\+Marker@{No\+Marker}}\item[{\em 
+\hypertarget{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a2bd1feb72e88164f7affaef48f8980c7}{}No\+Marker\label{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a2bd1feb72e88164f7affaef48f8980c7}
+}]\index{Circle\+Marker@{Circle\+Marker}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Circle\+Marker@{Circle\+Marker}}\item[{\em 
+\hypertarget{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a994829e0aaea0862619f232517a1e22a}{}Circle\+Marker\label{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a994829e0aaea0862619f232517a1e22a}
+}]\index{Square\+Marker@{Square\+Marker}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Square\+Marker@{Square\+Marker}}\item[{\em 
+\hypertarget{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a14ff0127b2411b4696b705e6bdc88bf5}{}Square\+Marker\label{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a14ff0127b2411b4696b705e6bdc88bf5}
+}]\index{Diamond\+Marker@{Diamond\+Marker}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Diamond\+Marker@{Diamond\+Marker}}\item[{\em 
+\hypertarget{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a9a9b82d3e21118fd09695b6bb4e46acc}{}Diamond\+Marker\label{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a9a9b82d3e21118fd09695b6bb4e46acc}
+}]\index{Cross\+Marker@{Cross\+Marker}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Cross\+Marker@{Cross\+Marker}}\item[{\em 
+\hypertarget{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a7701895659e4a281cd9c66189dc9224e}{}Cross\+Marker\label{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a7701895659e4a281cd9c66189dc9224e}
+}]\index{Solid\+Circle\+Marker@{Solid\+Circle\+Marker}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Solid\+Circle\+Marker@{Solid\+Circle\+Marker}}\item[{\em 
+\hypertarget{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a166e1831b8ee347b2b520f1a286b541a}{}Solid\+Circle\+Marker\label{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a166e1831b8ee347b2b520f1a286b541a}
+}]\index{Solid\+Square\+Marker@{Solid\+Square\+Marker}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Solid\+Square\+Marker@{Solid\+Square\+Marker}}\item[{\em 
+\hypertarget{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a522d7e8a4d70417e6069ed0bd2ae917f}{}Solid\+Square\+Marker\label{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a522d7e8a4d70417e6069ed0bd2ae917f}
+}]\index{Solid\+Diamond\+Marker@{Solid\+Diamond\+Marker}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Solid\+Diamond\+Marker@{Solid\+Diamond\+Marker}}\item[{\em 
+\hypertarget{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a7680d2a7ac12d6d646c9491b6562a9f5}{}Solid\+Diamond\+Marker\label{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286a7680d2a7ac12d6d646c9491b6562a9f5}
+}]\end{description}
+\end{Desc}
+\hypertarget{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9}{}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Line\+Styles@{Line\+Styles}}
+\index{Line\+Styles@{Line\+Styles}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}
+\subsubsection[{Line\+Styles}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Line\+Styles}}\label{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9}
+The type of lines that can be plotted. Not aplicable to bar graphs, or point graphs. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Solid\+Line@{Solid\+Line}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Solid\+Line@{Solid\+Line}}\item[{\em 
+\hypertarget{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9aa093aac47201f487076a14536d7d232e}{}Solid\+Line\label{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9aa093aac47201f487076a14536d7d232e}
+}]\index{Dashed\+Line@{Dashed\+Line}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Dashed\+Line@{Dashed\+Line}}\item[{\em 
+\hypertarget{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9acae47cc0c6fb8b2fd78960321b3af3e6}{}Dashed\+Line\label{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9acae47cc0c6fb8b2fd78960321b3af3e6}
+}]\index{Doted\+Line@{Doted\+Line}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Doted\+Line@{Doted\+Line}}\item[{\em 
+\hypertarget{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9a4fe473485f77246f8a6a7b7908c1cb29}{}Doted\+Line\label{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9a4fe473485f77246f8a6a7b7908c1cb29}
+}]\index{Dash\+Dot\+Line@{Dash\+Dot\+Line}!Line\+Apperance.\+h@{Line\+Apperance.\+h}}\index{Line\+Apperance.\+h@{Line\+Apperance.\+h}!Dash\+Dot\+Line@{Dash\+Dot\+Line}}\item[{\em 
+\hypertarget{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9a090a9f999b11add4d84265b73f7aa55d}{}Dash\+Dot\+Line\label{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9a090a9f999b11add4d84265b73f7aa55d}
+}]\end{description}
+\end{Desc}

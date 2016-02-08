@@ -1,0 +1,162 @@
+\hypertarget{_sanity_8h}{}\section{W\+D\+Arduino\+Lib/src/\+Sanity.h File Reference}
+\label{_sanity_8h}\index{W\+D\+Arduino\+Lib/src/\+Sanity.\+h@{W\+D\+Arduino\+Lib/src/\+Sanity.\+h}}
+{\ttfamily \#include \char`\"{}W\+Program.\+h\char`\"{}}\\*
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766c}{Common\+Baud\+Rates} \{ \\*
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca4e239f2986ae27d556046682ea8fa763}{Baud\+Rate300} =300, 
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca6b4e1203046e206c425263db64445696}{Baud\+Rate600} =600, 
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca4c8ed9328c7e9d7ecb57c1403146b6c7}{Baud\+Rate1200} =1200, 
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766caf645a74e446e102641141a8c1ee666ea}{Baud\+Rate2400} =2400, 
+\\*
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca70afb824131f79acce9dec9225051b43}{Baud\+Rate4800} =4800, 
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766caa752f00e7d569cc67143818d0040e826}{Baud\+Rate9600} =9600, 
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766caa19b0361eeeccdb1a3f46979e3842acb}{Baud\+Rate14400} =14400, 
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca5ee8475620025558aeaaa2ef04462f1f}{Baud\+Rate19200} =19200, 
+\\*
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca445afd4bdfb9f25f3ae75c0476266380}{Baud\+Rate28800} =28800, 
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca184e7a9a3cfe931f945465dc345fc1a4}{Baud\+Rate31250} =31250, 
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca2e3be0508fd82f6ba86b6a8b184778b9}{Baud\+Rate38400} =38400, 
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766cae80696b36f7613d96eb3ef7060284420}{Baud\+Rate57600} =57600, 
+\\*
+\hyperlink{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766caa7fabff02846f926cddabff0d982e4b5}{Baud\+Rate115200} =115200
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{_sanity_8h_afd4c86ba716fdf40d84831822843016a}{clamp} (T value, T min, T max)
+\item 
+char $\ast$ \hyperlink{_sanity_8h_a93a84ed85f2057d2619ca03c79468821}{malloc\+Copy\+Of} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$text)
+\item 
+char $\ast$ \hyperlink{_sanity_8h_a9f7f8a517e066841232e89b2bbaa1a16}{strcpy} (char $\ast$dest, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$src)
+\item 
+size\+\_\+t \hyperlink{_sanity_8h_a928edfff700692b2289de42bce28a170}{strlcpy} (char $\ast$dest, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$src, size\+\_\+t len)
+\item 
+int \hyperlink{_sanity_8h_a7d1bf061cf6518ece41144e74dd68937}{strcmp} (const char $\ast$a, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_adab634951eeadcd5a7c8840eefbf780f}{b})
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766c}{}\index{Sanity.\+h@{Sanity.\+h}!Common\+Baud\+Rates@{Common\+Baud\+Rates}}
+\index{Common\+Baud\+Rates@{Common\+Baud\+Rates}!Sanity.\+h@{Sanity.\+h}}
+\subsubsection[{Common\+Baud\+Rates}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Common\+Baud\+Rates}}\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766c}
+Baudrates supported by the arduino platfrom. @ see \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Baud\+Rate300@{Baud\+Rate300}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate300@{Baud\+Rate300}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca4e239f2986ae27d556046682ea8fa763}{}Baud\+Rate300\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca4e239f2986ae27d556046682ea8fa763}
+}]\index{Baud\+Rate600@{Baud\+Rate600}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate600@{Baud\+Rate600}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca6b4e1203046e206c425263db64445696}{}Baud\+Rate600\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca6b4e1203046e206c425263db64445696}
+}]\index{Baud\+Rate1200@{Baud\+Rate1200}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate1200@{Baud\+Rate1200}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca4c8ed9328c7e9d7ecb57c1403146b6c7}{}Baud\+Rate1200\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca4c8ed9328c7e9d7ecb57c1403146b6c7}
+}]\index{Baud\+Rate2400@{Baud\+Rate2400}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate2400@{Baud\+Rate2400}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766caf645a74e446e102641141a8c1ee666ea}{}Baud\+Rate2400\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766caf645a74e446e102641141a8c1ee666ea}
+}]\index{Baud\+Rate4800@{Baud\+Rate4800}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate4800@{Baud\+Rate4800}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca70afb824131f79acce9dec9225051b43}{}Baud\+Rate4800\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca70afb824131f79acce9dec9225051b43}
+}]\index{Baud\+Rate9600@{Baud\+Rate9600}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate9600@{Baud\+Rate9600}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766caa752f00e7d569cc67143818d0040e826}{}Baud\+Rate9600\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766caa752f00e7d569cc67143818d0040e826}
+}]\index{Baud\+Rate14400@{Baud\+Rate14400}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate14400@{Baud\+Rate14400}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766caa19b0361eeeccdb1a3f46979e3842acb}{}Baud\+Rate14400\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766caa19b0361eeeccdb1a3f46979e3842acb}
+}]\index{Baud\+Rate19200@{Baud\+Rate19200}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate19200@{Baud\+Rate19200}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca5ee8475620025558aeaaa2ef04462f1f}{}Baud\+Rate19200\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca5ee8475620025558aeaaa2ef04462f1f}
+}]\index{Baud\+Rate28800@{Baud\+Rate28800}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate28800@{Baud\+Rate28800}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca445afd4bdfb9f25f3ae75c0476266380}{}Baud\+Rate28800\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca445afd4bdfb9f25f3ae75c0476266380}
+}]\index{Baud\+Rate31250@{Baud\+Rate31250}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate31250@{Baud\+Rate31250}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca184e7a9a3cfe931f945465dc345fc1a4}{}Baud\+Rate31250\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca184e7a9a3cfe931f945465dc345fc1a4}
+}]\index{Baud\+Rate38400@{Baud\+Rate38400}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate38400@{Baud\+Rate38400}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca2e3be0508fd82f6ba86b6a8b184778b9}{}Baud\+Rate38400\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766ca2e3be0508fd82f6ba86b6a8b184778b9}
+}]\index{Baud\+Rate57600@{Baud\+Rate57600}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate57600@{Baud\+Rate57600}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766cae80696b36f7613d96eb3ef7060284420}{}Baud\+Rate57600\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766cae80696b36f7613d96eb3ef7060284420}
+}]\index{Baud\+Rate115200@{Baud\+Rate115200}!Sanity.\+h@{Sanity.\+h}}\index{Sanity.\+h@{Sanity.\+h}!Baud\+Rate115200@{Baud\+Rate115200}}\item[{\em 
+\hypertarget{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766caa7fabff02846f926cddabff0d982e4b5}{}Baud\+Rate115200\label{_sanity_8h_ab04f2c484334f45a9b8e7225a8b8766caa7fabff02846f926cddabff0d982e4b5}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{_sanity_8h_afd4c86ba716fdf40d84831822843016a}{}\index{Sanity.\+h@{Sanity.\+h}!clamp@{clamp}}
+\index{clamp@{clamp}!Sanity.\+h@{Sanity.\+h}}
+\subsubsection[{clamp(\+T value, T min, T max)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T clamp (
+\begin{DoxyParamCaption}
+\item[{T}]{value, }
+\item[{T}]{min, }
+\item[{T}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_sanity_8h_afd4c86ba716fdf40d84831822843016a}
+Clamps a value between an inclusive range. ie\+: min $<$= value $<$= max 
+\begin{DoxyParams}{Parameters}
+{\em value} & value to clamp \\
+\hline
+{\em min} & Inclusive min. Must be $<$= max. \\
+\hline
+{\em max} & Inclusive max. Must be $>$= min. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+min $<$= value $<$= max 
+\end{DoxyReturn}
+\hypertarget{_sanity_8h_a93a84ed85f2057d2619ca03c79468821}{}\index{Sanity.\+h@{Sanity.\+h}!malloc\+Copy\+Of@{malloc\+Copy\+Of}}
+\index{malloc\+Copy\+Of@{malloc\+Copy\+Of}!Sanity.\+h@{Sanity.\+h}}
+\subsubsection[{malloc\+Copy\+Of(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$text)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ malloc\+Copy\+Of (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{text}
+\end{DoxyParamCaption}
+)}\label{_sanity_8h_a93a84ed85f2057d2619ca03c79468821}
+dynamically alocate a copy of a \+\_\+\+\_\+\+Flash\+String\+Helper. 
+\begin{DoxyParams}{Parameters}
+{\em text} & A \+\_\+\+\_\+\+Flash\+String\+Helper storing text in progmem. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_sanity_8h_a7d1bf061cf6518ece41144e74dd68937}{}\index{Sanity.\+h@{Sanity.\+h}!strcmp@{strcmp}}
+\index{strcmp@{strcmp}!Sanity.\+h@{Sanity.\+h}}
+\subsubsection[{strcmp(const char $\ast$a, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}int strcmp (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{a, }
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{b}
+\end{DoxyParamCaption}
+)}\label{_sanity_8h_a7d1bf061cf6518ece41144e74dd68937}
+compare string to a \+\_\+\+\_\+\+Flash\+String\+Helper. 
+\begin{DoxyParams}{Parameters}
+{\em a} & A string to compare. \\
+\hline
+{\em b} & A \+\_\+\+\_\+\+Flash\+String\+Helper other text. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_sanity_8h_a9f7f8a517e066841232e89b2bbaa1a16}{}\index{Sanity.\+h@{Sanity.\+h}!strcpy@{strcpy}}
+\index{strcpy@{strcpy}!Sanity.\+h@{Sanity.\+h}}
+\subsubsection[{strcpy(char $\ast$dest, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$src)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ strcpy (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{dest, }
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\label{_sanity_8h_a9f7f8a517e066841232e89b2bbaa1a16}
+Copy a \+\_\+\+\_\+\+Flash\+String\+Helper to local memory. 
+\begin{DoxyParams}{Parameters}
+{\em Destination} & buffer. \\
+\hline
+{\em src} & A \+\_\+\+\_\+\+Flash\+String\+Helper storing text in progmem. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_sanity_8h_a928edfff700692b2289de42bce28a170}{}\index{Sanity.\+h@{Sanity.\+h}!strlcpy@{strlcpy}}
+\index{strlcpy@{strlcpy}!Sanity.\+h@{Sanity.\+h}}
+\subsubsection[{strlcpy(char $\ast$dest, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$src, size\+\_\+t len)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t strlcpy (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{dest, }
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{src, }
+\item[{size\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{_sanity_8h_a928edfff700692b2289de42bce28a170}
+Copy a \+\_\+\+\_\+\+Flash\+String\+Helper to local memory. Maximum size is specified. String will be null terminated. 
+\begin{DoxyParams}{Parameters}
+{\em Destination} & buffer. \\
+\hline
+{\em src} & A \+\_\+\+\_\+\+Flash\+String\+Helper storing text in progmem. \\
+\hline
+{\em len} & Maximun length of string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of characters copied. 
+\end{DoxyReturn}

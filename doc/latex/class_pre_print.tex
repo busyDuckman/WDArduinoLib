@@ -1,0 +1,140 @@
+\hypertarget{class_pre_print}{}\section{Pre\+Print Class Reference}
+\label{class_pre_print}\index{Pre\+Print@{Pre\+Print}}
+
+
+{\ttfamily \#include $<$Pre\+Print.\+h$>$}
+
+Inheritance diagram for Pre\+Print\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pre_print}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pre_print_a6062e08cf52ab0bacc9af9f0ea060d6d}{Pre\+Print} (Print $\ast$\hyperlink{class_pre_print_a2864325a5347e151969f30e3139d68ef}{inner\+Printer}, const char $\ast$a\+Pre\+Token, const char $\ast$a\+Post\+Token)
+\item 
+void \hyperlink{class_pre_print_aeb453f39e57d53c0a4fa1bdc7284209f}{set\+Inner\+Printer} (Print $\ast$\hyperlink{class_pre_print_a2864325a5347e151969f30e3139d68ef}{inner\+Printer})
+\item 
+virtual size\+\_\+t \hyperlink{class_pre_print_aa1a6239b213974765a39a304c18b8df3}{write} (uint8\+\_\+t c)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pre_print_a9740712f07374dfda00d46ebf0730efc}{print\+Pre\+Token} ()
+\item 
+void \hyperlink{class_pre_print_a3f2ab5d0d1d614b4acf47f4ef566e428}{print\+Post\+Token} ()
+\item 
+void \hyperlink{class_pre_print_ac8b43aee74a660f18f3f290fc13af31e}{print\+Char} (char c)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_pre_print_8h_a1ff8bc7546384565c03c9f1f523edab8}{Pre\+Print\+State} \hyperlink{class_pre_print_a3d55c492a2085b880305ebf9e09faa31}{state}
+\item 
+Print $\ast$ \hyperlink{class_pre_print_a2864325a5347e151969f30e3139d68ef}{inner\+Printer}
+\item 
+const char $\ast$ \hyperlink{class_pre_print_a6d490d820f913d07f7b27c3d9f7641f4}{pre\+Token}
+\item 
+const char $\ast$ \hyperlink{class_pre_print_a8c087522317c48cb74a26c5ac4220cc3}{post\+Token}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_pre_print}{Pre\+Print} implements Print re-\/directing all output to another print device, but with something printed before every line.
+\begin{DoxyItemize}
+\item Indent a printing routine.
+\item prepend a comment character. 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_pre_print_a6062e08cf52ab0bacc9af9f0ea060d6d}{}\index{Pre\+Print@{Pre\+Print}!Pre\+Print@{Pre\+Print}}
+\index{Pre\+Print@{Pre\+Print}!Pre\+Print@{Pre\+Print}}
+\subsubsection[{Pre\+Print(\+Print $\ast$inner\+Printer, const char $\ast$a\+Pre\+Token, const char $\ast$a\+Post\+Token)}]{\setlength{\rightskip}{0pt plus 5cm}Pre\+Print\+::\+Pre\+Print (
+\begin{DoxyParamCaption}
+\item[{Print $\ast$}]{inner\+Printer, }
+\item[{const char $\ast$}]{a\+Pre\+Token, }
+\item[{const char $\ast$}]{a\+Post\+Token}
+\end{DoxyParamCaption}
+)}\label{class_pre_print_a6062e08cf52ab0bacc9af9f0ea060d6d}
+\hyperlink{class_capture_print}{Capture\+Print} constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inner\+Printer} & device to print to. N\+U\+L\+L to disable. \\
+\hline
+{\em pre\+Token} & Token to print before any line. N\+U\+L\+L to disable. \\
+\hline
+{\em a\+Post\+Token} & Token to print at the end of any line. N\+U\+L\+L to disable. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pre_print_ac8b43aee74a660f18f3f290fc13af31e}{}\index{Pre\+Print@{Pre\+Print}!print\+Char@{print\+Char}}
+\index{print\+Char@{print\+Char}!Pre\+Print@{Pre\+Print}}
+\subsubsection[{print\+Char(char c)}]{\setlength{\rightskip}{0pt plus 5cm}void Pre\+Print\+::print\+Char (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_pre_print_ac8b43aee74a660f18f3f290fc13af31e}
+\hypertarget{class_pre_print_a3f2ab5d0d1d614b4acf47f4ef566e428}{}\index{Pre\+Print@{Pre\+Print}!print\+Post\+Token@{print\+Post\+Token}}
+\index{print\+Post\+Token@{print\+Post\+Token}!Pre\+Print@{Pre\+Print}}
+\subsubsection[{print\+Post\+Token()}]{\setlength{\rightskip}{0pt plus 5cm}void Pre\+Print\+::print\+Post\+Token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_pre_print_a3f2ab5d0d1d614b4acf47f4ef566e428}
+\hypertarget{class_pre_print_a9740712f07374dfda00d46ebf0730efc}{}\index{Pre\+Print@{Pre\+Print}!print\+Pre\+Token@{print\+Pre\+Token}}
+\index{print\+Pre\+Token@{print\+Pre\+Token}!Pre\+Print@{Pre\+Print}}
+\subsubsection[{print\+Pre\+Token()}]{\setlength{\rightskip}{0pt plus 5cm}void Pre\+Print\+::print\+Pre\+Token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_pre_print_a9740712f07374dfda00d46ebf0730efc}
+\hypertarget{class_pre_print_aeb453f39e57d53c0a4fa1bdc7284209f}{}\index{Pre\+Print@{Pre\+Print}!set\+Inner\+Printer@{set\+Inner\+Printer}}
+\index{set\+Inner\+Printer@{set\+Inner\+Printer}!Pre\+Print@{Pre\+Print}}
+\subsubsection[{set\+Inner\+Printer(\+Print $\ast$inner\+Printer)}]{\setlength{\rightskip}{0pt plus 5cm}void Pre\+Print\+::set\+Inner\+Printer (
+\begin{DoxyParamCaption}
+\item[{Print $\ast$}]{inner\+Printer}
+\end{DoxyParamCaption}
+)}\label{class_pre_print_aeb453f39e57d53c0a4fa1bdc7284209f}
+Reconfigure the output device. 
+\begin{DoxyParams}{Parameters}
+{\em inner\+Printer} & device to print to. N\+U\+L\+L to disable. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pre_print_aa1a6239b213974765a39a304c18b8df3}{}\index{Pre\+Print@{Pre\+Print}!write@{write}}
+\index{write@{write}!Pre\+Print@{Pre\+Print}}
+\subsubsection[{write(uint8\+\_\+t c)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Pre\+Print\+::write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_pre_print_aa1a6239b213974765a39a304c18b8df3}
+Write a character to the buffer. 
+\begin{DoxyParams}{Parameters}
+{\em c} & character to write. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_pre_print_a2864325a5347e151969f30e3139d68ef}{}\index{Pre\+Print@{Pre\+Print}!inner\+Printer@{inner\+Printer}}
+\index{inner\+Printer@{inner\+Printer}!Pre\+Print@{Pre\+Print}}
+\subsubsection[{inner\+Printer}]{\setlength{\rightskip}{0pt plus 5cm}Print$\ast$ Pre\+Print\+::inner\+Printer\hspace{0.3cm}{\ttfamily [protected]}}\label{class_pre_print_a2864325a5347e151969f30e3139d68ef}
+\hypertarget{class_pre_print_a8c087522317c48cb74a26c5ac4220cc3}{}\index{Pre\+Print@{Pre\+Print}!post\+Token@{post\+Token}}
+\index{post\+Token@{post\+Token}!Pre\+Print@{Pre\+Print}}
+\subsubsection[{post\+Token}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Pre\+Print\+::post\+Token\hspace{0.3cm}{\ttfamily [protected]}}\label{class_pre_print_a8c087522317c48cb74a26c5ac4220cc3}
+\hypertarget{class_pre_print_a6d490d820f913d07f7b27c3d9f7641f4}{}\index{Pre\+Print@{Pre\+Print}!pre\+Token@{pre\+Token}}
+\index{pre\+Token@{pre\+Token}!Pre\+Print@{Pre\+Print}}
+\subsubsection[{pre\+Token}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Pre\+Print\+::pre\+Token\hspace{0.3cm}{\ttfamily [protected]}}\label{class_pre_print_a6d490d820f913d07f7b27c3d9f7641f4}
+\hypertarget{class_pre_print_a3d55c492a2085b880305ebf9e09faa31}{}\index{Pre\+Print@{Pre\+Print}!state@{state}}
+\index{state@{state}!Pre\+Print@{Pre\+Print}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pre\+Print\+State} Pre\+Print\+::state\hspace{0.3cm}{\ttfamily [protected]}}\label{class_pre_print_a3d55c492a2085b880305ebf9e09faa31}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+W\+D\+Arduino\+Lib/src/\hyperlink{_pre_print_8h}{Pre\+Print.\+h}\item 
+W\+D\+Arduino\+Lib/src/\hyperlink{_pre_print_8cpp}{Pre\+Print.\+cpp}\end{DoxyCompactItemize}

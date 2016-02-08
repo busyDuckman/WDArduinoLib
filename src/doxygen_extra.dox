@@ -1,0 +1,108 @@
+/**
+ * @mainpage  WDLib_Arduino
+ * This is a collection of usefull functions and classes for the Arduino platorm.
+ *
+ * Home Page: http://busyducks.com/
+ *
+ * Graph Plotting:
+ * - Supports sending GNUPlot commands to create graphs of your data.
+ * - #include <SerialGraph.h>
+ * - #include <GNUPlot.h>
+ * - see ::SerialGraph as the base class.
+ * - see ::LineApperance for changing the apperance of a series.
+ * Included color schemes suitable for graphing.
+ *   - Strong, but balanced, colors for unrelated catagories ::CategoricalSchemeStrong
+ *   - Balanced colors for graphing ::GraphColorsSchemeGreyScale, ::GraphColorsSchemeRedScale, ::GraphColorsSchemeGreenScale, ::GraphColorsSchemeBlueScale, ::GraphColorsSchemeOrangeScale, ::GraphColorsSchemePurpleScale
+ *   - Spectral colors for graphing on a white background ::GraphColorsSchemeSpectral
+ *   - Colors for colorblind compatability ::ColorBlindSafe
+ *   .
+ * .
+ * String validation
+ *  - For validating input strings and external data.
+ *  - #include <StringValidation.h>
+ *  - Allows filering of against a combination of flags, see StringValidationRules.
+ *  - Can operate in three modes: inplace, copy to another buffer, allocate a new buffer.
+ *  - _Not_ intended to be a "security grade" validation to protect against various attacks.
+ *  .
+ * 
+ * Bit Arithmatic
+ *  - Helpers for dealing with bits and bytes
+ *  - #include <BitArithmatic.h>
+ *  - ::setBits(...) Stores a n bit number at given bit position
+ *  - ::getBits(...) Gets a n bit number at given bit position
+ *  - ::printHexByte ::printHexInt16 ::printHexInt24 ::printHexInt32 output numbers as hex, with leading 0's 
+ *  - ::bytesTo32bit ::bytesTo16bit Assembles integers from bytes.
+ *
+ * General Helpers
+ *  - #include <Sanity.h>
+ *  - ::ArduinoBaudRates 
+ *  - A few methods that fill the gap between __FlashStringHelper and general strings.
+ *    - eg. strcmp(myStr, F("start")) is now possible.
+ *    .
+ *  .
+ *
+ * Capture Print
+ *  - #include <CapturePrint.h>
+ *  - Implements the Arduino Print class, re-directing all output to a buffer.
+ *  - Processes Print data one line at a time
+ *  - Great for:
+ *    - Grep like activites on lines of output.
+ *    - Employing the powerful Print functionality to format strings.
+ *    - Adding checksum calculations to output text.
+ *    - Unit testing print functions.
+ *    - Capturing stream output and sending to multiple other streams.
+ *    .
+ *  .
+ *
+ */
+
+
+ /** 
+ * @example ::GNUPlotLineGraph
+ * Shows how to construct a line graph.
+ * @verbatim
+ * Serial.begin([your baude rate here]);
+ * GNUPlotLineGraph gnuLinePlotter(&Serial);
+ * PlotDampenedSineWaves(gnuLinePlotter);
+ * @venderbatim
+ */
+void PlotDampenedSineWaves(SerialGraph& plot)
+{
+	
+	//setup graph
+	plot.newGraph();
+	plot.enableSaveImageFile(true);
+	plot.setTitle(F("Dampened Sine Wave"));
+	plot.setXAxisName(F("Time (Sec)"));
+	plot.setYAxisName(F("Voltage (V)"));
+
+	//setup series
+	plot.setSeriesName(0, F("Slow decay"));
+	plot.getLineApperance(0)->setLineStyle(LineStyles::SolidLine);
+	plot.getLineApperance(0)->setLineWidth(4);
+	plot.getLineApperance(0)->setRGB(GraphColorsSchemeBlueScale::Blue1);
+
+
+	plot.setSeriesName(1, F("Medium decay"));
+	plot.getLineApperance(1)->setLineStyle(LineStyles::DashedLine);
+	plot.getLineApperance(1)->setLineWidth(3);
+	plot.getLineApperance(1)->setRGB(GraphColorsSchemeBlueScale::Blue2);
+
+	plot.setSeriesName(2, F("Quick decay"));
+	plot.getLineApperance(2)->setLineStyle(LineStyles::DotedLine);
+	plot.getLineApperance(2)->setLineWidth(2);
+	plot.getLineApperance(2)->setRGB(GraphColorsSchemeBlueScale::Blue3);
+
+	//plot graph
+	for(int i=0; i<=720; i+=3)
+	{
+		float c = cos(DEG_TO_RAD*(float)i); 
+		float y1 = Dampen(i, c, 1, 1.0/360.0); 
+		float y2 = Dampen(i, c, 1, 1.0/240.0); 
+		float y3 = Dampen(i, c, 1, 1.0/180.0); 
+
+		plot.plotDatumXYn(i, y1, y2, y3);
+	}
+	
+	plot.finishGraph();
+}

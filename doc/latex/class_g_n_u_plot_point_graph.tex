@@ -1,0 +1,1013 @@
+\hypertarget{class_g_n_u_plot_point_graph}{}\section{G\+N\+U\+Plot\+Point\+Graph Class Reference}
+\label{class_g_n_u_plot_point_graph}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+
+
+{\ttfamily \#include $<$G\+N\+U\+Plot.\+h$>$}
+
+Inheritance diagram for G\+N\+U\+Plot\+Point\+Graph\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_g_n_u_plot_point_graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_n_u_plot_point_graph_a2b97fa221bf9012787cd20df14dc1c3c}{G\+N\+U\+Plot\+Point\+Graph} (Print $\ast$\+\_\+out\+Stream)
+\item 
+virtual \hyperlink{class_g_n_u_plot_point_graph_a41cd525a889e78bcfc3359f52a2afecb}{$\sim$\+G\+N\+U\+Plot\+Point\+Graph} ()
+\item 
+virtual \hyperlink{_serial_graph_8h_adc73bce6b7e6c4ecf37dde452d6a385e}{Graph\+Style} \hyperlink{class_g_n_u_plot_point_graph_aeeae395426112202d3617ff66d836c99}{get\+Graph\+Style} () const 
+\item 
+virtual void \hyperlink{class_g_n_u_plot_x_y_graph_base_a8389f830ff330dfb705e00d31053e130}{create\+Graph} ()
+\item 
+virtual void \hyperlink{class_g_n_u_plot_base_a4d4da234cfdeb99ec3228ef7b2df8a50}{new\+Graph} ()
+\item 
+virtual void \hyperlink{class_g_n_u_plot_base_aa4b0574c35fbee4dc5f25451eaf956dd}{finish\+Graph} ()
+\item 
+virtual void \hyperlink{class_g_n_u_plot_base_a219601bd41203477ae73a18d18dd7443}{print\+Comment\+Start} ()
+\item 
+virtual void \hyperlink{class_serial_graph_a28b020807c52c113685aa6a31f836c52}{enable\+Save\+Image\+File} (bool enabled)
+\item 
+virtual void \hyperlink{class_serial_graph_abf488e449d6d786bc01478793d0094ad}{set\+Show\+Grid} (bool enabled)
+\item 
+void \hyperlink{class_serial_graph_a4db09b008589914b71b2ee8b1873db7a}{set\+Title} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$title)
+\item 
+virtual void \hyperlink{class_serial_graph_ad726b2c84cec50c2d4bfe769e62a9bcd}{set\+Title} (const char $\ast$title)
+\item 
+void \hyperlink{class_serial_graph_afdb759a860c41de2fc4cfe78519b9fc0}{set\+X\+Axis\+Name} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$title)
+\item 
+virtual void \hyperlink{class_serial_graph_ac7f30036f5006091af51204a4d9efaf2}{set\+X\+Axis\+Name} (const char $\ast$name)
+\item 
+void \hyperlink{class_serial_graph_abfc46c15cf8e1b4362a7f51cb11c7bdb}{set\+Y\+Axis\+Name} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$title)
+\item 
+virtual void \hyperlink{class_serial_graph_ab0c675c8682959261f79dcf37b04148c}{set\+Y\+Axis\+Name} (const char $\ast$name)
+\item 
+virtual void \hyperlink{class_serial_graph_ae58de4fa4d391f1a2f411ce00dd74d93}{set\+X\+Axis\+Log} (byte scale)
+\item 
+virtual void \hyperlink{class_serial_graph_a444e38e8ef3784942ca6ee58940f7023}{set\+Y\+Axis\+Log} (byte scale)
+\item 
+void \hyperlink{class_serial_graph_a84d8e8ce9bff20e53ba738d1d34d3577}{set\+Series\+Name} (int \+\_\+n, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$title)
+\item 
+virtual void \hyperlink{class_serial_graph_a9d67fbecbee6edb82646aa7ba5103046}{set\+Series\+Name} (int \+\_\+n, const char $\ast$name)
+\item 
+\hyperlink{struct_line_apperance}{Line\+Apperance} $\ast$ \hyperlink{class_serial_graph_a5a6008dc86a2101a58782929721a5b77}{get\+Line\+Apperance} (int \+\_\+n)
+\item 
+{\footnotesize template$<$typename Y\+T $>$ }\\void \hyperlink{class_serial_graph_afbcc26bd6bad7179d75379ac0f0d25f1}{plot\+Datum\+Y} (Y\+T y1)
+\item 
+{\footnotesize template$<$typename X\+T , typename Y\+T $>$ }\\void \hyperlink{class_serial_graph_a265b48fb0afe543e14cedb6619e3931e}{plot\+Datum\+X\+Y} (X\+T x, Y\+T y1)
+\item 
+{\footnotesize template$<$typename Y\+T $>$ }\\void \hyperlink{class_serial_graph_a56f584fa6316175bc9fbcb4f671f1c93}{plot\+Datum\+Yn} (Y\+T y1, Y\+T y2)
+\item 
+{\footnotesize template$<$typename Y\+T $>$ }\\void \hyperlink{class_serial_graph_ae755b026606e34c33c4aa8f10d8b5d9c}{plot\+Datum\+Yn} (Y\+T y1, Y\+T y2, Y\+T y3)
+\item 
+{\footnotesize template$<$typename Y\+T $>$ }\\void \hyperlink{class_serial_graph_a354feb95f91239699d3510c2ce5659b0}{plot\+Datum\+Yn} (Y\+T y1, Y\+T y2, Y\+T y3, Y\+T y4)
+\item 
+{\footnotesize template$<$typename Y\+T $>$ }\\void \hyperlink{class_serial_graph_ab0fff3fc1879e1cd6aadf24c913ff617}{plot\+Datum\+Yn} (Y\+T y1, Y\+T y2, Y\+T y3, Y\+T y4, Y\+T y5)
+\item 
+{\footnotesize template$<$typename X\+T , typename Y\+T $>$ }\\void \hyperlink{class_serial_graph_aa20b03efac52c18c50efc79c6459a9fc}{plot\+Datum\+Yn} (const Y\+T $\ast$y\+Vec, int \+\_\+n)
+\item 
+{\footnotesize template$<$typename X\+T , typename Y\+T $>$ }\\void \hyperlink{class_serial_graph_a79b721ca2be68969862869f96d6a6305}{plot\+Datum\+X\+Yn} (X\+T x, Y\+T y1, Y\+T y2)
+\item 
+{\footnotesize template$<$typename X\+T , typename Y\+T $>$ }\\void \hyperlink{class_serial_graph_a9fcea879f299a7d24be4ff9a38c53c26}{plot\+Datum\+X\+Yn} (X\+T x, Y\+T y1, Y\+T y2, Y\+T y3)
+\item 
+{\footnotesize template$<$typename X\+T , typename Y\+T $>$ }\\void \hyperlink{class_serial_graph_afd854b631604abe2014a1bb1beeeec52}{plot\+Datum\+X\+Yn} (X\+T x, Y\+T y1, Y\+T y2, Y\+T y3, Y\+T y4)
+\item 
+{\footnotesize template$<$typename X\+T , typename Y\+T $>$ }\\void \hyperlink{class_serial_graph_aa1bb6fa08a8bd06c074ac2a02b3f6fbc}{plot\+Datum\+X\+Yn} (X\+T x, Y\+T y1, Y\+T y2, Y\+T y3, Y\+T y4, Y\+T y5)
+\item 
+{\footnotesize template$<$typename X\+T , typename Y\+T $>$ }\\void \hyperlink{class_serial_graph_a3d7276c89235dc1aa176e2439ad9835b}{plot\+Datum\+X\+Yn} (X\+T x, const Y\+T $\ast$y\+Vec, int \+\_\+n)
+\item 
+{\footnotesize template$<$typename W\+T $>$ }\\void \hyperlink{class_serial_graph_aa72b48968e82a953dcdc6522bd04c7b4}{print} (const W\+T what)
+\item 
+{\footnotesize template$<$typename W\+T $>$ }\\void \hyperlink{class_serial_graph_a2005d103cb5a578053ef7838b3a8422d}{println} (const W\+T what)
+\item 
+{\footnotesize template$<$typename W\+T $>$ }\\void \hyperlink{class_serial_graph_a7237d928f67a14d5c9950d8c23c2a794}{print\+Comment} (const W\+T what)
+\item 
+{\footnotesize template$<$typename W\+T $>$ }\\void \hyperlink{class_serial_graph_a9b40aa22335fc26a6c29b16d278b26f8}{print\+Comment} (const W\+T $\ast$what)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const byte \hyperlink{class_serial_graph_a1867ab3a93268646490fa7ba4f8b5680}{max\+String\+Size} = 128
+\item 
+const byte \hyperlink{class_serial_graph_a752a1429bd35687163fe11c5a2562bef}{max\+Series} = 8
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\void \hyperlink{class_g_n_u_plot_base_a03d371b0c6c7ef89064525438b22d52c}{set\+Variable} (T name, U value, bool quoted)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_g_n_u_plot_base_a3c8c8f68c13661d91bd844589e1a2a85}{set\+Variable} (T name)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_g_n_u_plot_base_af9b418bbcafb41d4d51b92018ca4f217}{unset\+Variable} (T name)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_g_n_u_plot_base_a68171bf36461e54e2b81384c112ad975}{set\+Varible\+By\+String\+\_\+null\+Safe} (T name, const char $\ast$text)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_g_n_u_plot_base_ae93c5de3241c2b6b6f703a202dc1d94b}{set\+Varible\+Flag\+By\+Boolean} (T name, bool value)
+\item 
+void \hyperlink{class_g_n_u_plot_base_ab5c851953dd140cc3ee936a5cd329200}{save\+Plot\+To\+Image\+File} (const char $\ast$title)
+\item 
+virtual void \hyperlink{class_g_n_u_plot_base_adaf91c191e4d889537d401faeb863485}{make\+Ready\+For\+Plot\+Data} ()
+\item 
+char $\ast$ \hyperlink{class_g_n_u_plot_base_a7f71f3c616b3a4a854f9118a04c40447}{malloc\+Basic\+File\+Name\+From\+Graph\+Title} ()
+\item 
+void \hyperlink{class_g_n_u_plot_base_a65ae2b3220034bce21c7feb39a632991}{print\+Title\+In\+Plot\+Command} (int series\+Num)
+\item 
+void \hyperlink{class_g_n_u_plot_base_ad057969aa7f8bdbe884d6a5d03a29722}{print\+Line\+Apperance} (\hyperlink{struct_line_apperance}{Line\+Apperance} apperance)
+\item 
+void \hyperlink{class_g_n_u_plot_base_ad7e8ef8d8e5eb80119fc0cce9be2d525}{print\+Log\+Axis\+Command} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$axis\+Name, byte log\+Scale)
+\item 
+virtual void \hyperlink{class_g_n_u_plot_base_ae204818b4e8dcd9d2f6b5426127ca2cf}{print\+Seperator} ()
+\item 
+virtual void \hyperlink{class_g_n_u_plot_base_ac2b48b822b6043392b514c9580b1661a}{print\+Start\+Datum} ()
+\item 
+virtual void \hyperlink{class_g_n_u_plot_base_aff02bc279e6c3cb83f2cdc7aa021268f}{print\+End\+Datum} ()
+\item 
+virtual void \hyperlink{class_g_n_u_plot_base_ad00a12fd681e4638fae005891fd72f38}{\+\_\+print\+Data\+Value} (const char $\ast$value)
+\item 
+virtual void \hyperlink{class_g_n_u_plot_base_aa6c6dfff0568dd99c0c28081c41b4433}{\+\_\+print\+Data\+Value} (char value)
+\item 
+virtual void \hyperlink{class_g_n_u_plot_base_a6f14fc040ff833c685ab09fc7917e059}{\+\_\+print\+Data\+Value} (bool value)
+\item 
+virtual void \hyperlink{class_serial_graph_a0c4d2c1239de3107d7332389183b05a1}{\+\_\+print\+Data\+Value} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$value)
+\item 
+virtual void \hyperlink{class_serial_graph_a58edf4683c600b6bfa1714b0f8dfc82c}{\+\_\+print\+Data\+Value} (int value)
+\item 
+virtual void \hyperlink{class_serial_graph_a9a4903d4fa26bb85ba5dd93c4365bcc2}{\+\_\+print\+Data\+Value} (long value)
+\item 
+virtual void \hyperlink{class_serial_graph_acada5333b96b65e31d8c76c3ab22905f}{\+\_\+print\+Data\+Value} (byte value)
+\item 
+virtual void \hyperlink{class_serial_graph_acd91cf0c3a0f49d4bdf18b447503da23}{\+\_\+print\+Data\+Value} (unsigned int value)
+\item 
+virtual void \hyperlink{class_serial_graph_a6dbfe61ee398e18c1b752a3748df9663}{\+\_\+print\+Data\+Value} (unsigned long value)
+\item 
+virtual void \hyperlink{class_serial_graph_a766d5838ede9c8fa998ce8664e5f92be}{\+\_\+print\+Data\+Value} (double value)
+\item 
+void \hyperlink{class_serial_graph_a760dd00474c9780c81ece7cdf621fc15}{init} ()
+\item 
+void \hyperlink{class_serial_graph_abd43150abedec26eef3994cd33035173}{ensure\+Ready\+To\+Recive\+Plot\+Data} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_serial_graph_a91e20c05c8cc612fd9ffd85880149264}{print\+Data\+Value} (T value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_serial_graph_a24202e0a7a8bac5ec1cfd92bf796e078}{save\+File}
+\item 
+Print $\ast$ \hyperlink{class_serial_graph_aec32289a9393e98bf80d44406e5c207d}{out\+Stream}
+\item 
+bool \hyperlink{class_serial_graph_a4dbd9cf190c591fb4f2f46a50d937199}{x\+Axis\+Specified}
+\item 
+int \hyperlink{class_serial_graph_ab40c430e06102b9624736173d4a58596}{num\+Y\+Series}
+\item 
+bool \hyperlink{class_serial_graph_ad61d5ea29eacc1611c5addc94714f1e2}{show\+Grid}
+\item 
+char $\ast$ \hyperlink{class_serial_graph_a0b33d43c2bb54340ef1f90b5f76d7aea}{graph\+Title}
+\item 
+char $\ast$ \hyperlink{class_serial_graph_a5f5bf85ed361ff567d0888eaa73e269c}{x\+Axis\+Name}
+\item 
+char $\ast$ \hyperlink{class_serial_graph_a08452a56c74ec5f5473b64605d555339}{y\+Axis\+Name}
+\item 
+char $\ast$$\ast$ \hyperlink{class_serial_graph_a2307e40e27249f44bbe14776dc68c561}{series\+Names}
+\item 
+\hyperlink{struct_line_apperance}{Line\+Apperance} $\ast$ \hyperlink{class_serial_graph_a8d743f9eeeca69a988d2159a405e4253}{series\+Apperance}
+\item 
+byte \hyperlink{class_serial_graph_afc2ca72fdfe2bc5e3159c9e910a8f81e}{x\+Axis\+Log\+Scale}
+\item 
+byte \hyperlink{class_serial_graph_a1f0424857ec14c176747b3ddb0768eee}{y\+Axis\+Log\+Scale}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Specilisation of \hyperlink{class_g_n_u_plot_x_y_graph_base}{G\+N\+U\+Plot\+X\+Y\+Graph\+Base} to make a nice scatter plot. \hyperlink{class_g_n_u_plot_point_graph_aeeae395426112202d3617ff66d836c99}{G\+N\+U\+Plot\+Point\+Graph\+::get\+Graph\+Style()} alters the behaviour of \hyperlink{class_g_n_u_plot_x_y_graph_base_a8389f830ff330dfb705e00d31053e130}{G\+N\+U\+Plot\+X\+Y\+Graph\+Base\+::create\+Graph()} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_g_n_u_plot_point_graph_a2b97fa221bf9012787cd20df14dc1c3c}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{G\+N\+U\+Plot\+Point\+Graph(\+Print $\ast$\+\_\+out\+Stream)}]{\setlength{\rightskip}{0pt plus 5cm}G\+N\+U\+Plot\+Point\+Graph\+::\+G\+N\+U\+Plot\+Point\+Graph (
+\begin{DoxyParamCaption}
+\item[{Print $\ast$}]{\+\_\+out\+Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_g_n_u_plot_point_graph_a2b97fa221bf9012787cd20df14dc1c3c}
+\hypertarget{class_g_n_u_plot_point_graph_a41cd525a889e78bcfc3359f52a2afecb}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!````~G\+N\+U\+Plot\+Point\+Graph@{$\sim$\+G\+N\+U\+Plot\+Point\+Graph}}
+\index{````~G\+N\+U\+Plot\+Point\+Graph@{$\sim$\+G\+N\+U\+Plot\+Point\+Graph}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{$\sim$\+G\+N\+U\+Plot\+Point\+Graph()}]{\setlength{\rightskip}{0pt plus 5cm}virtual G\+N\+U\+Plot\+Point\+Graph\+::$\sim$\+G\+N\+U\+Plot\+Point\+Graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_g_n_u_plot_point_graph_a41cd525a889e78bcfc3359f52a2afecb}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_g_n_u_plot_base_ad00a12fd681e4638fae005891fd72f38}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}}
+\index{\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{\+\_\+print\+Data\+Value(const char $\ast$value)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+N\+U\+Plot\+Base\+::\+\_\+print\+Data\+Value (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_ad00a12fd681e4638fae005891fd72f38}
+Override a put appropriate quotes around strings etc. 
+\begin{DoxyParams}{Parameters}
+{\em value} & What to print. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_serial_graph_a8252997dd4bad0251d437d6dd097bffb}{Serial\+Graph}.
+
+\hypertarget{class_g_n_u_plot_base_aa6c6dfff0568dd99c0c28081c41b4433}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}}
+\index{\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{\+\_\+print\+Data\+Value(char value)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void G\+N\+U\+Plot\+Base\+::\+\_\+print\+Data\+Value (
+\begin{DoxyParamCaption}
+\item[{char}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_aa6c6dfff0568dd99c0c28081c41b4433}
+Override for customised value output. 
+\begin{DoxyParams}{Parameters}
+{\em value} & What to print. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_serial_graph_af3fbf7a9201f71cd6bad7e4337092fb6}{Serial\+Graph}.
+
+\hypertarget{class_g_n_u_plot_base_a6f14fc040ff833c685ab09fc7917e059}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}}
+\index{\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{\+\_\+print\+Data\+Value(bool value)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void G\+N\+U\+Plot\+Base\+::\+\_\+print\+Data\+Value (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_a6f14fc040ff833c685ab09fc7917e059}
+Override for customised value output. 
+\begin{DoxyParams}{Parameters}
+{\em value} & What to print. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_serial_graph_aed9ff95634ace3d190863ea9d15c10da}{Serial\+Graph}.
+
+\hypertarget{class_serial_graph_a0c4d2c1239de3107d7332389183b05a1}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}}
+\index{\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{\+\_\+print\+Data\+Value(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$value)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::\+\_\+print\+Data\+Value (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_a0c4d2c1239de3107d7332389183b05a1}
+This just calls \hyperlink{class_serial_graph_a8252997dd4bad0251d437d6dd097bffb}{\+\_\+print\+Data\+Value(const char $\ast$value)} so probably alter that instead. 
+\begin{DoxyParams}{Parameters}
+{\em value} & What to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_serial_graph_a58edf4683c600b6bfa1714b0f8dfc82c}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}}
+\index{\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{\+\_\+print\+Data\+Value(int value)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::\+\_\+print\+Data\+Value (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_a58edf4683c600b6bfa1714b0f8dfc82c}
+Override for customised value output. 
+\begin{DoxyParams}{Parameters}
+{\em value} & What to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_serial_graph_a9a4903d4fa26bb85ba5dd93c4365bcc2}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}}
+\index{\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{\+\_\+print\+Data\+Value(long value)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::\+\_\+print\+Data\+Value (
+\begin{DoxyParamCaption}
+\item[{long}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_a9a4903d4fa26bb85ba5dd93c4365bcc2}
+Override for customised value output. 
+\begin{DoxyParams}{Parameters}
+{\em value} & What to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_serial_graph_acada5333b96b65e31d8c76c3ab22905f}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}}
+\index{\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{\+\_\+print\+Data\+Value(byte value)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::\+\_\+print\+Data\+Value (
+\begin{DoxyParamCaption}
+\item[{byte}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_acada5333b96b65e31d8c76c3ab22905f}
+Override for customised value output. 
+\begin{DoxyParams}{Parameters}
+{\em value} & What to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_serial_graph_acd91cf0c3a0f49d4bdf18b447503da23}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}}
+\index{\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{\+\_\+print\+Data\+Value(unsigned int value)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::\+\_\+print\+Data\+Value (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_acd91cf0c3a0f49d4bdf18b447503da23}
+Override for customised value output. 
+\begin{DoxyParams}{Parameters}
+{\em value} & What to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_serial_graph_a6dbfe61ee398e18c1b752a3748df9663}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}}
+\index{\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{\+\_\+print\+Data\+Value(unsigned long value)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::\+\_\+print\+Data\+Value (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_a6dbfe61ee398e18c1b752a3748df9663}
+Override for customised value output. 
+\begin{DoxyParams}{Parameters}
+{\em value} & What to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_serial_graph_a766d5838ede9c8fa998ce8664e5f92be}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}}
+\index{\+\_\+print\+Data\+Value@{\+\_\+print\+Data\+Value}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{\+\_\+print\+Data\+Value(double value)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::\+\_\+print\+Data\+Value (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_a766d5838ede9c8fa998ce8664e5f92be}
+Override for customised value output. 
+\begin{DoxyParams}{Parameters}
+{\em value} & What to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_n_u_plot_x_y_graph_base_a8389f830ff330dfb705e00d31053e130}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!create\+Graph@{create\+Graph}}
+\index{create\+Graph@{create\+Graph}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{create\+Graph()}]{\setlength{\rightskip}{0pt plus 5cm}void G\+N\+U\+Plot\+X\+Y\+Graph\+Base\+::create\+Graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_x_y_graph_base_a8389f830ff330dfb705e00d31053e130}
+
+
+Implements \hyperlink{class_g_n_u_plot_base_ad877f207d43e6f9cd0aa0ef241e31c24}{G\+N\+U\+Plot\+Base}.
+
+\hypertarget{class_serial_graph_a28b020807c52c113685aa6a31f836c52}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!enable\+Save\+Image\+File@{enable\+Save\+Image\+File}}
+\index{enable\+Save\+Image\+File@{enable\+Save\+Image\+File}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{enable\+Save\+Image\+File(bool enabled)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::enable\+Save\+Image\+File (
+\begin{DoxyParamCaption}
+\item[{bool}]{enabled}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_a28b020807c52c113685aa6a31f836c52}
+Set to true if an image file should be saved. \begin{DoxyNote}{Note}
+Filename will be based on graph title. This is done to save memory. Final filename has some extra validation performed to conform with filename rules aplicable to modern operating systems (excluding 8 char limit). 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_abd43150abedec26eef3994cd33035173}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!ensure\+Ready\+To\+Recive\+Plot\+Data@{ensure\+Ready\+To\+Recive\+Plot\+Data}}
+\index{ensure\+Ready\+To\+Recive\+Plot\+Data@{ensure\+Ready\+To\+Recive\+Plot\+Data}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{ensure\+Ready\+To\+Recive\+Plot\+Data()}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\+Graph\+::ensure\+Ready\+To\+Recive\+Plot\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_abd43150abedec26eef3994cd33035173}
+Called by every plot command prior to sending data. it\textquotesingle{}s function is to call \hyperlink{class_serial_graph_a898cf274c886e0ff45e90d3f21f0a6cc}{make\+Ready\+For\+Plot\+Data()} the first time it is called. 
+\begin{DoxyParams}{Parameters}
+{\em value} & What to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_n_u_plot_base_aa4b0574c35fbee4dc5f25451eaf956dd}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!finish\+Graph@{finish\+Graph}}
+\index{finish\+Graph@{finish\+Graph}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{finish\+Graph()}]{\setlength{\rightskip}{0pt plus 5cm}void G\+N\+U\+Plot\+Base\+::finish\+Graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_aa4b0574c35fbee4dc5f25451eaf956dd}
+Serial output that finishes the plot, saves file, updates display etc. 
+
+Implements \hyperlink{class_serial_graph_a8054ce989a1788bd35d2fde56081c88c}{Serial\+Graph}.
+
+\hypertarget{class_g_n_u_plot_point_graph_aeeae395426112202d3617ff66d836c99}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!get\+Graph\+Style@{get\+Graph\+Style}}
+\index{get\+Graph\+Style@{get\+Graph\+Style}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{get\+Graph\+Style() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Graph\+Style} G\+N\+U\+Plot\+Point\+Graph\+::get\+Graph\+Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_g_n_u_plot_point_graph_aeeae395426112202d3617ff66d836c99}
+Returns the Graph\+Style of the current object. 
+
+Implements \hyperlink{class_serial_graph_a2ab97096fffdf429bfa271b9fd4c642a}{Serial\+Graph}.
+
+\hypertarget{class_serial_graph_a5a6008dc86a2101a58782929721a5b77}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!get\+Line\+Apperance@{get\+Line\+Apperance}}
+\index{get\+Line\+Apperance@{get\+Line\+Apperance}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{get\+Line\+Apperance(int \+\_\+n)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\+Apperance}$\ast$ Serial\+Graph\+::get\+Line\+Apperance (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_a5a6008dc86a2101a58782929721a5b77}
+Gets a structure that controls apperance of a series (called a \hyperlink{struct_line_apperance}{Line\+Apperance}). It is intended that you directly modify the structure returned, there is no set\+Line\+Apperance. See the struct \hyperlink{struct_line_apperance}{Line\+Apperance} for more.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+n} & Series number to alter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Behaviour on \+\_\+n $>$ max\+Series, is to just override the last possible series entry. 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_a760dd00474c9780c81ece7cdf621fc15}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!init@{init}}
+\index{init@{init}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{init()}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\+Graph\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_a760dd00474c9780c81ece7cdf621fc15}
+Brings the class to its default state. Called by the constructor and \hyperlink{class_serial_graph_a44d34593c56aa67142ccd9fcc0a1da86}{new\+Graph()}. \hypertarget{class_g_n_u_plot_base_adaf91c191e4d889537d401faeb863485}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!make\+Ready\+For\+Plot\+Data@{make\+Ready\+For\+Plot\+Data}}
+\index{make\+Ready\+For\+Plot\+Data@{make\+Ready\+For\+Plot\+Data}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{make\+Ready\+For\+Plot\+Data()}]{\setlength{\rightskip}{0pt plus 5cm}void G\+N\+U\+Plot\+Base\+::make\+Ready\+For\+Plot\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_adaf91c191e4d889537d401faeb863485}
+Called by ensure\+Ready\+To\+Recive\+Plot\+Data, if the first plot command is encountered. \begin{DoxyNote}{Note}
+A concrete class should override this. 
+\end{DoxyNote}
+
+
+Reimplemented from \hyperlink{class_serial_graph_a898cf274c886e0ff45e90d3f21f0a6cc}{Serial\+Graph}.
+
+\hypertarget{class_g_n_u_plot_base_a7f71f3c616b3a4a854f9118a04c40447}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!malloc\+Basic\+File\+Name\+From\+Graph\+Title@{malloc\+Basic\+File\+Name\+From\+Graph\+Title}}
+\index{malloc\+Basic\+File\+Name\+From\+Graph\+Title@{malloc\+Basic\+File\+Name\+From\+Graph\+Title}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{malloc\+Basic\+File\+Name\+From\+Graph\+Title()}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ G\+N\+U\+Plot\+Base\+::malloc\+Basic\+File\+Name\+From\+Graph\+Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_a7f71f3c616b3a4a854f9118a04c40447}
+\hypertarget{class_g_n_u_plot_base_a4d4da234cfdeb99ec3228ef7b2df8a50}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!new\+Graph@{new\+Graph}}
+\index{new\+Graph@{new\+Graph}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{new\+Graph()}]{\setlength{\rightskip}{0pt plus 5cm}void G\+N\+U\+Plot\+Base\+::new\+Graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_a4d4da234cfdeb99ec3228ef7b2df8a50}
+Serial output that establishes a new graph. This should also call \hyperlink{class_serial_graph_a760dd00474c9780c81ece7cdf621fc15}{init()}, to reset the class. \begin{DoxyNote}{Note}
+\+: If you wan\textquotesingle{}t a \char`\"{}memory breather\char`\"{} between plots, calling this method frees all series names, titles etc. 
+\end{DoxyNote}
+
+
+Implements \hyperlink{class_serial_graph_a44d34593c56aa67142ccd9fcc0a1da86}{Serial\+Graph}.
+
+\hypertarget{class_serial_graph_a265b48fb0afe543e14cedb6619e3931e}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!plot\+Datum\+X\+Y@{plot\+Datum\+X\+Y}}
+\index{plot\+Datum\+X\+Y@{plot\+Datum\+X\+Y}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{plot\+Datum\+X\+Y(\+X\+T x, Y\+T y1)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename X\+T , typename Y\+T $>$ void Serial\+Graph\+::plot\+Datum\+X\+Y (
+\begin{DoxyParamCaption}
+\item[{X\+T}]{x, }
+\item[{Y\+T}]{y1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_a265b48fb0afe543e14cedb6619e3931e}
+Outputs a point to be plotted. All Y values must be of the same type.
+
+\begin{DoxyNote}{Note}
+The first time this is called after \hyperlink{class_serial_graph_a44d34593c56aa67142ccd9fcc0a1da86}{new\+Graph()}, \hyperlink{class_serial_graph_a898cf274c886e0ff45e90d3f21f0a6cc}{make\+Ready\+For\+Plot\+Data()} will be called. 
+
+The following feilds automatically set\+: x\+Axis\+Specified; num\+Y\+Series; 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_a79b721ca2be68969862869f96d6a6305}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!plot\+Datum\+X\+Yn@{plot\+Datum\+X\+Yn}}
+\index{plot\+Datum\+X\+Yn@{plot\+Datum\+X\+Yn}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{plot\+Datum\+X\+Yn(\+X\+T x, Y\+T y1, Y\+T y2)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename X\+T , typename Y\+T $>$ void Serial\+Graph\+::plot\+Datum\+X\+Yn (
+\begin{DoxyParamCaption}
+\item[{X\+T}]{x, }
+\item[{Y\+T}]{y1, }
+\item[{Y\+T}]{y2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_a79b721ca2be68969862869f96d6a6305}
+Outputs a point to be plotted. All Y values must be of the same type.
+
+\begin{DoxyNote}{Note}
+The first time this is called after \hyperlink{class_serial_graph_a44d34593c56aa67142ccd9fcc0a1da86}{new\+Graph()}, \hyperlink{class_serial_graph_a898cf274c886e0ff45e90d3f21f0a6cc}{make\+Ready\+For\+Plot\+Data()} will be called. 
+
+The following feilds automatically set\+: x\+Axis\+Specified; num\+Y\+Series; 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_a9fcea879f299a7d24be4ff9a38c53c26}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!plot\+Datum\+X\+Yn@{plot\+Datum\+X\+Yn}}
+\index{plot\+Datum\+X\+Yn@{plot\+Datum\+X\+Yn}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{plot\+Datum\+X\+Yn(\+X\+T x, Y\+T y1, Y\+T y2, Y\+T y3)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename X\+T , typename Y\+T $>$ void Serial\+Graph\+::plot\+Datum\+X\+Yn (
+\begin{DoxyParamCaption}
+\item[{X\+T}]{x, }
+\item[{Y\+T}]{y1, }
+\item[{Y\+T}]{y2, }
+\item[{Y\+T}]{y3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_a9fcea879f299a7d24be4ff9a38c53c26}
+Outputs a point to be plotted. All Y values must be of the same type.
+
+\begin{DoxyNote}{Note}
+The first time this is called after \hyperlink{class_serial_graph_a44d34593c56aa67142ccd9fcc0a1da86}{new\+Graph()}, \hyperlink{class_serial_graph_a898cf274c886e0ff45e90d3f21f0a6cc}{make\+Ready\+For\+Plot\+Data()} will be called. 
+
+The following feilds automatically set\+: x\+Axis\+Specified; num\+Y\+Series; 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_afd854b631604abe2014a1bb1beeeec52}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!plot\+Datum\+X\+Yn@{plot\+Datum\+X\+Yn}}
+\index{plot\+Datum\+X\+Yn@{plot\+Datum\+X\+Yn}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{plot\+Datum\+X\+Yn(\+X\+T x, Y\+T y1, Y\+T y2, Y\+T y3, Y\+T y4)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename X\+T , typename Y\+T $>$ void Serial\+Graph\+::plot\+Datum\+X\+Yn (
+\begin{DoxyParamCaption}
+\item[{X\+T}]{x, }
+\item[{Y\+T}]{y1, }
+\item[{Y\+T}]{y2, }
+\item[{Y\+T}]{y3, }
+\item[{Y\+T}]{y4}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_afd854b631604abe2014a1bb1beeeec52}
+Outputs a point to be plotted. All Y values must be of the same type.
+
+\begin{DoxyNote}{Note}
+The first time this is called after \hyperlink{class_serial_graph_a44d34593c56aa67142ccd9fcc0a1da86}{new\+Graph()}, \hyperlink{class_serial_graph_a898cf274c886e0ff45e90d3f21f0a6cc}{make\+Ready\+For\+Plot\+Data()} will be called. 
+
+The following feilds automatically set\+: x\+Axis\+Specified; num\+Y\+Series; 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_aa1bb6fa08a8bd06c074ac2a02b3f6fbc}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!plot\+Datum\+X\+Yn@{plot\+Datum\+X\+Yn}}
+\index{plot\+Datum\+X\+Yn@{plot\+Datum\+X\+Yn}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{plot\+Datum\+X\+Yn(\+X\+T x, Y\+T y1, Y\+T y2, Y\+T y3, Y\+T y4, Y\+T y5)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename X\+T , typename Y\+T $>$ void Serial\+Graph\+::plot\+Datum\+X\+Yn (
+\begin{DoxyParamCaption}
+\item[{X\+T}]{x, }
+\item[{Y\+T}]{y1, }
+\item[{Y\+T}]{y2, }
+\item[{Y\+T}]{y3, }
+\item[{Y\+T}]{y4, }
+\item[{Y\+T}]{y5}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_aa1bb6fa08a8bd06c074ac2a02b3f6fbc}
+Outputs a point to be plotted. All Y values must be of the same type.
+
+\begin{DoxyNote}{Note}
+The first time this is called after \hyperlink{class_serial_graph_a44d34593c56aa67142ccd9fcc0a1da86}{new\+Graph()}, \hyperlink{class_serial_graph_a898cf274c886e0ff45e90d3f21f0a6cc}{make\+Ready\+For\+Plot\+Data()} will be called. 
+
+The following feilds automatically set\+: x\+Axis\+Specified; num\+Y\+Series; 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_a3d7276c89235dc1aa176e2439ad9835b}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!plot\+Datum\+X\+Yn@{plot\+Datum\+X\+Yn}}
+\index{plot\+Datum\+X\+Yn@{plot\+Datum\+X\+Yn}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{plot\+Datum\+X\+Yn(\+X\+T x, const Y\+T $\ast$y\+Vec, int \+\_\+n)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename X\+T , typename Y\+T $>$ void Serial\+Graph\+::plot\+Datum\+X\+Yn (
+\begin{DoxyParamCaption}
+\item[{X\+T}]{x, }
+\item[{const Y\+T $\ast$}]{y\+Vec, }
+\item[{int}]{\+\_\+n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_a3d7276c89235dc1aa176e2439ad9835b}
+Outputs a point to be plotted. All Y values must be of the same type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y\+Vec} & Pointer to an array of y\+Values. \\
+\hline
+{\em \+\_\+n} & Number of items in array.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Behaviour on \+\_\+n $>$ max\+Series, is to just override the last possible series entry. 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_afbcc26bd6bad7179d75379ac0f0d25f1}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!plot\+Datum\+Y@{plot\+Datum\+Y}}
+\index{plot\+Datum\+Y@{plot\+Datum\+Y}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{plot\+Datum\+Y(\+Y\+T y1)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Y\+T $>$ void Serial\+Graph\+::plot\+Datum\+Y (
+\begin{DoxyParamCaption}
+\item[{Y\+T}]{y1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_afbcc26bd6bad7179d75379ac0f0d25f1}
+Outputs a point to be plotted. All Y values must be of the same type.
+
+\begin{DoxyNote}{Note}
+The first time this is called after \hyperlink{class_serial_graph_a44d34593c56aa67142ccd9fcc0a1da86}{new\+Graph()}, \hyperlink{class_serial_graph_a898cf274c886e0ff45e90d3f21f0a6cc}{make\+Ready\+For\+Plot\+Data()} will be called. 
+
+The following feilds automatically set\+: x\+Axis\+Specified; num\+Y\+Series; 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_a56f584fa6316175bc9fbcb4f671f1c93}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!plot\+Datum\+Yn@{plot\+Datum\+Yn}}
+\index{plot\+Datum\+Yn@{plot\+Datum\+Yn}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{plot\+Datum\+Yn(\+Y\+T y1, Y\+T y2)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Y\+T $>$ void Serial\+Graph\+::plot\+Datum\+Yn (
+\begin{DoxyParamCaption}
+\item[{Y\+T}]{y1, }
+\item[{Y\+T}]{y2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_a56f584fa6316175bc9fbcb4f671f1c93}
+Outputs a point to be plotted. All Y values must be of the same type.
+
+\begin{DoxyNote}{Note}
+The first time this is called after \hyperlink{class_serial_graph_a44d34593c56aa67142ccd9fcc0a1da86}{new\+Graph()}, \hyperlink{class_serial_graph_a898cf274c886e0ff45e90d3f21f0a6cc}{make\+Ready\+For\+Plot\+Data()} will be called. 
+
+The following feilds automatically set\+: x\+Axis\+Specified; num\+Y\+Series; 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_ae755b026606e34c33c4aa8f10d8b5d9c}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!plot\+Datum\+Yn@{plot\+Datum\+Yn}}
+\index{plot\+Datum\+Yn@{plot\+Datum\+Yn}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{plot\+Datum\+Yn(\+Y\+T y1, Y\+T y2, Y\+T y3)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Y\+T $>$ void Serial\+Graph\+::plot\+Datum\+Yn (
+\begin{DoxyParamCaption}
+\item[{Y\+T}]{y1, }
+\item[{Y\+T}]{y2, }
+\item[{Y\+T}]{y3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_ae755b026606e34c33c4aa8f10d8b5d9c}
+Outputs a point to be plotted. All Y values must be of the same type.
+
+\begin{DoxyNote}{Note}
+The first time this is called after \hyperlink{class_serial_graph_a44d34593c56aa67142ccd9fcc0a1da86}{new\+Graph()}, \hyperlink{class_serial_graph_a898cf274c886e0ff45e90d3f21f0a6cc}{make\+Ready\+For\+Plot\+Data()} will be called. 
+
+The following feilds automatically set\+: x\+Axis\+Specified; num\+Y\+Series; 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_a354feb95f91239699d3510c2ce5659b0}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!plot\+Datum\+Yn@{plot\+Datum\+Yn}}
+\index{plot\+Datum\+Yn@{plot\+Datum\+Yn}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{plot\+Datum\+Yn(\+Y\+T y1, Y\+T y2, Y\+T y3, Y\+T y4)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Y\+T $>$ void Serial\+Graph\+::plot\+Datum\+Yn (
+\begin{DoxyParamCaption}
+\item[{Y\+T}]{y1, }
+\item[{Y\+T}]{y2, }
+\item[{Y\+T}]{y3, }
+\item[{Y\+T}]{y4}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_a354feb95f91239699d3510c2ce5659b0}
+Outputs a point to be plotted. All Y values must be of the same type.
+
+\begin{DoxyNote}{Note}
+The first time this is called after \hyperlink{class_serial_graph_a44d34593c56aa67142ccd9fcc0a1da86}{new\+Graph()}, \hyperlink{class_serial_graph_a898cf274c886e0ff45e90d3f21f0a6cc}{make\+Ready\+For\+Plot\+Data()} will be called. 
+
+The following feilds automatically set\+: x\+Axis\+Specified; num\+Y\+Series; 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_ab0fff3fc1879e1cd6aadf24c913ff617}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!plot\+Datum\+Yn@{plot\+Datum\+Yn}}
+\index{plot\+Datum\+Yn@{plot\+Datum\+Yn}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{plot\+Datum\+Yn(\+Y\+T y1, Y\+T y2, Y\+T y3, Y\+T y4, Y\+T y5)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Y\+T $>$ void Serial\+Graph\+::plot\+Datum\+Yn (
+\begin{DoxyParamCaption}
+\item[{Y\+T}]{y1, }
+\item[{Y\+T}]{y2, }
+\item[{Y\+T}]{y3, }
+\item[{Y\+T}]{y4, }
+\item[{Y\+T}]{y5}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_ab0fff3fc1879e1cd6aadf24c913ff617}
+Outputs a point to be plotted. All Y values must be of the same type.
+
+\begin{DoxyNote}{Note}
+The first time this is called after \hyperlink{class_serial_graph_a44d34593c56aa67142ccd9fcc0a1da86}{new\+Graph()}, \hyperlink{class_serial_graph_a898cf274c886e0ff45e90d3f21f0a6cc}{make\+Ready\+For\+Plot\+Data()} will be called. 
+
+The following feilds automatically set\+: x\+Axis\+Specified; num\+Y\+Series; 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_aa20b03efac52c18c50efc79c6459a9fc}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!plot\+Datum\+Yn@{plot\+Datum\+Yn}}
+\index{plot\+Datum\+Yn@{plot\+Datum\+Yn}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{plot\+Datum\+Yn(const Y\+T $\ast$y\+Vec, int \+\_\+n)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename X\+T , typename Y\+T $>$ void Serial\+Graph\+::plot\+Datum\+Yn (
+\begin{DoxyParamCaption}
+\item[{const Y\+T $\ast$}]{y\+Vec, }
+\item[{int}]{\+\_\+n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_aa20b03efac52c18c50efc79c6459a9fc}
+Outputs a point to be plotted. All Y values must be of the same type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y\+Vec} & Pointer to an array of y\+Values. \\
+\hline
+{\em \+\_\+n} & Number of items in array.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Behaviour on \+\_\+n $>$ max\+Series, is to just override the last possible series entry. 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_aa72b48968e82a953dcdc6522bd04c7b4}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!print@{print}}
+\index{print@{print}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{print(const W\+T what)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename W\+T $>$ void Serial\+Graph\+::print (
+\begin{DoxyParamCaption}
+\item[{const W\+T}]{what}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_aa72b48968e82a953dcdc6522bd04c7b4}
+Outputs text directly to the graph output. To use this for debug notes etc, call \hyperlink{class_serial_graph_a42417137c452bdc7b3ae242931ec7199}{print\+Comment\+Start()} first.
+
+
+\begin{DoxyParams}{Parameters}
+{\em what} & Anything you can sent to a Print class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No string validation; as this is not considered a method that should recive data from outside the codebase. 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_a7237d928f67a14d5c9950d8c23c2a794}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!print\+Comment@{print\+Comment}}
+\index{print\+Comment@{print\+Comment}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{print\+Comment(const W\+T what)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename W\+T $>$ void Serial\+Graph\+::print\+Comment (
+\begin{DoxyParamCaption}
+\item[{const W\+T}]{what}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_a7237d928f67a14d5c9950d8c23c2a794}
+Outputs a comment that is ignored by the graph output. Use this for debug notes etc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em what} & Anything you can sent to a Print class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No string validation; as this is not considered a method that should recive data from outside the codebase. 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_a9b40aa22335fc26a6c29b16d278b26f8}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!print\+Comment@{print\+Comment}}
+\index{print\+Comment@{print\+Comment}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{print\+Comment(const W\+T $\ast$what)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename W\+T $>$ void Serial\+Graph\+::print\+Comment (
+\begin{DoxyParamCaption}
+\item[{const W\+T $\ast$}]{what}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_a9b40aa22335fc26a6c29b16d278b26f8}
+Outputs a comment that is ignored by the graph output. Use this for debug notes etc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em what} & Anything you can sent to a Print class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No string validation; as this is not considered a method that should recive data from outside the codebase. 
+\end{DoxyNote}
+\hypertarget{class_g_n_u_plot_base_a219601bd41203477ae73a18d18dd7443}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!print\+Comment\+Start@{print\+Comment\+Start}}
+\index{print\+Comment\+Start@{print\+Comment\+Start}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{print\+Comment\+Start()}]{\setlength{\rightskip}{0pt plus 5cm}virtual void G\+N\+U\+Plot\+Base\+::print\+Comment\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_a219601bd41203477ae73a18d18dd7443}
+Prints the text which makes a line a comment 
+
+Implements \hyperlink{class_serial_graph_a42417137c452bdc7b3ae242931ec7199}{Serial\+Graph}.
+
+\hypertarget{class_serial_graph_a91e20c05c8cc612fd9ffd85880149264}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!print\+Data\+Value@{print\+Data\+Value}}
+\index{print\+Data\+Value@{print\+Data\+Value}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{print\+Data\+Value(\+T value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Serial\+Graph\+::print\+Data\+Value (
+\begin{DoxyParamCaption}
+\item[{T}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_a91e20c05c8cc612fd9ffd85880149264}
+Prints plot data in a format that the server can understand. Override a coresponding \+\_\+print\+Data\+Value(...) to put appropriate quotes around strings etc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & What to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_g_n_u_plot_base_aff02bc279e6c3cb83f2cdc7aa021268f}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!print\+End\+Datum@{print\+End\+Datum}}
+\index{print\+End\+Datum@{print\+End\+Datum}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{print\+End\+Datum()}]{\setlength{\rightskip}{0pt plus 5cm}virtual void G\+N\+U\+Plot\+Base\+::print\+End\+Datum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_aff02bc279e6c3cb83f2cdc7aa021268f}
+If I am plotting point x, y; then this is printed afterward. It should include out\+Stream-\/$>$\hyperlink{class_serial_graph_a2005d103cb5a578053ef7838b3a8422d}{println()}; if data is to be sent via seperate lines. 
+
+Implements \hyperlink{class_serial_graph_afedf62d0e783c18e1e088d98affab108}{Serial\+Graph}.
+
+\hypertarget{class_g_n_u_plot_base_ad057969aa7f8bdbe884d6a5d03a29722}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!print\+Line\+Apperance@{print\+Line\+Apperance}}
+\index{print\+Line\+Apperance@{print\+Line\+Apperance}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{print\+Line\+Apperance(\+Line\+Apperance apperance)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+N\+U\+Plot\+Base\+::print\+Line\+Apperance (
+\begin{DoxyParamCaption}
+\item[{{\bf Line\+Apperance}}]{apperance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_ad057969aa7f8bdbe884d6a5d03a29722}
+\hypertarget{class_serial_graph_a2005d103cb5a578053ef7838b3a8422d}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!println@{println}}
+\index{println@{println}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{println(const W\+T what)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename W\+T $>$ void Serial\+Graph\+::println (
+\begin{DoxyParamCaption}
+\item[{const W\+T}]{what}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_a2005d103cb5a578053ef7838b3a8422d}
+Outputs text directly to the graph output. To use this for debug notes etc, call \hyperlink{class_serial_graph_a42417137c452bdc7b3ae242931ec7199}{print\+Comment\+Start()} first.
+
+
+\begin{DoxyParams}{Parameters}
+{\em what} & Anything you can sent to a Print class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No string validation; as this is not considered a method that should recive data from outside the codebase. 
+\end{DoxyNote}
+\hypertarget{class_g_n_u_plot_base_ad7e8ef8d8e5eb80119fc0cce9be2d525}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!print\+Log\+Axis\+Command@{print\+Log\+Axis\+Command}}
+\index{print\+Log\+Axis\+Command@{print\+Log\+Axis\+Command}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{print\+Log\+Axis\+Command(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$axis\+Name, byte log\+Scale)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+N\+U\+Plot\+Base\+::print\+Log\+Axis\+Command (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{axis\+Name, }
+\item[{byte}]{log\+Scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_ad7e8ef8d8e5eb80119fc0cce9be2d525}
+\hypertarget{class_g_n_u_plot_base_ae204818b4e8dcd9d2f6b5426127ca2cf}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!print\+Seperator@{print\+Seperator}}
+\index{print\+Seperator@{print\+Seperator}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{print\+Seperator()}]{\setlength{\rightskip}{0pt plus 5cm}virtual void G\+N\+U\+Plot\+Base\+::print\+Seperator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_ae204818b4e8dcd9d2f6b5426127ca2cf}
+If I am plotting x, y1, y2; then this is the deliminator (the comma in this case) 
+
+Implements \hyperlink{class_serial_graph_a2466a642c6f6c36c708494659e975411}{Serial\+Graph}.
+
+\hypertarget{class_g_n_u_plot_base_ac2b48b822b6043392b514c9580b1661a}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!print\+Start\+Datum@{print\+Start\+Datum}}
+\index{print\+Start\+Datum@{print\+Start\+Datum}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{print\+Start\+Datum()}]{\setlength{\rightskip}{0pt plus 5cm}virtual void G\+N\+U\+Plot\+Base\+::print\+Start\+Datum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_ac2b48b822b6043392b514c9580b1661a}
+If I am plotting point x, y; then this is printed before hand. 
+
+Implements \hyperlink{class_serial_graph_ac655612a046b59c4d0f8211ed349e45c}{Serial\+Graph}.
+
+\hypertarget{class_g_n_u_plot_base_a65ae2b3220034bce21c7feb39a632991}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!print\+Title\+In\+Plot\+Command@{print\+Title\+In\+Plot\+Command}}
+\index{print\+Title\+In\+Plot\+Command@{print\+Title\+In\+Plot\+Command}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{print\+Title\+In\+Plot\+Command(int series\+Num)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+N\+U\+Plot\+Base\+::print\+Title\+In\+Plot\+Command (
+\begin{DoxyParamCaption}
+\item[{int}]{series\+Num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_a65ae2b3220034bce21c7feb39a632991}
+\hypertarget{class_g_n_u_plot_base_ab5c851953dd140cc3ee936a5cd329200}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!save\+Plot\+To\+Image\+File@{save\+Plot\+To\+Image\+File}}
+\index{save\+Plot\+To\+Image\+File@{save\+Plot\+To\+Image\+File}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{save\+Plot\+To\+Image\+File(const char $\ast$title)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+N\+U\+Plot\+Base\+::save\+Plot\+To\+Image\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_ab5c851953dd140cc3ee936a5cd329200}
+\hypertarget{class_serial_graph_a84d8e8ce9bff20e53ba738d1d34d3577}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+Series\+Name@{set\+Series\+Name}}
+\index{set\+Series\+Name@{set\+Series\+Name}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+Series\+Name(int \+\_\+n, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$title)}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\+Graph\+::set\+Series\+Name (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+n, }
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_a84d8e8ce9bff20e53ba738d1d34d3577}
+Sets the name of a series. Validation is performed on the name (No\+Quotes, Com\+Port\+Safe, No\+New\+Lines), also enforces max\+String\+Size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title. \\
+\hline
+{\em \+\_\+n} & Series number to alter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Behaviour on \+\_\+n $>$ max\+Series, is to just override the last possible series entry. 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_a9d67fbecbee6edb82646aa7ba5103046}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+Series\+Name@{set\+Series\+Name}}
+\index{set\+Series\+Name@{set\+Series\+Name}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+Series\+Name(int \+\_\+n, const char $\ast$name)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::set\+Series\+Name (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+n, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_a9d67fbecbee6edb82646aa7ba5103046}
+Sets the name of a series. Validation is performed on the name (No\+Quotes, Com\+Port\+Safe, No\+New\+Lines), also enforces max\+String\+Size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title. \\
+\hline
+{\em \+\_\+n} & Series number to alter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Behaviour on \+\_\+n $>$ max\+Series, is to just override the last possible series entry. 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_abf488e449d6d786bc01478793d0094ad}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+Show\+Grid@{set\+Show\+Grid}}
+\index{set\+Show\+Grid@{set\+Show\+Grid}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+Show\+Grid(bool enabled)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::set\+Show\+Grid (
+\begin{DoxyParamCaption}
+\item[{bool}]{enabled}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_abf488e449d6d786bc01478793d0094ad}
+Set to place a grid on the plot. \begin{DoxyNote}{Note}
+Grid size is automatic. 
+\end{DoxyNote}
+\hypertarget{class_serial_graph_a4db09b008589914b71b2ee8b1873db7a}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+Title@{set\+Title}}
+\index{set\+Title@{set\+Title}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+Title(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$title)}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\+Graph\+::set\+Title (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_a4db09b008589914b71b2ee8b1873db7a}
+Sets the graph title (optional). Validation is performed on the name (No\+Quotes, Com\+Port\+Safe, No\+New\+Lines), also enforces max\+String\+Size. \hypertarget{class_serial_graph_ad726b2c84cec50c2d4bfe769e62a9bcd}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+Title@{set\+Title}}
+\index{set\+Title@{set\+Title}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+Title(const char $\ast$title)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::set\+Title (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_ad726b2c84cec50c2d4bfe769e62a9bcd}
+Sets the graph title (optional). Validation is performed on the name (No\+Quotes, Com\+Port\+Safe, No\+New\+Lines), also enforces max\+String\+Size. \hypertarget{class_g_n_u_plot_base_a03d371b0c6c7ef89064525438b22d52c}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+Variable@{set\+Variable}}
+\index{set\+Variable@{set\+Variable}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+Variable(\+T name, U value, bool quoted)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename U $>$ void G\+N\+U\+Plot\+Base\+::set\+Variable (
+\begin{DoxyParamCaption}
+\item[{T}]{name, }
+\item[{U}]{value, }
+\item[{bool}]{quoted}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_a03d371b0c6c7ef89064525438b22d52c}
+\hypertarget{class_g_n_u_plot_base_a3c8c8f68c13661d91bd844589e1a2a85}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+Variable@{set\+Variable}}
+\index{set\+Variable@{set\+Variable}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+Variable(\+T name)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void G\+N\+U\+Plot\+Base\+::set\+Variable (
+\begin{DoxyParamCaption}
+\item[{T}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_a3c8c8f68c13661d91bd844589e1a2a85}
+\hypertarget{class_g_n_u_plot_base_a68171bf36461e54e2b81384c112ad975}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+Varible\+By\+String\+\_\+null\+Safe@{set\+Varible\+By\+String\+\_\+null\+Safe}}
+\index{set\+Varible\+By\+String\+\_\+null\+Safe@{set\+Varible\+By\+String\+\_\+null\+Safe}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+Varible\+By\+String\+\_\+null\+Safe(\+T name, const char $\ast$text)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void G\+N\+U\+Plot\+Base\+::set\+Varible\+By\+String\+\_\+null\+Safe (
+\begin{DoxyParamCaption}
+\item[{T}]{name, }
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_a68171bf36461e54e2b81384c112ad975}
+\hypertarget{class_g_n_u_plot_base_ae93c5de3241c2b6b6f703a202dc1d94b}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+Varible\+Flag\+By\+Boolean@{set\+Varible\+Flag\+By\+Boolean}}
+\index{set\+Varible\+Flag\+By\+Boolean@{set\+Varible\+Flag\+By\+Boolean}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+Varible\+Flag\+By\+Boolean(\+T name, bool value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void G\+N\+U\+Plot\+Base\+::set\+Varible\+Flag\+By\+Boolean (
+\begin{DoxyParamCaption}
+\item[{T}]{name, }
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_ae93c5de3241c2b6b6f703a202dc1d94b}
+\hypertarget{class_serial_graph_ae58de4fa4d391f1a2f411ce00dd74d93}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+X\+Axis\+Log@{set\+X\+Axis\+Log}}
+\index{set\+X\+Axis\+Log@{set\+X\+Axis\+Log}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+X\+Axis\+Log(byte scale)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::set\+X\+Axis\+Log (
+\begin{DoxyParamCaption}
+\item[{byte}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_ae58de4fa4d391f1a2f411ce00dd74d93}
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & The log scale, eg 2 for binery, 10 for common logarithm. Use 1 or 0 to disable log scale. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_serial_graph_afdb759a860c41de2fc4cfe78519b9fc0}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+X\+Axis\+Name@{set\+X\+Axis\+Name}}
+\index{set\+X\+Axis\+Name@{set\+X\+Axis\+Name}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+X\+Axis\+Name(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$title)}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\+Graph\+::set\+X\+Axis\+Name (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_afdb759a860c41de2fc4cfe78519b9fc0}
+Sets x axis name (optional). Validation is performed on the name (No\+Quotes, Com\+Port\+Safe, No\+New\+Lines), also enforces max\+String\+Size. \hypertarget{class_serial_graph_ac7f30036f5006091af51204a4d9efaf2}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+X\+Axis\+Name@{set\+X\+Axis\+Name}}
+\index{set\+X\+Axis\+Name@{set\+X\+Axis\+Name}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+X\+Axis\+Name(const char $\ast$name)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::set\+X\+Axis\+Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_ac7f30036f5006091af51204a4d9efaf2}
+Sets x axis name (optional). Validation is performed on the name (No\+Quotes, Com\+Port\+Safe, No\+New\+Lines), also enforces max\+String\+Size. \hypertarget{class_serial_graph_a444e38e8ef3784942ca6ee58940f7023}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+Y\+Axis\+Log@{set\+Y\+Axis\+Log}}
+\index{set\+Y\+Axis\+Log@{set\+Y\+Axis\+Log}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+Y\+Axis\+Log(byte scale)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::set\+Y\+Axis\+Log (
+\begin{DoxyParamCaption}
+\item[{byte}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_a444e38e8ef3784942ca6ee58940f7023}
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & The log scale, eg 2 for binery, 10 for common logarithm. Use 1 or 0 to disable log scale. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_serial_graph_abfc46c15cf8e1b4362a7f51cb11c7bdb}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+Y\+Axis\+Name@{set\+Y\+Axis\+Name}}
+\index{set\+Y\+Axis\+Name@{set\+Y\+Axis\+Name}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+Y\+Axis\+Name(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$title)}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\+Graph\+::set\+Y\+Axis\+Name (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}\label{class_serial_graph_abfc46c15cf8e1b4362a7f51cb11c7bdb}
+Sets y axis name (optional). Validation is performed on the name (No\+Quotes, Com\+Port\+Safe, No\+New\+Lines), also enforces max\+String\+Size. \hypertarget{class_serial_graph_ab0c675c8682959261f79dcf37b04148c}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!set\+Y\+Axis\+Name@{set\+Y\+Axis\+Name}}
+\index{set\+Y\+Axis\+Name@{set\+Y\+Axis\+Name}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{set\+Y\+Axis\+Name(const char $\ast$name)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serial\+Graph\+::set\+Y\+Axis\+Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}\label{class_serial_graph_ab0c675c8682959261f79dcf37b04148c}
+Sets y axis name (optional). Validation is performed on the name (No\+Quotes, Com\+Port\+Safe, No\+New\+Lines), also enforces max\+String\+Size. \hypertarget{class_g_n_u_plot_base_af9b418bbcafb41d4d51b92018ca4f217}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!unset\+Variable@{unset\+Variable}}
+\index{unset\+Variable@{unset\+Variable}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{unset\+Variable(\+T name)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void G\+N\+U\+Plot\+Base\+::unset\+Variable (
+\begin{DoxyParamCaption}
+\item[{T}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_g_n_u_plot_base_af9b418bbcafb41d4d51b92018ca4f217}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_serial_graph_a0b33d43c2bb54340ef1f90b5f76d7aea}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!graph\+Title@{graph\+Title}}
+\index{graph\+Title@{graph\+Title}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{graph\+Title}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Serial\+Graph\+::graph\+Title\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_a0b33d43c2bb54340ef1f90b5f76d7aea}
+The graphs title (optional), see max\+String\+Size. \hypertarget{class_serial_graph_a752a1429bd35687163fe11c5a2562bef}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!max\+Series@{max\+Series}}
+\index{max\+Series@{max\+Series}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{max\+Series}]{\setlength{\rightskip}{0pt plus 5cm}const byte Serial\+Graph\+::max\+Series = 8\hspace{0.3cm}{\ttfamily [inherited]}}\label{class_serial_graph_a752a1429bd35687163fe11c5a2562bef}
+Number of possible series. (at least 8 bytes used per series, so only increase this number if you have to) \hypertarget{class_serial_graph_a1867ab3a93268646490fa7ba4f8b5680}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!max\+String\+Size@{max\+String\+Size}}
+\index{max\+String\+Size@{max\+String\+Size}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{max\+String\+Size}]{\setlength{\rightskip}{0pt plus 5cm}const byte Serial\+Graph\+::max\+String\+Size = 128\hspace{0.3cm}{\ttfamily [inherited]}}\label{class_serial_graph_a1867ab3a93268646490fa7ba4f8b5680}
+Sets the maximum string size (titles, series anmes etc). \hypertarget{class_serial_graph_ab40c430e06102b9624736173d4a58596}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!num\+Y\+Series@{num\+Y\+Series}}
+\index{num\+Y\+Series@{num\+Y\+Series}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{num\+Y\+Series}]{\setlength{\rightskip}{0pt plus 5cm}int Serial\+Graph\+::num\+Y\+Series\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_ab40c430e06102b9624736173d4a58596}
+Actual number of Y\+Series being used. The consts max\+Series and max\+String\+Size may need tweaking. \hypertarget{class_serial_graph_aec32289a9393e98bf80d44406e5c207d}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!out\+Stream@{out\+Stream}}
+\index{out\+Stream@{out\+Stream}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{out\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}Print$\ast$ Serial\+Graph\+::out\+Stream\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_aec32289a9393e98bf80d44406e5c207d}
+The script to write to. Bad things happen if this is null. \hypertarget{class_serial_graph_a24202e0a7a8bac5ec1cfd92bf796e078}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!save\+File@{save\+File}}
+\index{save\+File@{save\+File}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{save\+File}]{\setlength{\rightskip}{0pt plus 5cm}bool Serial\+Graph\+::save\+File\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_a24202e0a7a8bac5ec1cfd92bf796e078}
+True if an image file should be saved \hypertarget{class_serial_graph_a8d743f9eeeca69a988d2159a405e4253}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!series\+Apperance@{series\+Apperance}}
+\index{series\+Apperance@{series\+Apperance}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{series\+Apperance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\+Apperance}$\ast$ Serial\+Graph\+::series\+Apperance\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_a8d743f9eeeca69a988d2159a405e4253}
+Apperance of every series, see max\+String\+Size. N\+B\+: 0 = solid black line, 1 unit wide \hypertarget{class_serial_graph_a2307e40e27249f44bbe14776dc68c561}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!series\+Names@{series\+Names}}
+\index{series\+Names@{series\+Names}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{series\+Names}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ Serial\+Graph\+::series\+Names\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_a2307e40e27249f44bbe14776dc68c561}
+name of every series (optional), see max\+String\+Size. \hypertarget{class_serial_graph_ad61d5ea29eacc1611c5addc94714f1e2}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!show\+Grid@{show\+Grid}}
+\index{show\+Grid@{show\+Grid}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{show\+Grid}]{\setlength{\rightskip}{0pt plus 5cm}bool Serial\+Graph\+::show\+Grid\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_ad61d5ea29eacc1611c5addc94714f1e2}
+Places a grid on the plot. \hypertarget{class_serial_graph_afc2ca72fdfe2bc5e3159c9e910a8f81e}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!x\+Axis\+Log\+Scale@{x\+Axis\+Log\+Scale}}
+\index{x\+Axis\+Log\+Scale@{x\+Axis\+Log\+Scale}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{x\+Axis\+Log\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}byte Serial\+Graph\+::x\+Axis\+Log\+Scale\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_afc2ca72fdfe2bc5e3159c9e910a8f81e}
+0 = no log; 2 or more sets the log scale. \hypertarget{class_serial_graph_a5f5bf85ed361ff567d0888eaa73e269c}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!x\+Axis\+Name@{x\+Axis\+Name}}
+\index{x\+Axis\+Name@{x\+Axis\+Name}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{x\+Axis\+Name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Serial\+Graph\+::x\+Axis\+Name\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_a5f5bf85ed361ff567d0888eaa73e269c}
+x axis name (optional), see max\+String\+Size \hypertarget{class_serial_graph_a4dbd9cf190c591fb4f2f46a50d937199}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!x\+Axis\+Specified@{x\+Axis\+Specified}}
+\index{x\+Axis\+Specified@{x\+Axis\+Specified}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{x\+Axis\+Specified}]{\setlength{\rightskip}{0pt plus 5cm}bool Serial\+Graph\+::x\+Axis\+Specified\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_a4dbd9cf190c591fb4f2f46a50d937199}
+If this is true, then x co-\/ordinates are being supplied via the plot command, (ohterwise we will autogenerate it in G\+N\+U\+Plot). \hypertarget{class_serial_graph_a1f0424857ec14c176747b3ddb0768eee}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!y\+Axis\+Log\+Scale@{y\+Axis\+Log\+Scale}}
+\index{y\+Axis\+Log\+Scale@{y\+Axis\+Log\+Scale}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{y\+Axis\+Log\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}byte Serial\+Graph\+::y\+Axis\+Log\+Scale\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_a1f0424857ec14c176747b3ddb0768eee}
+0 = no log; 2 or more sets the log scale. \hypertarget{class_serial_graph_a08452a56c74ec5f5473b64605d555339}{}\index{G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}!y\+Axis\+Name@{y\+Axis\+Name}}
+\index{y\+Axis\+Name@{y\+Axis\+Name}!G\+N\+U\+Plot\+Point\+Graph@{G\+N\+U\+Plot\+Point\+Graph}}
+\subsubsection[{y\+Axis\+Name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Serial\+Graph\+::y\+Axis\+Name\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}\label{class_serial_graph_a08452a56c74ec5f5473b64605d555339}
+y axis name (optional), see max\+String\+Size 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+W\+D\+Arduino\+Lib/src/\hyperlink{_g_n_u_plot_8h}{G\+N\+U\+Plot.\+h}\end{DoxyCompactItemize}

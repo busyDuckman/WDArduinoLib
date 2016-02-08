@@ -1,0 +1,415 @@
+\hypertarget{_bit_arithmatic_8h}{}\section{W\+D\+Arduino\+Lib/src/\+Bit\+Arithmatic.h File Reference}
+\label{_bit_arithmatic_8h}\index{W\+D\+Arduino\+Lib/src/\+Bit\+Arithmatic.\+h@{W\+D\+Arduino\+Lib/src/\+Bit\+Arithmatic.\+h}}
+{\ttfamily \#include \char`\"{}W\+Program.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_bit_arithmatic_8h_a07b9d02b23a7b5526117bd66036cc516}{print\+Hex\+Byte} (Print $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_a1cfeea12527296318184b8fafd28ff4e}{out\+Stream}, const byte value)
+\item 
+void \hyperlink{_bit_arithmatic_8h_a2b7e446093fa0d1d250eea3d908ea28f}{print\+Hex\+Int16} (Print $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_a1cfeea12527296318184b8fafd28ff4e}{out\+Stream}, const uint16\+\_\+t value)
+\item 
+void \hyperlink{_bit_arithmatic_8h_af2a2e4872a45c5012fa0a63053e63f20}{print\+Hex\+Int24} (Print $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_a1cfeea12527296318184b8fafd28ff4e}{out\+Stream}, const uint32\+\_\+t value)
+\item 
+void \hyperlink{_bit_arithmatic_8h_ae6e1c4ca3c19e4a1e97ade02f5c7667b}{print\+Hex\+Int32} (Print $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_a1cfeea12527296318184b8fafd28ff4e}{out\+Stream}, const uint32\+\_\+t value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{_bit_arithmatic_8h_a9dd770c5f3d40d221e056fe0adaba2be}{print\+As\+Binary} (Print $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_a1cfeea12527296318184b8fafd28ff4e}{out\+Stream}, const T value, byte seperator\+Dist)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{_bit_arithmatic_8h_ae5f48c1b44a9f4450b25aef0d4e4cbf2}{print\+As\+Binary} (Print $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_a1cfeea12527296318184b8fafd28ff4e}{out\+Stream}, const T value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_a265ad18055014fc17a0eb2493effaa66}{set\+Bits} (uint8\+\_\+t \&bit\+Union, uint8\+\_\+t value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_a37ac4ac4045889ff3ba15f0f57c30c38}{set\+Bits} (uint16\+\_\+t \&bit\+Union, uint8\+\_\+t value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_af24577bdd32c36882c13fab19172da8c}{set\+Bits} (uint32\+\_\+t \&bit\+Union, uint8\+\_\+t value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_a096702c93929b971b5c6bc1dd62900a1}{set\+Bits} (uint64\+\_\+t \&bit\+Union, uint8\+\_\+t value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_abcf60decbd67d85bedcbef181d3dd224}{set\+Bits} (uint16\+\_\+t \&bit\+Union, uint16\+\_\+t value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_a00ce3bb36330b2b90f75b5606a123ef5}{set\+Bits} (uint32\+\_\+t \&bit\+Union, uint16\+\_\+t value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_af01cd0438be818af5fa618c8e876a1d3}{set\+Bits} (uint64\+\_\+t \&bit\+Union, uint16\+\_\+t value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_a1f604d0c86aab269d66951049d841d72}{set\+Bits} (uint32\+\_\+t \&bit\+Union, uint32\+\_\+t value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_a6dd3d26c0c5edeca00dab4d9a5b2ff8e}{set\+Bits} (uint64\+\_\+t \&bit\+Union, uint32\+\_\+t value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_ab25c5695adeef8509ef19f31f47ef0c1}{set\+Bits} (uint64\+\_\+t \&bit\+Union, uint64\+\_\+t value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_a56d1c43bc0f250ecef6af5ed9f8e63ea}{set\+Bits} (uint8\+\_\+t \&bit\+Union, const int value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_a885d126fcb5dadcd574addcca1b4572f}{set\+Bits} (uint16\+\_\+t \&bit\+Union, const int value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_a35bc14082e34d3cd1d236dfd995f65cd}{set\+Bits} (uint32\+\_\+t \&bit\+Union, const int value)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\void \hyperlink{_bit_arithmatic_8h_aabbf277315ff3b8310a7741925b56bc7}{set\+Bits} (uint64\+\_\+t \&bit\+Union, const int value)
+\item 
+{\footnotesize template$<$typename S , typename R , const int bits, const int pos$>$ }\\R \hyperlink{_bit_arithmatic_8h_a1131897261971e497cf6a4a83476fcdc}{get\+Bits} (const S bit\+Union)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\unsigned int \hyperlink{_bit_arithmatic_8h_a797aa5cac73fd62def9418f4a7fd820d}{get\+Unsigned\+Int} (const uint8\+\_\+t bit\+Union)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\unsigned int \hyperlink{_bit_arithmatic_8h_a32554a87c14324fad92020cb4fecf58d}{get\+Unsigned\+Int} (const uint16\+\_\+t bit\+Union)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\unsigned int \hyperlink{_bit_arithmatic_8h_adb24f4d0a68a24e60fb1e4265cb57fdc}{get\+Unsigned\+Int} (const uint32\+\_\+t bit\+Union)
+\item 
+{\footnotesize template$<$const int bits, const int pos$>$ }\\unsigned int \hyperlink{_bit_arithmatic_8h_acc730fceb6b046f51d2a8966a1a04577}{get\+Unsigned\+Int} (const uint64\+\_\+t bit\+Union)
+\item 
+uint32\+\_\+t \hyperlink{_bit_arithmatic_8h_a1e55823ca5d6c66eba53036134820785}{bytes\+To32bit} (byte a, byte \hyperlink{_w_d_arduino_lib___unit_tests_8h_adab634951eeadcd5a7c8840eefbf780f}{b}, byte c, byte d)
+\item 
+uint16\+\_\+t \hyperlink{_bit_arithmatic_8h_aa0bec3f30220610f221e46f327d13bf9}{bytes\+To16bit} (byte a, byte \hyperlink{_w_d_arduino_lib___unit_tests_8h_adab634951eeadcd5a7c8840eefbf780f}{b})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_bit_arithmatic_8h_aa0bec3f30220610f221e46f327d13bf9}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!bytes\+To16bit@{bytes\+To16bit}}
+\index{bytes\+To16bit@{bytes\+To16bit}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{bytes\+To16bit(byte a, byte b)}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t bytes\+To16bit (
+\begin{DoxyParamCaption}
+\item[{byte}]{a, }
+\item[{byte}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_aa0bec3f30220610f221e46f327d13bf9}
+Assembles a larger integer from bytes. 
+\begin{DoxyParams}{Parameters}
+{\em a} & highest byte \\
+\hline
+{\em b} & lowest byte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An unsigned integer (16 bit) 
+\end{DoxyReturn}
+\hypertarget{_bit_arithmatic_8h_a1e55823ca5d6c66eba53036134820785}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!bytes\+To32bit@{bytes\+To32bit}}
+\index{bytes\+To32bit@{bytes\+To32bit}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{bytes\+To32bit(byte a, byte b, byte c, byte d)}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t bytes\+To32bit (
+\begin{DoxyParamCaption}
+\item[{byte}]{a, }
+\item[{byte}]{b, }
+\item[{byte}]{c, }
+\item[{byte}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a1e55823ca5d6c66eba53036134820785}
+Assembles a larger integer from bytes. 
+\begin{DoxyParams}{Parameters}
+{\em a} & highest byte \\
+\hline
+{\em b} & next byte \\
+\hline
+{\em c} & next byte \\
+\hline
+{\em d} & lowest byte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An unsigned integer (32 bit) 
+\end{DoxyReturn}
+\hypertarget{_bit_arithmatic_8h_a1131897261971e497cf6a4a83476fcdc}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!get\+Bits@{get\+Bits}}
+\index{get\+Bits@{get\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{get\+Bits(const S bit\+Union)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename S , typename R , const int bits, const int pos$>$ R get\+Bits (
+\begin{DoxyParamCaption}
+\item[{const S}]{bit\+Union}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a1131897261971e497cf6a4a83476fcdc}
+Gets a n bit number at given bit position
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & How many bits (n) in our number. \\
+\hline
+{\em pos} & Bit position (zero based) of the n bits to be stored. \\
+\hline
+{\em bit\+Union} & The larger datatype. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value from the specified bits 
+\end{DoxyReturn}
+\hypertarget{_bit_arithmatic_8h_a797aa5cac73fd62def9418f4a7fd820d}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!get\+Unsigned\+Int@{get\+Unsigned\+Int}}
+\index{get\+Unsigned\+Int@{get\+Unsigned\+Int}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{get\+Unsigned\+Int(const uint8\+\_\+t bit\+Union)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ unsigned int get\+Unsigned\+Int (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t}]{bit\+Union}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a797aa5cac73fd62def9418f4a7fd820d}
+Gets a n bit number at given bit position
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & How many bits (n) in our number. \\
+\hline
+{\em pos} & Bit position (zero based) of the n bits to be stored. \\
+\hline
+{\em bit\+Union} & The larger datatype. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value from the specified bits 
+\end{DoxyReturn}
+\hypertarget{_bit_arithmatic_8h_a32554a87c14324fad92020cb4fecf58d}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!get\+Unsigned\+Int@{get\+Unsigned\+Int}}
+\index{get\+Unsigned\+Int@{get\+Unsigned\+Int}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{get\+Unsigned\+Int(const uint16\+\_\+t bit\+Union)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ unsigned int get\+Unsigned\+Int (
+\begin{DoxyParamCaption}
+\item[{const uint16\+\_\+t}]{bit\+Union}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a32554a87c14324fad92020cb4fecf58d}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_adb24f4d0a68a24e60fb1e4265cb57fdc}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!get\+Unsigned\+Int@{get\+Unsigned\+Int}}
+\index{get\+Unsigned\+Int@{get\+Unsigned\+Int}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{get\+Unsigned\+Int(const uint32\+\_\+t bit\+Union)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ unsigned int get\+Unsigned\+Int (
+\begin{DoxyParamCaption}
+\item[{const uint32\+\_\+t}]{bit\+Union}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_adb24f4d0a68a24e60fb1e4265cb57fdc}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_acc730fceb6b046f51d2a8966a1a04577}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!get\+Unsigned\+Int@{get\+Unsigned\+Int}}
+\index{get\+Unsigned\+Int@{get\+Unsigned\+Int}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{get\+Unsigned\+Int(const uint64\+\_\+t bit\+Union)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ unsigned int get\+Unsigned\+Int (
+\begin{DoxyParamCaption}
+\item[{const uint64\+\_\+t}]{bit\+Union}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_acc730fceb6b046f51d2a8966a1a04577}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_a9dd770c5f3d40d221e056fe0adaba2be}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!print\+As\+Binary@{print\+As\+Binary}}
+\index{print\+As\+Binary@{print\+As\+Binary}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{print\+As\+Binary(\+Print $\ast$out\+Stream, const T value, byte seperator\+Dist)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void print\+As\+Binary (
+\begin{DoxyParamCaption}
+\item[{Print $\ast$}]{out\+Stream, }
+\item[{const T}]{value, }
+\item[{byte}]{seperator\+Dist}
+\end{DoxyParamCaption}
+)}\label{_bit_arithmatic_8h_a9dd770c5f3d40d221e056fe0adaba2be}
+Prints a byte as two hex digits. Note\+: Upper case with a leading zero. 
+\begin{DoxyParams}{Parameters}
+{\em out\+Stream} & Stream to output to. \\
+\hline
+{\em value} & Integer to print. \\
+\hline
+{\em seperator\+Dist} & How often a space is inserted (normaly 4 or 8). \\
+\hline
+\end{DoxyParams}
+\hypertarget{_bit_arithmatic_8h_ae5f48c1b44a9f4450b25aef0d4e4cbf2}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!print\+As\+Binary@{print\+As\+Binary}}
+\index{print\+As\+Binary@{print\+As\+Binary}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{print\+As\+Binary(\+Print $\ast$out\+Stream, const T value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void print\+As\+Binary (
+\begin{DoxyParamCaption}
+\item[{Print $\ast$}]{out\+Stream, }
+\item[{const T}]{value}
+\end{DoxyParamCaption}
+)}\label{_bit_arithmatic_8h_ae5f48c1b44a9f4450b25aef0d4e4cbf2}
+Prints a byte as two hex digits. Note\+: Upper case with a leading zero. 
+\begin{DoxyParams}{Parameters}
+{\em out\+Stream} & Stream to output to. \\
+\hline
+{\em value} & Integer to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_bit_arithmatic_8h_a07b9d02b23a7b5526117bd66036cc516}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!print\+Hex\+Byte@{print\+Hex\+Byte}}
+\index{print\+Hex\+Byte@{print\+Hex\+Byte}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{print\+Hex\+Byte(\+Print $\ast$out\+Stream, const byte value)}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Hex\+Byte (
+\begin{DoxyParamCaption}
+\item[{Print $\ast$}]{out\+Stream, }
+\item[{const byte}]{value}
+\end{DoxyParamCaption}
+)}\label{_bit_arithmatic_8h_a07b9d02b23a7b5526117bd66036cc516}
+Prints a byte as two hex digits. Note\+: Upper case with a leading zero. 
+\begin{DoxyParams}{Parameters}
+{\em out\+Stream} & Stream to output to. \\
+\hline
+{\em value} & Integer to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_bit_arithmatic_8h_a2b7e446093fa0d1d250eea3d908ea28f}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!print\+Hex\+Int16@{print\+Hex\+Int16}}
+\index{print\+Hex\+Int16@{print\+Hex\+Int16}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{print\+Hex\+Int16(\+Print $\ast$out\+Stream, const uint16\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Hex\+Int16 (
+\begin{DoxyParamCaption}
+\item[{Print $\ast$}]{out\+Stream, }
+\item[{const uint16\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)}\label{_bit_arithmatic_8h_a2b7e446093fa0d1d250eea3d908ea28f}
+
+
+
+
+Prints a byte as two hex digits. Note\+: Upper case with a leading zero. 
+\begin{DoxyParams}{Parameters}
+{\em out\+Stream} & Stream to output to. \\
+\hline
+{\em value} & Integer to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_bit_arithmatic_8h_af2a2e4872a45c5012fa0a63053e63f20}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!print\+Hex\+Int24@{print\+Hex\+Int24}}
+\index{print\+Hex\+Int24@{print\+Hex\+Int24}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{print\+Hex\+Int24(\+Print $\ast$out\+Stream, const uint32\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Hex\+Int24 (
+\begin{DoxyParamCaption}
+\item[{Print $\ast$}]{out\+Stream, }
+\item[{const uint32\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)}\label{_bit_arithmatic_8h_af2a2e4872a45c5012fa0a63053e63f20}
+
+
+
+
+Prints a byte as two hex digits. Note\+: Upper case with a leading zero. 
+\begin{DoxyParams}{Parameters}
+{\em out\+Stream} & Stream to output to. \\
+\hline
+{\em value} & Integer to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_bit_arithmatic_8h_ae6e1c4ca3c19e4a1e97ade02f5c7667b}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!print\+Hex\+Int32@{print\+Hex\+Int32}}
+\index{print\+Hex\+Int32@{print\+Hex\+Int32}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{print\+Hex\+Int32(\+Print $\ast$out\+Stream, const uint32\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Hex\+Int32 (
+\begin{DoxyParamCaption}
+\item[{Print $\ast$}]{out\+Stream, }
+\item[{const uint32\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)}\label{_bit_arithmatic_8h_ae6e1c4ca3c19e4a1e97ade02f5c7667b}
+
+
+
+
+Prints a byte as two hex digits. Note\+: Upper case with a leading zero. 
+\begin{DoxyParams}{Parameters}
+{\em out\+Stream} & Stream to output to. \\
+\hline
+{\em value} & Integer to print. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_bit_arithmatic_8h_a265ad18055014fc17a0eb2493effaa66}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint8\+\_\+t \&bit\+Union, uint8\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t \&}]{bit\+Union, }
+\item[{uint8\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a265ad18055014fc17a0eb2493effaa66}
+Stores a n bit number at given bit position Only works with unsigned data types, due to c++ providing arathmentic shift, but no logical shift.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & How many bits (n) in our number. \\
+\hline
+{\em pos} & Bit position (zero based) of the n bits to be stored. \\
+\hline
+{\em bit\+Union} & The larger datatype (type S). Must support $<$$<$ $\sim$ $\vert$= and -\/ and cast from an interger. \\
+\hline
+{\em value} & The n most significant bits of this are stored. Must support $<$$<$ and cast to S \\
+\hline
+\end{DoxyParams}
+\hypertarget{_bit_arithmatic_8h_a37ac4ac4045889ff3ba15f0f57c30c38}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint16\+\_\+t \&bit\+Union, uint8\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t \&}]{bit\+Union, }
+\item[{uint8\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a37ac4ac4045889ff3ba15f0f57c30c38}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_af24577bdd32c36882c13fab19172da8c}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint32\+\_\+t \&bit\+Union, uint8\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t \&}]{bit\+Union, }
+\item[{uint8\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_af24577bdd32c36882c13fab19172da8c}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_a096702c93929b971b5c6bc1dd62900a1}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint64\+\_\+t \&bit\+Union, uint8\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t \&}]{bit\+Union, }
+\item[{uint8\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a096702c93929b971b5c6bc1dd62900a1}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_abcf60decbd67d85bedcbef181d3dd224}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint16\+\_\+t \&bit\+Union, uint16\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t \&}]{bit\+Union, }
+\item[{uint16\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_abcf60decbd67d85bedcbef181d3dd224}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_a00ce3bb36330b2b90f75b5606a123ef5}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint32\+\_\+t \&bit\+Union, uint16\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t \&}]{bit\+Union, }
+\item[{uint16\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a00ce3bb36330b2b90f75b5606a123ef5}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_af01cd0438be818af5fa618c8e876a1d3}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint64\+\_\+t \&bit\+Union, uint16\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t \&}]{bit\+Union, }
+\item[{uint16\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_af01cd0438be818af5fa618c8e876a1d3}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_a1f604d0c86aab269d66951049d841d72}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint32\+\_\+t \&bit\+Union, uint32\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t \&}]{bit\+Union, }
+\item[{uint32\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a1f604d0c86aab269d66951049d841d72}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_a6dd3d26c0c5edeca00dab4d9a5b2ff8e}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint64\+\_\+t \&bit\+Union, uint32\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t \&}]{bit\+Union, }
+\item[{uint32\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a6dd3d26c0c5edeca00dab4d9a5b2ff8e}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_ab25c5695adeef8509ef19f31f47ef0c1}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint64\+\_\+t \&bit\+Union, uint64\+\_\+t value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t \&}]{bit\+Union, }
+\item[{uint64\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_ab25c5695adeef8509ef19f31f47ef0c1}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_a56d1c43bc0f250ecef6af5ed9f8e63ea}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint8\+\_\+t \&bit\+Union, const int value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t \&}]{bit\+Union, }
+\item[{const int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a56d1c43bc0f250ecef6af5ed9f8e63ea}
+Stores a n bit number at given bit position Only works with unsigned data types, due to c++ providing arathmentic shift, but no logical shift.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & How many bits (n) in our number. \\
+\hline
+{\em pos} & Bit position (zero based) of the n bits to be stored. \\
+\hline
+{\em bit\+Union} & The larger datatype (type S). Must support $<$$<$ $\sim$ $\vert$= and -\/ and cast from an interger. \\
+\hline
+{\em value} & The n most significant bits of this are stored. Must support $<$$<$ and cast to S\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+\+: overloaded because ints are common literals 
+\end{DoxyNote}
+\hypertarget{_bit_arithmatic_8h_a885d126fcb5dadcd574addcca1b4572f}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint16\+\_\+t \&bit\+Union, const int value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t \&}]{bit\+Union, }
+\item[{const int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a885d126fcb5dadcd574addcca1b4572f}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_a35bc14082e34d3cd1d236dfd995f65cd}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint32\+\_\+t \&bit\+Union, const int value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t \&}]{bit\+Union, }
+\item[{const int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_a35bc14082e34d3cd1d236dfd995f65cd}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_bit_arithmatic_8h_aabbf277315ff3b8310a7741925b56bc7}{}\index{Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!Bit\+Arithmatic.\+h@{Bit\+Arithmatic.\+h}}
+\subsubsection[{set\+Bits(uint64\+\_\+t \&bit\+Union, const int value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$const int bits, const int pos$>$ void set\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t \&}]{bit\+Union, }
+\item[{const int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_bit_arithmatic_8h_aabbf277315ff3b8310a7741925b56bc7}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 

@@ -1,0 +1,107 @@
+\hypertarget{_string_validation_8cpp}{}\section{W\+D\+Arduino\+Lib/src/\+String\+Validation.cpp File Reference}
+\label{_string_validation_8cpp}\index{W\+D\+Arduino\+Lib/src/\+String\+Validation.\+cpp@{W\+D\+Arduino\+Lib/src/\+String\+Validation.\+cpp}}
+{\ttfamily \#include \char`\"{}String\+Validation.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_string_validation_8cpp_a9e27cb209a9b6086596309b278f50c47}{S\+A\+F\+E\+\_\+\+C\+H\+A\+R}~\textquotesingle{}\+\_\+\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{_string_validation_8cpp_a758246adf6fbc4b7de7d7a1d736d0e1c}{malloc\+Sanitized\+Copy} (const char $\ast$string, \hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154ee}{String\+Validation\+Rules} validation, int max\+Len)
+\item 
+char $\ast$ \hyperlink{_string_validation_8cpp_ab09691c331a9436fe1c186939a121aa8}{sanitize\+String} (char $\ast$string, char $\ast$buffer, \hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154ee}{String\+Validation\+Rules} validation, int max\+Len)
+\item 
+char $\ast$ \hyperlink{_string_validation_8cpp_a1ba1abfd807ca1763a9f73e836f9c903}{trim\+String} (char $\ast$string, char $\ast$buffer, int max\+Len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_string_validation_8cpp_a9e27cb209a9b6086596309b278f50c47}{}\index{String\+Validation.\+cpp@{String\+Validation.\+cpp}!S\+A\+F\+E\+\_\+\+C\+H\+A\+R@{S\+A\+F\+E\+\_\+\+C\+H\+A\+R}}
+\index{S\+A\+F\+E\+\_\+\+C\+H\+A\+R@{S\+A\+F\+E\+\_\+\+C\+H\+A\+R}!String\+Validation.\+cpp@{String\+Validation.\+cpp}}
+\subsubsection[{S\+A\+F\+E\+\_\+\+C\+H\+A\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+A\+F\+E\+\_\+\+C\+H\+A\+R~\textquotesingle{}\+\_\+\textquotesingle{}}\label{_string_validation_8cpp_a9e27cb209a9b6086596309b278f50c47}
+
+
+\subsection{Function Documentation}
+\hypertarget{_string_validation_8cpp_a758246adf6fbc4b7de7d7a1d736d0e1c}{}\index{String\+Validation.\+cpp@{String\+Validation.\+cpp}!malloc\+Sanitized\+Copy@{malloc\+Sanitized\+Copy}}
+\index{malloc\+Sanitized\+Copy@{malloc\+Sanitized\+Copy}!String\+Validation.\+cpp@{String\+Validation.\+cpp}}
+\subsubsection[{malloc\+Sanitized\+Copy(const char $\ast$string, String\+Validation\+Rules validation, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ malloc\+Sanitized\+Copy (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{string, }
+\item[{{\bf String\+Validation\+Rules}}]{validation, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)}\label{_string_validation_8cpp_a758246adf6fbc4b7de7d7a1d736d0e1c}
+Sanatises a string. 
+\begin{DoxyParams}{Parameters}
+{\em string} & Text to validate. \\
+\hline
+{\em validation} & Flags indicating type of validation needed. \\
+\hline
+{\em max\+Len} & A maximumlength for the final string, -\/1 to disable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to dynamicly allocated memory. N\+U\+L\+L on error.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The buffer will never hold more characters than the original string. 
+\end{DoxyNote}
+\hypertarget{_string_validation_8cpp_ab09691c331a9436fe1c186939a121aa8}{}\index{String\+Validation.\+cpp@{String\+Validation.\+cpp}!sanitize\+String@{sanitize\+String}}
+\index{sanitize\+String@{sanitize\+String}!String\+Validation.\+cpp@{String\+Validation.\+cpp}}
+\subsubsection[{sanitize\+String(char $\ast$string, char $\ast$buffer, String\+Validation\+Rules validation, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ sanitize\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string, }
+\item[{char $\ast$}]{buffer, }
+\item[{{\bf String\+Validation\+Rules}}]{validation, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)}\label{_string_validation_8cpp_ab09691c331a9436fe1c186939a121aa8}
+Sanatises a string. 
+\begin{DoxyParams}{Parameters}
+{\em string} & Text to validate. \\
+\hline
+{\em buffer} & Destination buffer. \\
+\hline
+{\em validation} & Flags indicating type of validation needed. \\
+\hline
+{\em max\+Len} & A maximumlength for the final string, -\/1 to disable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+buffer on success. N\+U\+L\+L on error.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The buffer will never hold more characters than the original string. 
+
+string and buffer can be the same, to make the function work in place. 
+\end{DoxyNote}
+\hypertarget{_string_validation_8cpp_a1ba1abfd807ca1763a9f73e836f9c903}{}\index{String\+Validation.\+cpp@{String\+Validation.\+cpp}!trim\+String@{trim\+String}}
+\index{trim\+String@{trim\+String}!String\+Validation.\+cpp@{String\+Validation.\+cpp}}
+\subsubsection[{trim\+String(char $\ast$string, char $\ast$buffer, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ trim\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string, }
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)}\label{_string_validation_8cpp_a1ba1abfd807ca1763a9f73e836f9c903}
+Trims whitespace around a string. 
+\begin{DoxyParams}{Parameters}
+{\em string} & Text to validate. \\
+\hline
+{\em buffer} & Destination buffer. \\
+\hline
+{\em validation} & Flags indicating type of validation needed. \\
+\hline
+{\em max\+Len} & A maximumlength for the final string, -\/1 to disable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+buffer on success. N\+U\+L\+L on error.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+string or buffer being N\+U\+L\+L causes no action, and N\+U\+L\+L to be returned. 
+
+string and buffer can be the same, to make the function work in place. 
+\end{DoxyNote}

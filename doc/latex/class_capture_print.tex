@@ -1,0 +1,219 @@
+\hypertarget{class_capture_print}{}\section{Capture\+Print Class Reference}
+\label{class_capture_print}\index{Capture\+Print@{Capture\+Print}}
+
+
+{\ttfamily \#include $<$Capture\+Print.\+h$>$}
+
+Inheritance diagram for Capture\+Print\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_capture_print}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_capture_print_a3b09811c1efd3e7a507627a965a4bdd8}{Capture\+Print} (char $\ast$buffer, int buffer\+Size)
+\item 
+\hyperlink{class_capture_print_a6e6741b8a50b6ad1c36ebc450798ba18}{Capture\+Print} (char $\ast$buffer, int buffer\+Size, void($\ast$on\+Line\+Finished\+Func)(const \hyperlink{class_capture_print}{Capture\+Print} $\ast$c\+Print), bool($\ast$on\+Buffer\+Overflow\+Func)(const \hyperlink{class_capture_print}{Capture\+Print} $\ast$c\+Print))
+\item 
+void \hyperlink{class_capture_print_a5ed2798b3b1009eaef1a7927bb50b908}{init} ()
+\item 
+virtual size\+\_\+t \hyperlink{class_capture_print_aa607f15e4a292e6496af34187732190e}{write} (uint8\+\_\+t c)
+\item 
+char $\ast$const \& \hyperlink{class_capture_print_a98d6d6a22d52f3a019251a6ca93257c5}{get\+Last\+Line\+Buffer} () const 
+\item 
+char $\ast$const \& \hyperlink{class_capture_print_a94376bd81d4fab70806fe520a82c2055}{get\+Max\+Buffer\+Size} () const 
+\item 
+bool \hyperlink{class_capture_print_a87ed8a53df62f7e6367c9885ddf3545d}{overflowed} () const 
+\item 
+bool \hyperlink{class_capture_print_a3925b40a6e5b62a6206f929ba0f72c7b}{end\+Of\+Line} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_capture_print_a2e3ac2d502b2918e3cd58fdd737467b9}{buffer\+Len}
+\item 
+char $\ast$ \hyperlink{class_capture_print_a25bb02cd05faee2fc28b82c86178c7c6}{data}
+\item 
+int \hyperlink{class_capture_print_ad7dfa3e9565787e2e80c19fb388c2b05}{data\+Pos}
+\item 
+bool \hyperlink{class_capture_print_a9f90066b7a79f5cd084e7f7b2ecbe232}{eol}
+\item 
+bool \hyperlink{class_capture_print_a8ba3d733760230f4c520dc88c81f6911}{current\+Line\+Overflowed}
+\item 
+void($\ast$ \hyperlink{class_capture_print_a37eb0324e0edeaafb8d4e15118fef58f}{on\+Line\+Finished} )(const \hyperlink{class_capture_print}{Capture\+Print} $\ast$c\+Print)
+\item 
+bool($\ast$ \hyperlink{class_capture_print_a601a9fdcb038b2e5d818083c58f5fff0}{on\+Buffer\+Overflow} )(const \hyperlink{class_capture_print}{Capture\+Print} $\ast$c\+Print)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_capture_print}{Capture\+Print} implements Print re-\/directing all output to a buffer.
+\begin{DoxyItemize}
+\item This class will maintain a buffer as a null terminated char\mbox{[}\mbox{]}.
+\item This buffer will only ever hold one line, it is flushed on N\+L or C\+R char (~\newline
+ smarts inbuilt).
+\item \textbackslash{}0 can be printed to this buffer.
+\item Full buffers recive no new data until a newline is sent.
+\item It can is call a method every newline (~\newline
+ smarts inbuilt).
+\item It can call a method is called every time an overflow occurs.
+\begin{DoxyItemize}
+\item If it return true the buffer is reset and overflow flag cleared, allowing for more data.
+\end{DoxyItemize}
+\end{DoxyItemize}\begin{DoxyWarning}{Warning}
+buffer\+Size must be $>$= 2 
+\end{DoxyWarning}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_capture_print_a3b09811c1efd3e7a507627a965a4bdd8}{}\index{Capture\+Print@{Capture\+Print}!Capture\+Print@{Capture\+Print}}
+\index{Capture\+Print@{Capture\+Print}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{Capture\+Print(char $\ast$buffer, int buffer\+Size)}]{\setlength{\rightskip}{0pt plus 5cm}Capture\+Print\+::\+Capture\+Print (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{buffer\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_capture_print_a3b09811c1efd3e7a507627a965a4bdd8}
+\hyperlink{class_capture_print}{Capture\+Print} constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & where data is stored.
+\begin{DoxyItemize}
+\item This class will maintain the buffer as a null terminated char\mbox{[}\mbox{]}.
+\item This buffer will only ever hold one line, it is flushed on N\+L or C\+R char.
+\item \textbackslash{}0 can be printed to this buffer.
+\item \textbackslash{}0 can be printed to this buffer.
+\item Full buffers recive no new data until a newline is sent. 
+\end{DoxyItemize}\\
+\hline
+{\em buffer\+Size} & size of buffer. N\+B\+: buffer\+Size-\/1 is the max string size, to allow for null termination. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+buffer\+Size must be $>$= 2 
+\end{DoxyWarning}
+\hypertarget{class_capture_print_a6e6741b8a50b6ad1c36ebc450798ba18}{}\index{Capture\+Print@{Capture\+Print}!Capture\+Print@{Capture\+Print}}
+\index{Capture\+Print@{Capture\+Print}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{Capture\+Print(char $\ast$buffer, int buffer\+Size, void($\ast$on\+Line\+Finished\+Func)(const Capture\+Print $\ast$c\+Print), bool($\ast$on\+Buffer\+Overflow\+Func)(const Capture\+Print $\ast$c\+Print))}]{\setlength{\rightskip}{0pt plus 5cm}Capture\+Print\+::\+Capture\+Print (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{buffer\+Size, }
+\item[{void($\ast$)(const {\bf Capture\+Print} $\ast$c\+Print)}]{on\+Line\+Finished\+Func, }
+\item[{bool($\ast$)(const {\bf Capture\+Print} $\ast$c\+Print)}]{on\+Buffer\+Overflow\+Func}
+\end{DoxyParamCaption}
+)}\label{class_capture_print_a6e6741b8a50b6ad1c36ebc450798ba18}
+\hyperlink{class_capture_print}{Capture\+Print} constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & where data is stored.
+\begin{DoxyItemize}
+\item This class will maintain the buffer as a null terminated char\mbox{[}\mbox{]}.
+\item This buffer will only ever hold one line, it is flushed on N\+L or C\+R char (~\newline
+ smarts inbuilt).
+\item \textbackslash{}0 can be printed to this buffer.
+\item Full buffers recive no new data until a newline is sent. 
+\end{DoxyItemize}\\
+\hline
+{\em buffer\+Size} & size of buffer. N\+B\+: buffer\+Size-\/1 is the max string size, to allow for null termination. \\
+\hline
+{\em on\+Line\+Finished\+Func} & This method is called every newline
+\begin{DoxyItemize}
+\item ~\newline
+ smarts inbuilt.
+\item Example function\+: bool on\+Buffer\+Overflow(const Capture\+Print $\ast$c\+Print) \{ \} 
+\end{DoxyItemize}\\
+\hline
+{\em on\+Line\+Finished\+Func} & This method is called every time an overflow occurs.
+\begin{DoxyItemize}
+\item If it return true the buffer is reset and overflow flag cleared, allowing for more data.
+\item Example function\+: void on\+Line\+Finished(const Capture\+Print $\ast$c\+Print) \{ \} 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+buffer\+Size must be $>$= 2 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_capture_print_a3925b40a6e5b62a6206f929ba0f72c7b}{}\index{Capture\+Print@{Capture\+Print}!end\+Of\+Line@{end\+Of\+Line}}
+\index{end\+Of\+Line@{end\+Of\+Line}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{end\+Of\+Line() const }]{\setlength{\rightskip}{0pt plus 5cm}bool Capture\+Print\+::end\+Of\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_capture_print_a3925b40a6e5b62a6206f929ba0f72c7b}
+Return true if we are at the end of the current line (buffer will hold the current line). \hypertarget{class_capture_print_a98d6d6a22d52f3a019251a6ca93257c5}{}\index{Capture\+Print@{Capture\+Print}!get\+Last\+Line\+Buffer@{get\+Last\+Line\+Buffer}}
+\index{get\+Last\+Line\+Buffer@{get\+Last\+Line\+Buffer}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{get\+Last\+Line\+Buffer() const }]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ const\& Capture\+Print\+::get\+Last\+Line\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_capture_print_a98d6d6a22d52f3a019251a6ca93257c5}
+Returns a pointer to the buffer. \hypertarget{class_capture_print_a94376bd81d4fab70806fe520a82c2055}{}\index{Capture\+Print@{Capture\+Print}!get\+Max\+Buffer\+Size@{get\+Max\+Buffer\+Size}}
+\index{get\+Max\+Buffer\+Size@{get\+Max\+Buffer\+Size}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{get\+Max\+Buffer\+Size() const }]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ const\& Capture\+Print\+::get\+Max\+Buffer\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_capture_print_a94376bd81d4fab70806fe520a82c2055}
+Returns the size of the buffer ({\itshape not} the length of the current string). \hypertarget{class_capture_print_a5ed2798b3b1009eaef1a7927bb50b908}{}\index{Capture\+Print@{Capture\+Print}!init@{init}}
+\index{init@{init}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{init()}]{\setlength{\rightskip}{0pt plus 5cm}void Capture\+Print\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_capture_print_a5ed2798b3b1009eaef1a7927bb50b908}
+Resets the class. N\+B\+: called by constructor, alo suitable for general use. \hypertarget{class_capture_print_a87ed8a53df62f7e6367c9885ddf3545d}{}\index{Capture\+Print@{Capture\+Print}!overflowed@{overflowed}}
+\index{overflowed@{overflowed}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{overflowed() const }]{\setlength{\rightskip}{0pt plus 5cm}bool Capture\+Print\+::overflowed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_capture_print_a87ed8a53df62f7e6367c9885ddf3545d}
+Return true if the buffer overflowed (and overflow was not handled my delegate). \hypertarget{class_capture_print_aa607f15e4a292e6496af34187732190e}{}\index{Capture\+Print@{Capture\+Print}!write@{write}}
+\index{write@{write}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{write(uint8\+\_\+t c)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Capture\+Print\+::write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_capture_print_aa607f15e4a292e6496af34187732190e}
+Write a character to the buffer. 
+\begin{DoxyParams}{Parameters}
+{\em c} & character to write. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_capture_print_a2e3ac2d502b2918e3cd58fdd737467b9}{}\index{Capture\+Print@{Capture\+Print}!buffer\+Len@{buffer\+Len}}
+\index{buffer\+Len@{buffer\+Len}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{buffer\+Len}]{\setlength{\rightskip}{0pt plus 5cm}int Capture\+Print\+::buffer\+Len\hspace{0.3cm}{\ttfamily [protected]}}\label{class_capture_print_a2e3ac2d502b2918e3cd58fdd737467b9}
+\hypertarget{class_capture_print_a8ba3d733760230f4c520dc88c81f6911}{}\index{Capture\+Print@{Capture\+Print}!current\+Line\+Overflowed@{current\+Line\+Overflowed}}
+\index{current\+Line\+Overflowed@{current\+Line\+Overflowed}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{current\+Line\+Overflowed}]{\setlength{\rightskip}{0pt plus 5cm}bool Capture\+Print\+::current\+Line\+Overflowed\hspace{0.3cm}{\ttfamily [protected]}}\label{class_capture_print_a8ba3d733760230f4c520dc88c81f6911}
+\hypertarget{class_capture_print_a25bb02cd05faee2fc28b82c86178c7c6}{}\index{Capture\+Print@{Capture\+Print}!data@{data}}
+\index{data@{data}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Capture\+Print\+::data\hspace{0.3cm}{\ttfamily [protected]}}\label{class_capture_print_a25bb02cd05faee2fc28b82c86178c7c6}
+\hypertarget{class_capture_print_ad7dfa3e9565787e2e80c19fb388c2b05}{}\index{Capture\+Print@{Capture\+Print}!data\+Pos@{data\+Pos}}
+\index{data\+Pos@{data\+Pos}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{data\+Pos}]{\setlength{\rightskip}{0pt plus 5cm}int Capture\+Print\+::data\+Pos\hspace{0.3cm}{\ttfamily [protected]}}\label{class_capture_print_ad7dfa3e9565787e2e80c19fb388c2b05}
+\hypertarget{class_capture_print_a9f90066b7a79f5cd084e7f7b2ecbe232}{}\index{Capture\+Print@{Capture\+Print}!eol@{eol}}
+\index{eol@{eol}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{eol}]{\setlength{\rightskip}{0pt plus 5cm}bool Capture\+Print\+::eol\hspace{0.3cm}{\ttfamily [protected]}}\label{class_capture_print_a9f90066b7a79f5cd084e7f7b2ecbe232}
+\hypertarget{class_capture_print_a601a9fdcb038b2e5d818083c58f5fff0}{}\index{Capture\+Print@{Capture\+Print}!on\+Buffer\+Overflow@{on\+Buffer\+Overflow}}
+\index{on\+Buffer\+Overflow@{on\+Buffer\+Overflow}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{on\+Buffer\+Overflow}]{\setlength{\rightskip}{0pt plus 5cm}bool($\ast$ Capture\+Print\+::on\+Buffer\+Overflow) (const {\bf Capture\+Print} $\ast$c\+Print)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_capture_print_a601a9fdcb038b2e5d818083c58f5fff0}
+\hypertarget{class_capture_print_a37eb0324e0edeaafb8d4e15118fef58f}{}\index{Capture\+Print@{Capture\+Print}!on\+Line\+Finished@{on\+Line\+Finished}}
+\index{on\+Line\+Finished@{on\+Line\+Finished}!Capture\+Print@{Capture\+Print}}
+\subsubsection[{on\+Line\+Finished}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ Capture\+Print\+::on\+Line\+Finished) (const {\bf Capture\+Print} $\ast$c\+Print)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_capture_print_a37eb0324e0edeaafb8d4e15118fef58f}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+W\+D\+Arduino\+Lib/src/\hyperlink{_capture_print_8h}{Capture\+Print.\+h}\item 
+W\+D\+Arduino\+Lib/src/\hyperlink{_capture_print_8cpp}{Capture\+Print.\+cpp}\end{DoxyCompactItemize}

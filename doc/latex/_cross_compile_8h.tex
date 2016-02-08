@@ -1,0 +1,39 @@
+\hypertarget{_cross_compile_8h}{}\section{W\+D\+Arduino\+Lib/src/\+Cross\+Compile.h File Reference}
+\label{_cross_compile_8h}\index{W\+D\+Arduino\+Lib/src/\+Cross\+Compile.\+h@{W\+D\+Arduino\+Lib/src/\+Cross\+Compile.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_cross_compile_8h_a1da20b1f787d25e84d70ae7d9878b4aa}{\+\_\+\+\_\+\+G\+C\+C\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R\+\_\+\+\_\+}
+\item 
+\#define \hyperlink{_cross_compile_8h_a1b7c2cc6285d73f0449071856f1f5af7}{\+\_\+\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+}~\hyperlink{_w_d_arduino_lib___unit_tests_8h_a031e70fc786e9c7d06e001eff58d28d1}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((always\+\_\+inline))
+\item 
+\#define \hyperlink{_cross_compile_8h_a7a76473a66d022aee2c9f661405d8fbb}{\+\_\+\+\_\+\+N\+O\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+}~\hyperlink{_w_d_arduino_lib___unit_tests_8h_a031e70fc786e9c7d06e001eff58d28d1}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((noinline))
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_cross_compile_8h_a1da20b1f787d25e84d70ae7d9878b4aa}{}\index{Cross\+Compile.\+h@{Cross\+Compile.\+h}!\+\_\+\+\_\+\+G\+C\+C\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R\+\_\+\+\_\+@{\+\_\+\+\_\+\+G\+C\+C\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+G\+C\+C\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R\+\_\+\+\_\+@{\+\_\+\+\_\+\+G\+C\+C\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R\+\_\+\+\_\+}!Cross\+Compile.\+h@{Cross\+Compile.\+h}}
+\subsubsection[{\+\_\+\+\_\+\+G\+C\+C\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+G\+C\+C\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R\+\_\+\+\_\+}\label{_cross_compile_8h_a1da20b1f787d25e84d70ae7d9878b4aa}
+It\textquotesingle{}s generaly easier to develop/debug code in the develoment P\+C. For this reson Arduino / Desktop cross compiles can be usefull.
+
+This header provides for getting basic code to cross compile.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright 2015 Dr Warren Creemers. All rights reserved. See Licence.\+txt for details.
+\end{DoxyCopyright}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item Defines the macros {\bfseries I\+N\+L\+I\+N\+E} and {\bfseries N\+O\+\_\+\+I\+N\+L\+I\+N\+E} which work across platgorms.
+\item Use of byte is ok
+\item Use N\+U\+L\+L not null
+\item Use int32\+\_\+t, uint16\+\_\+t... etc, not int. 
+\end{DoxyItemize}
+\end{DoxyNote}
+\hypertarget{_cross_compile_8h_a1b7c2cc6285d73f0449071856f1f5af7}{}\index{Cross\+Compile.\+h@{Cross\+Compile.\+h}!\+\_\+\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+@{\+\_\+\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+@{\+\_\+\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+}!Cross\+Compile.\+h@{Cross\+Compile.\+h}}
+\subsubsection[{\+\_\+\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+~{\bf \+\_\+\+\_\+attribute\+\_\+\+\_\+}((always\+\_\+inline))}\label{_cross_compile_8h_a1b7c2cc6285d73f0449071856f1f5af7}
+\hypertarget{_cross_compile_8h_a7a76473a66d022aee2c9f661405d8fbb}{}\index{Cross\+Compile.\+h@{Cross\+Compile.\+h}!\+\_\+\+\_\+\+N\+O\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+@{\+\_\+\+\_\+\+N\+O\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+N\+O\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+@{\+\_\+\+\_\+\+N\+O\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+}!Cross\+Compile.\+h@{Cross\+Compile.\+h}}
+\subsubsection[{\+\_\+\+\_\+\+N\+O\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+N\+O\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+~{\bf \+\_\+\+\_\+attribute\+\_\+\+\_\+}((noinline))}\label{_cross_compile_8h_a7a76473a66d022aee2c9f661405d8fbb}

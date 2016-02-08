@@ -1,0 +1,104 @@
+\hypertarget{_w_d_arduino_lib___unit_tests_8cpp}{}\section{W\+D\+Arduino\+Lib/src/\+W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.cpp File Reference}
+\label{_w_d_arduino_lib___unit_tests_8cpp}\index{W\+D\+Arduino\+Lib/src/\+W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib/src/\+W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}}
+{\ttfamily \#include \char`\"{}W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bit\+Arithmatic.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}String\+Validation.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Sanity.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_w_d_arduino_lib___unit_tests_8cpp_aa24d8895880c22aed86a5acdbc8b48b0}{set\+Test\+Name} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$name)
+\item 
+void \hyperlink{_w_d_arduino_lib___unit_tests_8cpp_ac6360f86511519873a37980bd35db06c}{set\+Test\+Name} (const char $\ast$name)
+\item 
+bool \hyperlink{_w_d_arduino_lib___unit_tests_8cpp_a4e632e089400353b3033708acff79f4d}{assert} (bool is\+True, Print $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_a1cfeea12527296318184b8fafd28ff4e}{out\+Stream})
+\item 
+void \hyperlink{_w_d_arduino_lib___unit_tests_8cpp_a66c35da1e5f781d38e10eed221f2b949}{pass} ()
+\item 
+void \hyperlink{_w_d_arduino_lib___unit_tests_8cpp_aaec2292956523c5d970d90946021c078}{fail} (Print $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_a1cfeea12527296318184b8fafd28ff4e}{out\+Stream})
+\item 
+void \hyperlink{_w_d_arduino_lib___unit_tests_8cpp_aad2438dba86a7448d8c110eba5948d6c}{print\+Test\+Summary} (Print $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_a1cfeea12527296318184b8fafd28ff4e}{out\+Stream})
+\item 
+bool \hyperlink{_w_d_arduino_lib___unit_tests_8cpp_a8d90c42c64b979d4cc7310901f16a80f}{assert\+\_\+is\+String} (const char $\ast$string, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$expected\+String, Print $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_a1cfeea12527296318184b8fafd28ff4e}{out\+Stream})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{_w_d_arduino_lib___unit_tests_8cpp_a6f0978bccfc43979d20522931c55c8fa}{pass\+Count} = 0
+\item 
+long \hyperlink{_w_d_arduino_lib___unit_tests_8cpp_aa79f9d8490e7ed243946961e307818c5}{fail\+Count} = 0
+\item 
+long \hyperlink{_w_d_arduino_lib___unit_tests_8cpp_afb18bdedeb820bcd1dd2a4d39b45c634}{count\+At\+Last\+Name\+Change} = 0
+\item 
+char \hyperlink{_w_d_arduino_lib___unit_tests_8cpp_a17c12fb330ddbee760832a3511bb711e}{current\+Test\+Name} \mbox{[}\hyperlink{_w_d_arduino_lib___unit_tests_8h_aa02b0facf5404b3771bd3b5f209dce0f}{T\+E\+S\+T\+\_\+\+N\+A\+M\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+E\+N}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_w_d_arduino_lib___unit_tests_8cpp_a4e632e089400353b3033708acff79f4d}{}\index{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}!assert@{assert}}
+\index{assert@{assert}!W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}}
+\subsubsection[{assert(bool is\+True, Print $\ast$out\+Stream)}]{\setlength{\rightskip}{0pt plus 5cm}bool assert (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+True, }
+\item[{Print $\ast$}]{out\+Stream}
+\end{DoxyParamCaption}
+)}\label{_w_d_arduino_lib___unit_tests_8cpp_a4e632e089400353b3033708acff79f4d}
+\hypertarget{_w_d_arduino_lib___unit_tests_8cpp_a8d90c42c64b979d4cc7310901f16a80f}{}\index{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}!assert\+\_\+is\+String@{assert\+\_\+is\+String}}
+\index{assert\+\_\+is\+String@{assert\+\_\+is\+String}!W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}}
+\subsubsection[{assert\+\_\+is\+String(const char $\ast$string, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$expected\+String, Print $\ast$out\+Stream)}]{\setlength{\rightskip}{0pt plus 5cm}bool assert\+\_\+is\+String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{string, }
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{expected\+String, }
+\item[{Print $\ast$}]{out\+Stream}
+\end{DoxyParamCaption}
+)}\label{_w_d_arduino_lib___unit_tests_8cpp_a8d90c42c64b979d4cc7310901f16a80f}
+\hypertarget{_w_d_arduino_lib___unit_tests_8cpp_aaec2292956523c5d970d90946021c078}{}\index{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}!fail@{fail}}
+\index{fail@{fail}!W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}}
+\subsubsection[{fail(\+Print $\ast$out\+Stream)}]{\setlength{\rightskip}{0pt plus 5cm}void fail (
+\begin{DoxyParamCaption}
+\item[{Print $\ast$}]{out\+Stream}
+\end{DoxyParamCaption}
+)}\label{_w_d_arduino_lib___unit_tests_8cpp_aaec2292956523c5d970d90946021c078}
+\hypertarget{_w_d_arduino_lib___unit_tests_8cpp_a66c35da1e5f781d38e10eed221f2b949}{}\index{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}!pass@{pass}}
+\index{pass@{pass}!W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}}
+\subsubsection[{pass()}]{\setlength{\rightskip}{0pt plus 5cm}void pass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_w_d_arduino_lib___unit_tests_8cpp_a66c35da1e5f781d38e10eed221f2b949}
+\hypertarget{_w_d_arduino_lib___unit_tests_8cpp_aad2438dba86a7448d8c110eba5948d6c}{}\index{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}!print\+Test\+Summary@{print\+Test\+Summary}}
+\index{print\+Test\+Summary@{print\+Test\+Summary}!W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}}
+\subsubsection[{print\+Test\+Summary(\+Print $\ast$out\+Stream)}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Test\+Summary (
+\begin{DoxyParamCaption}
+\item[{Print $\ast$}]{out\+Stream}
+\end{DoxyParamCaption}
+)}\label{_w_d_arduino_lib___unit_tests_8cpp_aad2438dba86a7448d8c110eba5948d6c}
+\hypertarget{_w_d_arduino_lib___unit_tests_8cpp_aa24d8895880c22aed86a5acdbc8b48b0}{}\index{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}!set\+Test\+Name@{set\+Test\+Name}}
+\index{set\+Test\+Name@{set\+Test\+Name}!W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}}
+\subsubsection[{set\+Test\+Name(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$name)}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Test\+Name (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\label{_w_d_arduino_lib___unit_tests_8cpp_aa24d8895880c22aed86a5acdbc8b48b0}
+\hypertarget{_w_d_arduino_lib___unit_tests_8cpp_ac6360f86511519873a37980bd35db06c}{}\index{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}!set\+Test\+Name@{set\+Test\+Name}}
+\index{set\+Test\+Name@{set\+Test\+Name}!W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}}
+\subsubsection[{set\+Test\+Name(const char $\ast$name)}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Test\+Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\label{_w_d_arduino_lib___unit_tests_8cpp_ac6360f86511519873a37980bd35db06c}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_w_d_arduino_lib___unit_tests_8cpp_afb18bdedeb820bcd1dd2a4d39b45c634}{}\index{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}!count\+At\+Last\+Name\+Change@{count\+At\+Last\+Name\+Change}}
+\index{count\+At\+Last\+Name\+Change@{count\+At\+Last\+Name\+Change}!W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}}
+\subsubsection[{count\+At\+Last\+Name\+Change}]{\setlength{\rightskip}{0pt plus 5cm}long count\+At\+Last\+Name\+Change = 0}\label{_w_d_arduino_lib___unit_tests_8cpp_afb18bdedeb820bcd1dd2a4d39b45c634}
+\hypertarget{_w_d_arduino_lib___unit_tests_8cpp_a17c12fb330ddbee760832a3511bb711e}{}\index{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}!current\+Test\+Name@{current\+Test\+Name}}
+\index{current\+Test\+Name@{current\+Test\+Name}!W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}}
+\subsubsection[{current\+Test\+Name}]{\setlength{\rightskip}{0pt plus 5cm}char current\+Test\+Name\mbox{[}{\bf T\+E\+S\+T\+\_\+\+N\+A\+M\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+E\+N}\mbox{]}}\label{_w_d_arduino_lib___unit_tests_8cpp_a17c12fb330ddbee760832a3511bb711e}
+\hypertarget{_w_d_arduino_lib___unit_tests_8cpp_aa79f9d8490e7ed243946961e307818c5}{}\index{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}!fail\+Count@{fail\+Count}}
+\index{fail\+Count@{fail\+Count}!W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}}
+\subsubsection[{fail\+Count}]{\setlength{\rightskip}{0pt plus 5cm}long fail\+Count = 0}\label{_w_d_arduino_lib___unit_tests_8cpp_aa79f9d8490e7ed243946961e307818c5}
+\hypertarget{_w_d_arduino_lib___unit_tests_8cpp_a6f0978bccfc43979d20522931c55c8fa}{}\index{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}!pass\+Count@{pass\+Count}}
+\index{pass\+Count@{pass\+Count}!W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp@{W\+D\+Arduino\+Lib\+\_\+\+Unit\+Tests.\+cpp}}
+\subsubsection[{pass\+Count}]{\setlength{\rightskip}{0pt plus 5cm}long pass\+Count = 0}\label{_w_d_arduino_lib___unit_tests_8cpp_a6f0978bccfc43979d20522931c55c8fa}

@@ -1,0 +1,80 @@
+\hypertarget{_sanity_8cpp}{}\section{W\+D\+Arduino\+Lib/src/\+Sanity.cpp File Reference}
+\label{_sanity_8cpp}\index{W\+D\+Arduino\+Lib/src/\+Sanity.\+cpp@{W\+D\+Arduino\+Lib/src/\+Sanity.\+cpp}}
+{\ttfamily \#include \char`\"{}Sanity.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{_sanity_8cpp_a93a84ed85f2057d2619ca03c79468821}{malloc\+Copy\+Of} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$text)
+\item 
+char $\ast$ \hyperlink{_sanity_8cpp_a9f7f8a517e066841232e89b2bbaa1a16}{strcpy} (char $\ast$dest, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$src)
+\item 
+size\+\_\+t \hyperlink{_sanity_8cpp_a928edfff700692b2289de42bce28a170}{strlcpy} (char $\ast$dest, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$src, size\+\_\+t len)
+\item 
+int \hyperlink{_sanity_8cpp_a7d1bf061cf6518ece41144e74dd68937}{strcmp} (const char $\ast$a, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_adab634951eeadcd5a7c8840eefbf780f}{b})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_sanity_8cpp_a93a84ed85f2057d2619ca03c79468821}{}\index{Sanity.\+cpp@{Sanity.\+cpp}!malloc\+Copy\+Of@{malloc\+Copy\+Of}}
+\index{malloc\+Copy\+Of@{malloc\+Copy\+Of}!Sanity.\+cpp@{Sanity.\+cpp}}
+\subsubsection[{malloc\+Copy\+Of(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$text)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ malloc\+Copy\+Of (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{text}
+\end{DoxyParamCaption}
+)}\label{_sanity_8cpp_a93a84ed85f2057d2619ca03c79468821}
+dynamically alocate a copy of a \+\_\+\+\_\+\+Flash\+String\+Helper. 
+\begin{DoxyParams}{Parameters}
+{\em text} & A \+\_\+\+\_\+\+Flash\+String\+Helper storing text in progmem. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_sanity_8cpp_a7d1bf061cf6518ece41144e74dd68937}{}\index{Sanity.\+cpp@{Sanity.\+cpp}!strcmp@{strcmp}}
+\index{strcmp@{strcmp}!Sanity.\+cpp@{Sanity.\+cpp}}
+\subsubsection[{strcmp(const char $\ast$a, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$b)}]{\setlength{\rightskip}{0pt plus 5cm}int strcmp (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{a, }
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{b}
+\end{DoxyParamCaption}
+)}\label{_sanity_8cpp_a7d1bf061cf6518ece41144e74dd68937}
+compare string to a \+\_\+\+\_\+\+Flash\+String\+Helper. 
+\begin{DoxyParams}{Parameters}
+{\em a} & A string to compare. \\
+\hline
+{\em b} & A \+\_\+\+\_\+\+Flash\+String\+Helper other text. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_sanity_8cpp_a9f7f8a517e066841232e89b2bbaa1a16}{}\index{Sanity.\+cpp@{Sanity.\+cpp}!strcpy@{strcpy}}
+\index{strcpy@{strcpy}!Sanity.\+cpp@{Sanity.\+cpp}}
+\subsubsection[{strcpy(char $\ast$dest, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$src)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ strcpy (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{dest, }
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\label{_sanity_8cpp_a9f7f8a517e066841232e89b2bbaa1a16}
+Copy a \+\_\+\+\_\+\+Flash\+String\+Helper to local memory. 
+\begin{DoxyParams}{Parameters}
+{\em Destination} & buffer. \\
+\hline
+{\em src} & A \+\_\+\+\_\+\+Flash\+String\+Helper storing text in progmem. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_sanity_8cpp_a928edfff700692b2289de42bce28a170}{}\index{Sanity.\+cpp@{Sanity.\+cpp}!strlcpy@{strlcpy}}
+\index{strlcpy@{strlcpy}!Sanity.\+cpp@{Sanity.\+cpp}}
+\subsubsection[{strlcpy(char $\ast$dest, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$src, size\+\_\+t len)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t strlcpy (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{dest, }
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{src, }
+\item[{size\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{_sanity_8cpp_a928edfff700692b2289de42bce28a170}
+Copy a \+\_\+\+\_\+\+Flash\+String\+Helper to local memory. Maximum size is specified. String will be null terminated. 
+\begin{DoxyParams}{Parameters}
+{\em Destination} & buffer. \\
+\hline
+{\em src} & A \+\_\+\+\_\+\+Flash\+String\+Helper storing text in progmem. \\
+\hline
+{\em len} & Maximun length of string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of characters copied. 
+\end{DoxyReturn}

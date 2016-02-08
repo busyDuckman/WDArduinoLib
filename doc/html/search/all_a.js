@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['makereadyforplotdata',['makeReadyForPlotData',['../class_g_n_u_plot_base.html#adaf91c191e4d889537d401faeb863485',1,'GNUPlotBase::makeReadyForPlotData()'],['../class_serial_graph.html#a898cf274c886e0ff45e90d3f21f0a6cc',1,'SerialGraph::makeReadyForPlotData()']]],
+  ['mallocbasicfilenamefromgraphtitle',['mallocBasicFileNameFromGraphTitle',['../class_g_n_u_plot_base.html#a7f71f3c616b3a4a854f9118a04c40447',1,'GNUPlotBase']]],
+  ['malloccopyof',['mallocCopyOf',['../_sanity_8cpp.html#a93a84ed85f2057d2619ca03c79468821',1,'mallocCopyOf(const __FlashStringHelper *text):&#160;Sanity.cpp'],['../_sanity_8h.html#a93a84ed85f2057d2619ca03c79468821',1,'mallocCopyOf(const __FlashStringHelper *text):&#160;Sanity.cpp']]],
+  ['mallocsanitizedcopy',['mallocSanitizedCopy',['../_string_validation_8cpp.html#a758246adf6fbc4b7de7d7a1d736d0e1c',1,'mallocSanitizedCopy(const char *string, StringValidationRules validation, int maxLen):&#160;StringValidation.cpp'],['../_string_validation_8h.html#a758246adf6fbc4b7de7d7a1d736d0e1c',1,'mallocSanitizedCopy(const char *string, StringValidationRules validation, int maxLen):&#160;StringValidation.cpp'],['../_string_validation_8h.html#afb4c4c3e0d9fb3ff42a37f73df863bc5',1,'mallocSanitizedCopy(const __FlashStringHelper *text, StringValidationRules validation, int maxLen):&#160;StringValidation.h'],['../_string_validation_8h.html#aaa5c2a60f8ee633102bb302a1bca4184',1,'mallocSanitizedCopy(const char *string, int validation, int maxLen):&#160;StringValidation.h'],['../_string_validation_8h.html#a5cf799ceeebf05d3612dc3783ad4c674',1,'mallocSanitizedCopy(const __FlashStringHelper *text, int validation, int maxLen):&#160;StringValidation.h']]],
+  ['maxseries',['maxSeries',['../class_serial_graph.html#a752a1429bd35687163fe11c5a2562bef',1,'SerialGraph']]],
+  ['maxstringsize',['maxStringSize',['../class_serial_graph.html#a1867ab3a93268646490fa7ba4f8b5680',1,'SerialGraph']]]
+];

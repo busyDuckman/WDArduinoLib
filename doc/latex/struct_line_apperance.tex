@@ -1,0 +1,250 @@
+\hypertarget{struct_line_apperance}{}\section{Line\+Apperance Struct Reference}
+\label{struct_line_apperance}\index{Line\+Apperance@{Line\+Apperance}}
+
+
+{\ttfamily \#include $<$Line\+Apperance.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{struct_line_apperance_a34ae106e6365f9e91afca14e174fecab}{init} ()
+\item 
+byte \hyperlink{struct_line_apperance_a109fe4a87fc054fc79099129a78ff913}{get\+Red} () const 
+\item 
+void \hyperlink{struct_line_apperance_a03213324a927b014ade4373bb5944b3a}{set\+Red} (byte r)
+\item 
+byte \hyperlink{struct_line_apperance_a02bd6546b4d57964cb9bd378f0cc2c71}{get\+Green} () const 
+\item 
+void \hyperlink{struct_line_apperance_a77f7183e8e9da7b9209fdb5e0580aa5a}{set\+Green} (byte g)
+\item 
+byte \hyperlink{struct_line_apperance_a7af927b62d49e1731f324f22b438634c}{get\+Blue} () const 
+\item 
+void \hyperlink{struct_line_apperance_af254ae4bc14093b998881665e3b71cb3}{set\+Blue} (byte \hyperlink{_w_d_arduino_lib___unit_tests_8h_adab634951eeadcd5a7c8840eefbf780f}{b})
+\item 
+long \hyperlink{struct_line_apperance_a553035e24a56d02cf9a168d11c01aec0}{get\+R\+G\+B} () const 
+\item 
+void \hyperlink{struct_line_apperance_ac7d7604de64a523965aba51b21a10f95}{set\+R\+G\+B} (long rgb)
+\item 
+\hyperlink{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9}{Line\+Styles} \hyperlink{struct_line_apperance_add19680a506fa43c3e6cb12cfcf5badc}{get\+Line\+Style} () const 
+\item 
+void \hyperlink{struct_line_apperance_a040398efa6f1313582ebcbe57f18f2c2}{set\+Line\+Style} (\hyperlink{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9}{Line\+Styles} style)
+\item 
+\hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286}{Line\+Markers} \hyperlink{struct_line_apperance_a71a1c86e0cbd58bf22db1f991f270a39}{get\+Marker\+Style} () const 
+\item 
+void \hyperlink{struct_line_apperance_aa15cf71fa2fb087a2391abb01bcd320b}{set\+Marker\+Style} (\hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286}{Line\+Markers} marker)
+\item 
+int \hyperlink{struct_line_apperance_af185f4756f8fe8991551f615ddac1ba7}{get\+Line\+Width} () const 
+\item 
+void \hyperlink{struct_line_apperance_a310d71b2ebb02f5d44c23e2048fc8d48}{set\+Line\+Width} (byte width)
+\item 
+void \hyperlink{struct_line_apperance_a1370d300e9531998490e59c98082097d}{print\+R\+G\+B\+As\+H\+T\+M\+L\+Code} (Print $\ast$\hyperlink{_w_d_arduino_lib___unit_tests_8h_a1cfeea12527296318184b8fafd28ff4e}{out\+Stream}) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_line_apperance_a0c6239c22f699f072e4d50ef3469718f}{data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A struct to hold a series apperance (refered to as a Line Apperance).
+
+This struct is bit compact and uses 32 bits of data (stored as uint32\+\_\+t).
+
+\begin{DoxyVerb}* Memory map af LineApperance [bits]
+* 0123456789ABCDEF0123456789ABCDEF  
+* XX      |       |       |         (2 bits) one of 4 line styles
+*   XXX   |       |       |         (3 bits) one of 8 line markers
+*      XXX|       |       |         (3 bits) line width (1 to 8)
+*         XXXXXXXX|       |         (1 byte) red
+*         |       XXXXXXXX|         (1 byte) green
+*         |       |       XXXXXXXX  (1 byte) blue
+* \end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_line_apperance_a7af927b62d49e1731f324f22b438634c}{}\index{Line\+Apperance@{Line\+Apperance}!get\+Blue@{get\+Blue}}
+\index{get\+Blue@{get\+Blue}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{get\+Blue() const }]{\setlength{\rightskip}{0pt plus 5cm}byte Line\+Apperance\+::get\+Blue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{struct_line_apperance_a7af927b62d49e1731f324f22b438634c}
+Gets the blue component 0-\/255. \begin{DoxyReturn}{Returns}
+the blue component 0-\/255 
+\end{DoxyReturn}
+\hypertarget{struct_line_apperance_a02bd6546b4d57964cb9bd378f0cc2c71}{}\index{Line\+Apperance@{Line\+Apperance}!get\+Green@{get\+Green}}
+\index{get\+Green@{get\+Green}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{get\+Green() const }]{\setlength{\rightskip}{0pt plus 5cm}byte Line\+Apperance\+::get\+Green (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{struct_line_apperance_a02bd6546b4d57964cb9bd378f0cc2c71}
+Gets the green component 0-\/255. \begin{DoxyReturn}{Returns}
+the green component 0-\/255 
+\end{DoxyReturn}
+\hypertarget{struct_line_apperance_add19680a506fa43c3e6cb12cfcf5badc}{}\index{Line\+Apperance@{Line\+Apperance}!get\+Line\+Style@{get\+Line\+Style}}
+\index{get\+Line\+Style@{get\+Line\+Style}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{get\+Line\+Style() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\+Styles} Line\+Apperance\+::get\+Line\+Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{struct_line_apperance_add19680a506fa43c3e6cb12cfcf5badc}
+Gets the line style. \begin{DoxyReturn}{Returns}
+the current line style, see \hyperlink{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9}{Line\+Styles}. 
+\end{DoxyReturn}
+\hypertarget{struct_line_apperance_af185f4756f8fe8991551f615ddac1ba7}{}\index{Line\+Apperance@{Line\+Apperance}!get\+Line\+Width@{get\+Line\+Width}}
+\index{get\+Line\+Width@{get\+Line\+Width}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{get\+Line\+Width() const }]{\setlength{\rightskip}{0pt plus 5cm}int Line\+Apperance\+::get\+Line\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{struct_line_apperance_af185f4756f8fe8991551f615ddac1ba7}
+Gets the line width. \begin{DoxyReturn}{Returns}
+the current line width (1 to 8). 
+\end{DoxyReturn}
+\hypertarget{struct_line_apperance_a71a1c86e0cbd58bf22db1f991f270a39}{}\index{Line\+Apperance@{Line\+Apperance}!get\+Marker\+Style@{get\+Marker\+Style}}
+\index{get\+Marker\+Style@{get\+Marker\+Style}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{get\+Marker\+Style() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\+Markers} Line\+Apperance\+::get\+Marker\+Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{struct_line_apperance_a71a1c86e0cbd58bf22db1f991f270a39}
+Gets the marker style. \begin{DoxyReturn}{Returns}
+the current marker style, see \hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286}{Line\+Markers}. 
+\end{DoxyReturn}
+\hypertarget{struct_line_apperance_a109fe4a87fc054fc79099129a78ff913}{}\index{Line\+Apperance@{Line\+Apperance}!get\+Red@{get\+Red}}
+\index{get\+Red@{get\+Red}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{get\+Red() const }]{\setlength{\rightskip}{0pt plus 5cm}byte Line\+Apperance\+::get\+Red (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{struct_line_apperance_a109fe4a87fc054fc79099129a78ff913}
+Gets the red component 0-\/255. \begin{DoxyReturn}{Returns}
+the red component 0-\/255 
+\end{DoxyReturn}
+\hypertarget{struct_line_apperance_a553035e24a56d02cf9a168d11c01aec0}{}\index{Line\+Apperance@{Line\+Apperance}!get\+R\+G\+B@{get\+R\+G\+B}}
+\index{get\+R\+G\+B@{get\+R\+G\+B}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{get\+R\+G\+B() const }]{\setlength{\rightskip}{0pt plus 5cm}long Line\+Apperance\+::get\+R\+G\+B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{struct_line_apperance_a553035e24a56d02cf9a168d11c01aec0}
+Gets a 24bit rgb value of the current color. \begin{DoxyReturn}{Returns}
+24bit rgb value of the current color 
+\end{DoxyReturn}
+\hypertarget{struct_line_apperance_a34ae106e6365f9e91afca14e174fecab}{}\index{Line\+Apperance@{Line\+Apperance}!init@{init}}
+\index{init@{init}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{init()}]{\setlength{\rightskip}{0pt plus 5cm}void Line\+Apperance\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{struct_line_apperance_a34ae106e6365f9e91afca14e174fecab}
+Set data to 0. This creates a solid black line no marker, size 1. \hypertarget{struct_line_apperance_a1370d300e9531998490e59c98082097d}{}\index{Line\+Apperance@{Line\+Apperance}!print\+R\+G\+B\+As\+H\+T\+M\+L\+Code@{print\+R\+G\+B\+As\+H\+T\+M\+L\+Code}}
+\index{print\+R\+G\+B\+As\+H\+T\+M\+L\+Code@{print\+R\+G\+B\+As\+H\+T\+M\+L\+Code}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{print\+R\+G\+B\+As\+H\+T\+M\+L\+Code(\+Print $\ast$out\+Stream) const }]{\setlength{\rightskip}{0pt plus 5cm}void Line\+Apperance\+::print\+R\+G\+B\+As\+H\+T\+M\+L\+Code (
+\begin{DoxyParamCaption}
+\item[{Print $\ast$}]{out\+Stream}
+\end{DoxyParamCaption}
+) const}\label{struct_line_apperance_a1370d300e9531998490e59c98082097d}
+Prints the current color as a html code. \begin{DoxyNote}{Note}
+as an example, output looks like\+: \char`\"{}\#\+F\+F0070\char`\"{} where red = F\+F. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em out\+Stream} & Stream to print to. Can be N\+U\+L\+L to disable. \\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_line_apperance_af254ae4bc14093b998881665e3b71cb3}{}\index{Line\+Apperance@{Line\+Apperance}!set\+Blue@{set\+Blue}}
+\index{set\+Blue@{set\+Blue}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{set\+Blue(byte b)}]{\setlength{\rightskip}{0pt plus 5cm}void Line\+Apperance\+::set\+Blue (
+\begin{DoxyParamCaption}
+\item[{byte}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{struct_line_apperance_af254ae4bc14093b998881665e3b71cb3}
+Gets the blue component 0-\/255. \begin{DoxyReturn}{Returns}
+the blue component 0-\/255 
+\end{DoxyReturn}
+\hypertarget{struct_line_apperance_a77f7183e8e9da7b9209fdb5e0580aa5a}{}\index{Line\+Apperance@{Line\+Apperance}!set\+Green@{set\+Green}}
+\index{set\+Green@{set\+Green}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{set\+Green(byte g)}]{\setlength{\rightskip}{0pt plus 5cm}void Line\+Apperance\+::set\+Green (
+\begin{DoxyParamCaption}
+\item[{byte}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{struct_line_apperance_a77f7183e8e9da7b9209fdb5e0580aa5a}
+Gets the green component 0-\/255. \begin{DoxyReturn}{Returns}
+the green component 0-\/255 
+\end{DoxyReturn}
+\hypertarget{struct_line_apperance_a040398efa6f1313582ebcbe57f18f2c2}{}\index{Line\+Apperance@{Line\+Apperance}!set\+Line\+Style@{set\+Line\+Style}}
+\index{set\+Line\+Style@{set\+Line\+Style}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{set\+Line\+Style(\+Line\+Styles style)}]{\setlength{\rightskip}{0pt plus 5cm}void Line\+Apperance\+::set\+Line\+Style (
+\begin{DoxyParamCaption}
+\item[{{\bf Line\+Styles}}]{style}
+\end{DoxyParamCaption}
+)}\label{struct_line_apperance_a040398efa6f1313582ebcbe57f18f2c2}
+Sets the line style. 
+\begin{DoxyParams}{Parameters}
+{\em style} & The line style, see \hyperlink{_line_apperance_8h_aeb7e6d7bbe3cf0c8018ad97e75d8e8d9}{Line\+Styles}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_line_apperance_a310d71b2ebb02f5d44c23e2048fc8d48}{}\index{Line\+Apperance@{Line\+Apperance}!set\+Line\+Width@{set\+Line\+Width}}
+\index{set\+Line\+Width@{set\+Line\+Width}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{set\+Line\+Width(byte width)}]{\setlength{\rightskip}{0pt plus 5cm}void Line\+Apperance\+::set\+Line\+Width (
+\begin{DoxyParamCaption}
+\item[{byte}]{width}
+\end{DoxyParamCaption}
+)}\label{struct_line_apperance_a310d71b2ebb02f5d44c23e2048fc8d48}
+Sets the line width. \begin{DoxyReturn}{Returns}
+the current line width (1 to 8). 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Setting width to 0, sets maximum width. 0 width lines are not allowed. 
+\end{DoxyNote}
+\hypertarget{struct_line_apperance_aa15cf71fa2fb087a2391abb01bcd320b}{}\index{Line\+Apperance@{Line\+Apperance}!set\+Marker\+Style@{set\+Marker\+Style}}
+\index{set\+Marker\+Style@{set\+Marker\+Style}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{set\+Marker\+Style(\+Line\+Markers marker)}]{\setlength{\rightskip}{0pt plus 5cm}void Line\+Apperance\+::set\+Marker\+Style (
+\begin{DoxyParamCaption}
+\item[{{\bf Line\+Markers}}]{marker}
+\end{DoxyParamCaption}
+)}\label{struct_line_apperance_aa15cf71fa2fb087a2391abb01bcd320b}
+Sets the marker style. 
+\begin{DoxyParams}{Parameters}
+{\em marker} & The marker style, see \hyperlink{_line_apperance_8h_a68bf945a0195e285b96ed51e814a6286}{Line\+Markers}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_line_apperance_a03213324a927b014ade4373bb5944b3a}{}\index{Line\+Apperance@{Line\+Apperance}!set\+Red@{set\+Red}}
+\index{set\+Red@{set\+Red}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{set\+Red(byte r)}]{\setlength{\rightskip}{0pt plus 5cm}void Line\+Apperance\+::set\+Red (
+\begin{DoxyParamCaption}
+\item[{byte}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{struct_line_apperance_a03213324a927b014ade4373bb5944b3a}
+Sets the red component 0-\/255. 
+\begin{DoxyParams}{Parameters}
+{\em r} & The red component. \\
+\hline
+\end{DoxyParams}
+\hypertarget{struct_line_apperance_ac7d7604de64a523965aba51b21a10f95}{}\index{Line\+Apperance@{Line\+Apperance}!set\+R\+G\+B@{set\+R\+G\+B}}
+\index{set\+R\+G\+B@{set\+R\+G\+B}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{set\+R\+G\+B(long rgb)}]{\setlength{\rightskip}{0pt plus 5cm}void Line\+Apperance\+::set\+R\+G\+B (
+\begin{DoxyParamCaption}
+\item[{long}]{rgb}
+\end{DoxyParamCaption}
+)}\label{struct_line_apperance_ac7d7604de64a523965aba51b21a10f95}
+Sets a 24bit rgb value of the current color. 
+\begin{DoxyParams}{Parameters}
+{\em rgb} & 24bit rgb value of the current color. Highest byte ignored. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_line_apperance_a0c6239c22f699f072e4d50ef3469718f}{}\index{Line\+Apperance@{Line\+Apperance}!data@{data}}
+\index{data@{data}!Line\+Apperance@{Line\+Apperance}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Line\+Apperance\+::data}\label{struct_line_apperance_a0c6239c22f699f072e4d50ef3469718f}
+Memory for the packed bits. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+W\+D\+Arduino\+Lib/src/\hyperlink{_line_apperance_8h}{Line\+Apperance.\+h}\item 
+W\+D\+Arduino\+Lib/src/\hyperlink{_line_apperance_8cpp}{Line\+Apperance.\+cpp}\end{DoxyCompactItemize}

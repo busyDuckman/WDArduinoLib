@@ -1,0 +1,2 @@
+erase *.d
+erase *.o

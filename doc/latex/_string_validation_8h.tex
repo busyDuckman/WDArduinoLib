@@ -1,0 +1,230 @@
+\hypertarget{_string_validation_8h}{}\section{W\+D\+Arduino\+Lib/src/\+String\+Validation.h File Reference}
+\label{_string_validation_8h}\index{W\+D\+Arduino\+Lib/src/\+String\+Validation.\+h@{W\+D\+Arduino\+Lib/src/\+String\+Validation.\+h}}
+{\ttfamily \#include \char`\"{}W\+Program.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Sanity.\+h\char`\"{}}\\*
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154ee}{String\+Validation\+Rules} \{ \\*
+\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eeac9d3e887722f2bc482bcca9d41c512af}{None} = 0, 
+\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eeaddf41d1dabf98f0db09db7ba513ed534}{Com\+Port\+Safe} = 1, 
+\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea1a6a5e6db520f476ece043bc682e9a8c}{Variable\+Name} = 2, 
+\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea15b8593153c64accc0d2a898350bf5c9}{File\+Name\+No\+Ext} = 4, 
+\\*
+\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea5fb5145803eb9ca6322325fddac2f10a}{File\+Name\+Full} = 8, 
+\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eead49bca3399937cc8dbbb0ee19552e82d}{No\+Tabs} = 16, 
+\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea18a180550f62eeabadc25f4c34c6fae6}{No\+White\+Space} = 32, 
+\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea064af96be640396afe6970cc3cffba4c}{Path} = 64, 
+\\*
+\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eeafc9fee5540a10b2ab19aa7ffa981f107}{No\+Single\+Quotes} =128, 
+\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea8ce921e598bdec3776226140150edf50}{No\+Double\+Quotes} =256, 
+\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea5beb90f026d9ba35a7bc5a4ed445fa18}{No\+New\+Lines} = 512, 
+\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea9675cbf44c669d738daca0513dfb2022}{No\+Quotes} =No\+Single\+Quotes$\vert$\+No\+Double\+Quotes
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{_string_validation_8h_ab09691c331a9436fe1c186939a121aa8}{sanitize\+String} (char $\ast$string, char $\ast$buffer, \hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154ee}{String\+Validation\+Rules} validation, int max\+Len)
+\item 
+char $\ast$ \hyperlink{_string_validation_8h_ae17269313e331f53874f3eb6b608c2b3}{sanitize\+String} (char $\ast$string, char $\ast$buffer, int validation, int max\+Len)
+\item 
+char $\ast$ \hyperlink{_string_validation_8h_ad0815e353cecd9417b642878c6b3cbd2}{sanitize\+String} (char $\ast$buffer, \hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154ee}{String\+Validation\+Rules} validation, int max\+Len)
+\item 
+char $\ast$ \hyperlink{_string_validation_8h_a395c13230cb451a0f172d170ea07f2d8}{sanitize\+String} (char $\ast$buffer, int validation, int max\+Len)
+\item 
+char $\ast$ \hyperlink{_string_validation_8h_a758246adf6fbc4b7de7d7a1d736d0e1c}{malloc\+Sanitized\+Copy} (const char $\ast$string, \hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154ee}{String\+Validation\+Rules} validation, int max\+Len)
+\item 
+char $\ast$ \hyperlink{_string_validation_8h_afb4c4c3e0d9fb3ff42a37f73df863bc5}{malloc\+Sanitized\+Copy} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$text, \hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154ee}{String\+Validation\+Rules} validation, int max\+Len)
+\item 
+char $\ast$ \hyperlink{_string_validation_8h_aaa5c2a60f8ee633102bb302a1bca4184}{malloc\+Sanitized\+Copy} (const char $\ast$string, int validation, int max\+Len)
+\item 
+char $\ast$ \hyperlink{_string_validation_8h_a5cf799ceeebf05d3612dc3783ad4c674}{malloc\+Sanitized\+Copy} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$text, int validation, int max\+Len)
+\item 
+char $\ast$ \hyperlink{_string_validation_8h_a1ba1abfd807ca1763a9f73e836f9c903}{trim\+String} (char $\ast$string, char $\ast$buffer, int max\+Len)
+\item 
+char $\ast$ \hyperlink{_string_validation_8h_a836dbcf930fbe3e3c835fd61d5d6d23c}{trim\+String} (char $\ast$buffer, int max\+Len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154ee}{}\index{String\+Validation.\+h@{String\+Validation.\+h}!String\+Validation\+Rules@{String\+Validation\+Rules}}
+\index{String\+Validation\+Rules@{String\+Validation\+Rules}!String\+Validation.\+h@{String\+Validation.\+h}}
+\subsubsection[{String\+Validation\+Rules}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf String\+Validation\+Rules}}\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154ee}
+Flags for validation rules. eg\+: (File\+Name\+Full $\vert$ No\+White\+Space $\vert$ Com\+Port\+Safe) creates validation for a filename (without spaces), that is safe for com port style text transmition. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{None@{None}!String\+Validation.\+h@{String\+Validation.\+h}}\index{String\+Validation.\+h@{String\+Validation.\+h}!None@{None}}\item[{\em 
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eeac9d3e887722f2bc482bcca9d41c512af}{}None\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eeac9d3e887722f2bc482bcca9d41c512af}
+}]\index{Com\+Port\+Safe@{Com\+Port\+Safe}!String\+Validation.\+h@{String\+Validation.\+h}}\index{String\+Validation.\+h@{String\+Validation.\+h}!Com\+Port\+Safe@{Com\+Port\+Safe}}\item[{\em 
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eeaddf41d1dabf98f0db09db7ba513ed534}{}Com\+Port\+Safe\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eeaddf41d1dabf98f0db09db7ba513ed534}
+}]\index{Variable\+Name@{Variable\+Name}!String\+Validation.\+h@{String\+Validation.\+h}}\index{String\+Validation.\+h@{String\+Validation.\+h}!Variable\+Name@{Variable\+Name}}\item[{\em 
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea1a6a5e6db520f476ece043bc682e9a8c}{}Variable\+Name\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea1a6a5e6db520f476ece043bc682e9a8c}
+}]\index{File\+Name\+No\+Ext@{File\+Name\+No\+Ext}!String\+Validation.\+h@{String\+Validation.\+h}}\index{String\+Validation.\+h@{String\+Validation.\+h}!File\+Name\+No\+Ext@{File\+Name\+No\+Ext}}\item[{\em 
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea15b8593153c64accc0d2a898350bf5c9}{}File\+Name\+No\+Ext\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea15b8593153c64accc0d2a898350bf5c9}
+}]\index{File\+Name\+Full@{File\+Name\+Full}!String\+Validation.\+h@{String\+Validation.\+h}}\index{String\+Validation.\+h@{String\+Validation.\+h}!File\+Name\+Full@{File\+Name\+Full}}\item[{\em 
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea5fb5145803eb9ca6322325fddac2f10a}{}File\+Name\+Full\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea5fb5145803eb9ca6322325fddac2f10a}
+}]\index{No\+Tabs@{No\+Tabs}!String\+Validation.\+h@{String\+Validation.\+h}}\index{String\+Validation.\+h@{String\+Validation.\+h}!No\+Tabs@{No\+Tabs}}\item[{\em 
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eead49bca3399937cc8dbbb0ee19552e82d}{}No\+Tabs\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eead49bca3399937cc8dbbb0ee19552e82d}
+}]\index{No\+White\+Space@{No\+White\+Space}!String\+Validation.\+h@{String\+Validation.\+h}}\index{String\+Validation.\+h@{String\+Validation.\+h}!No\+White\+Space@{No\+White\+Space}}\item[{\em 
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea18a180550f62eeabadc25f4c34c6fae6}{}No\+White\+Space\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea18a180550f62eeabadc25f4c34c6fae6}
+}]\index{Path@{Path}!String\+Validation.\+h@{String\+Validation.\+h}}\index{String\+Validation.\+h@{String\+Validation.\+h}!Path@{Path}}\item[{\em 
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea064af96be640396afe6970cc3cffba4c}{}Path\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea064af96be640396afe6970cc3cffba4c}
+}]\index{No\+Single\+Quotes@{No\+Single\+Quotes}!String\+Validation.\+h@{String\+Validation.\+h}}\index{String\+Validation.\+h@{String\+Validation.\+h}!No\+Single\+Quotes@{No\+Single\+Quotes}}\item[{\em 
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eeafc9fee5540a10b2ab19aa7ffa981f107}{}No\+Single\+Quotes\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eeafc9fee5540a10b2ab19aa7ffa981f107}
+}]\index{No\+Double\+Quotes@{No\+Double\+Quotes}!String\+Validation.\+h@{String\+Validation.\+h}}\index{String\+Validation.\+h@{String\+Validation.\+h}!No\+Double\+Quotes@{No\+Double\+Quotes}}\item[{\em 
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea8ce921e598bdec3776226140150edf50}{}No\+Double\+Quotes\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea8ce921e598bdec3776226140150edf50}
+}]\index{No\+New\+Lines@{No\+New\+Lines}!String\+Validation.\+h@{String\+Validation.\+h}}\index{String\+Validation.\+h@{String\+Validation.\+h}!No\+New\+Lines@{No\+New\+Lines}}\item[{\em 
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea5beb90f026d9ba35a7bc5a4ed445fa18}{}No\+New\+Lines\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea5beb90f026d9ba35a7bc5a4ed445fa18}
+}]\index{No\+Quotes@{No\+Quotes}!String\+Validation.\+h@{String\+Validation.\+h}}\index{String\+Validation.\+h@{String\+Validation.\+h}!No\+Quotes@{No\+Quotes}}\item[{\em 
+\hypertarget{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea9675cbf44c669d738daca0513dfb2022}{}No\+Quotes\label{_string_validation_8h_a41ca5bd265fe45732965add3e9a154eea9675cbf44c669d738daca0513dfb2022}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{_string_validation_8h_a758246adf6fbc4b7de7d7a1d736d0e1c}{}\index{String\+Validation.\+h@{String\+Validation.\+h}!malloc\+Sanitized\+Copy@{malloc\+Sanitized\+Copy}}
+\index{malloc\+Sanitized\+Copy@{malloc\+Sanitized\+Copy}!String\+Validation.\+h@{String\+Validation.\+h}}
+\subsubsection[{malloc\+Sanitized\+Copy(const char $\ast$string, String\+Validation\+Rules validation, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ malloc\+Sanitized\+Copy (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{string, }
+\item[{{\bf String\+Validation\+Rules}}]{validation, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)}\label{_string_validation_8h_a758246adf6fbc4b7de7d7a1d736d0e1c}
+Sanatises a string. 
+\begin{DoxyParams}{Parameters}
+{\em string} & Text to validate. \\
+\hline
+{\em validation} & Flags indicating type of validation needed. \\
+\hline
+{\em max\+Len} & A maximumlength for the final string, -\/1 to disable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to dynamicly allocated memory. N\+U\+L\+L on error.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The buffer will never hold more characters than the original string. 
+\end{DoxyNote}
+\hypertarget{_string_validation_8h_afb4c4c3e0d9fb3ff42a37f73df863bc5}{}\index{String\+Validation.\+h@{String\+Validation.\+h}!malloc\+Sanitized\+Copy@{malloc\+Sanitized\+Copy}}
+\index{malloc\+Sanitized\+Copy@{malloc\+Sanitized\+Copy}!String\+Validation.\+h@{String\+Validation.\+h}}
+\subsubsection[{malloc\+Sanitized\+Copy(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$text, String\+Validation\+Rules validation, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ malloc\+Sanitized\+Copy (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{text, }
+\item[{{\bf String\+Validation\+Rules}}]{validation, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_string_validation_8h_afb4c4c3e0d9fb3ff42a37f73df863bc5}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_string_validation_8h_aaa5c2a60f8ee633102bb302a1bca4184}{}\index{String\+Validation.\+h@{String\+Validation.\+h}!malloc\+Sanitized\+Copy@{malloc\+Sanitized\+Copy}}
+\index{malloc\+Sanitized\+Copy@{malloc\+Sanitized\+Copy}!String\+Validation.\+h@{String\+Validation.\+h}}
+\subsubsection[{malloc\+Sanitized\+Copy(const char $\ast$string, int validation, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ malloc\+Sanitized\+Copy (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{string, }
+\item[{int}]{validation, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_string_validation_8h_aaa5c2a60f8ee633102bb302a1bca4184}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_string_validation_8h_a5cf799ceeebf05d3612dc3783ad4c674}{}\index{String\+Validation.\+h@{String\+Validation.\+h}!malloc\+Sanitized\+Copy@{malloc\+Sanitized\+Copy}}
+\index{malloc\+Sanitized\+Copy@{malloc\+Sanitized\+Copy}!String\+Validation.\+h@{String\+Validation.\+h}}
+\subsubsection[{malloc\+Sanitized\+Copy(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$text, int validation, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ malloc\+Sanitized\+Copy (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{text, }
+\item[{int}]{validation, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_string_validation_8h_a5cf799ceeebf05d3612dc3783ad4c674}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_string_validation_8h_ab09691c331a9436fe1c186939a121aa8}{}\index{String\+Validation.\+h@{String\+Validation.\+h}!sanitize\+String@{sanitize\+String}}
+\index{sanitize\+String@{sanitize\+String}!String\+Validation.\+h@{String\+Validation.\+h}}
+\subsubsection[{sanitize\+String(char $\ast$string, char $\ast$buffer, String\+Validation\+Rules validation, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ sanitize\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string, }
+\item[{char $\ast$}]{buffer, }
+\item[{{\bf String\+Validation\+Rules}}]{validation, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)}\label{_string_validation_8h_ab09691c331a9436fe1c186939a121aa8}
+Sanatises a string. 
+\begin{DoxyParams}{Parameters}
+{\em string} & Text to validate. \\
+\hline
+{\em buffer} & Destination buffer. \\
+\hline
+{\em validation} & Flags indicating type of validation needed. \\
+\hline
+{\em max\+Len} & A maximumlength for the final string, -\/1 to disable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+buffer on success. N\+U\+L\+L on error.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The buffer will never hold more characters than the original string. 
+
+string and buffer can be the same, to make the function work in place. 
+\end{DoxyNote}
+\hypertarget{_string_validation_8h_ae17269313e331f53874f3eb6b608c2b3}{}\index{String\+Validation.\+h@{String\+Validation.\+h}!sanitize\+String@{sanitize\+String}}
+\index{sanitize\+String@{sanitize\+String}!String\+Validation.\+h@{String\+Validation.\+h}}
+\subsubsection[{sanitize\+String(char $\ast$string, char $\ast$buffer, int validation, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ sanitize\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string, }
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{validation, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_string_validation_8h_ae17269313e331f53874f3eb6b608c2b3}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_string_validation_8h_ad0815e353cecd9417b642878c6b3cbd2}{}\index{String\+Validation.\+h@{String\+Validation.\+h}!sanitize\+String@{sanitize\+String}}
+\index{sanitize\+String@{sanitize\+String}!String\+Validation.\+h@{String\+Validation.\+h}}
+\subsubsection[{sanitize\+String(char $\ast$buffer, String\+Validation\+Rules validation, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ sanitize\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{{\bf String\+Validation\+Rules}}]{validation, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_string_validation_8h_ad0815e353cecd9417b642878c6b3cbd2}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_string_validation_8h_a395c13230cb451a0f172d170ea07f2d8}{}\index{String\+Validation.\+h@{String\+Validation.\+h}!sanitize\+String@{sanitize\+String}}
+\index{sanitize\+String@{sanitize\+String}!String\+Validation.\+h@{String\+Validation.\+h}}
+\subsubsection[{sanitize\+String(char $\ast$buffer, int validation, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ sanitize\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{validation, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_string_validation_8h_a395c13230cb451a0f172d170ea07f2d8}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \hypertarget{_string_validation_8h_a1ba1abfd807ca1763a9f73e836f9c903}{}\index{String\+Validation.\+h@{String\+Validation.\+h}!trim\+String@{trim\+String}}
+\index{trim\+String@{trim\+String}!String\+Validation.\+h@{String\+Validation.\+h}}
+\subsubsection[{trim\+String(char $\ast$string, char $\ast$buffer, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ trim\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string, }
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)}\label{_string_validation_8h_a1ba1abfd807ca1763a9f73e836f9c903}
+Trims whitespace around a string. 
+\begin{DoxyParams}{Parameters}
+{\em string} & Text to validate. \\
+\hline
+{\em buffer} & Destination buffer. \\
+\hline
+{\em validation} & Flags indicating type of validation needed. \\
+\hline
+{\em max\+Len} & A maximumlength for the final string, -\/1 to disable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+buffer on success. N\+U\+L\+L on error.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+string or buffer being N\+U\+L\+L causes no action, and N\+U\+L\+L to be returned. 
+
+string and buffer can be the same, to make the function work in place. 
+\end{DoxyNote}
+\hypertarget{_string_validation_8h_a836dbcf930fbe3e3c835fd61d5d6d23c}{}\index{String\+Validation.\+h@{String\+Validation.\+h}!trim\+String@{trim\+String}}
+\index{trim\+String@{trim\+String}!String\+Validation.\+h@{String\+Validation.\+h}}
+\subsubsection[{trim\+String(char $\ast$buffer, int max\+Len)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ trim\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{max\+Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_string_validation_8h_a836dbcf930fbe3e3c835fd61d5d6d23c}
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 

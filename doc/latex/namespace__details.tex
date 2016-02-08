@@ -1,0 +1,57 @@
+\hypertarget{namespace__details}{}\section{\+\_\+details Namespace Reference}
+\label{namespace__details}\index{\+\_\+details@{\+\_\+details}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename S , typename R , const int bits, const int pos$>$ }\\void \hyperlink{namespace__details_af702f93fd39fe53e8079a950560344bd}{set\+Bits} (S \&bit\+Union, const R value)
+\item 
+bool \hyperlink{namespace__details_a189714c9cfe402a4db24c5581fd3eeac}{better\+Use\+A\+Space\+Instead\+Of\+Tab} (\hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154ee}{String\+Validation\+Rules} validation)
+\item 
+bool \hyperlink{namespace__details_a73c211dd5ba93ee45592dcc23e592826}{is\+Ok\+Char} (char c, \hyperlink{_string_validation_8h_a41ca5bd265fe45732965add3e9a154ee}{String\+Validation\+Rules} validation)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespace__details_a189714c9cfe402a4db24c5581fd3eeac}{}\index{\+\_\+details@{\+\_\+details}!better\+Use\+A\+Space\+Instead\+Of\+Tab@{better\+Use\+A\+Space\+Instead\+Of\+Tab}}
+\index{better\+Use\+A\+Space\+Instead\+Of\+Tab@{better\+Use\+A\+Space\+Instead\+Of\+Tab}!\+\_\+details@{\+\_\+details}}
+\subsubsection[{better\+Use\+A\+Space\+Instead\+Of\+Tab(\+String\+Validation\+Rules validation)}]{\setlength{\rightskip}{0pt plus 5cm}bool \+\_\+details\+::better\+Use\+A\+Space\+Instead\+Of\+Tab (
+\begin{DoxyParamCaption}
+\item[{{\bf String\+Validation\+Rules}}]{validation}
+\end{DoxyParamCaption}
+)}\label{namespace__details_a189714c9cfe402a4db24c5581fd3eeac}
+\hypertarget{namespace__details_a73c211dd5ba93ee45592dcc23e592826}{}\index{\+\_\+details@{\+\_\+details}!is\+Ok\+Char@{is\+Ok\+Char}}
+\index{is\+Ok\+Char@{is\+Ok\+Char}!\+\_\+details@{\+\_\+details}}
+\subsubsection[{is\+Ok\+Char(char c, String\+Validation\+Rules validation)}]{\setlength{\rightskip}{0pt plus 5cm}bool \+\_\+details\+::is\+Ok\+Char (
+\begin{DoxyParamCaption}
+\item[{char}]{c, }
+\item[{{\bf String\+Validation\+Rules}}]{validation}
+\end{DoxyParamCaption}
+)}\label{namespace__details_a73c211dd5ba93ee45592dcc23e592826}
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the character to validate \\
+\hline
+{\em validation} & type of validation to apply. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespace__details_af702f93fd39fe53e8079a950560344bd}{}\index{\+\_\+details@{\+\_\+details}!set\+Bits@{set\+Bits}}
+\index{set\+Bits@{set\+Bits}!\+\_\+details@{\+\_\+details}}
+\subsubsection[{set\+Bits(\+S \&bit\+Union, const R value)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename S , typename R , const int bits, const int pos$>$ void \+\_\+details\+::set\+Bits (
+\begin{DoxyParamCaption}
+\item[{S \&}]{bit\+Union, }
+\item[{const R}]{value}
+\end{DoxyParamCaption}
+)}\label{namespace__details_af702f93fd39fe53e8079a950560344bd}
+Stores a n bit number at given bit position Only works with unsigned data types, due to c++ providing arathmentic shift, but no logical shift.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & How many bits (n) in our number. \\
+\hline
+{\em pos} & Bit position (zero based) of the n bits to be stored. \\
+\hline
+{\em bit\+Union} & The larger datatype (type S). Must support $<$$<$ $\sim$ $\vert$= and -\/ and cast from an interger. \\
+\hline
+{\em value} & The n most significant bits of this are stored. Must support $<$$<$ and cast to S \\
+\hline
+\end{DoxyParams}

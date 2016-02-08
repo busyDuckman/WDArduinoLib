@@ -1,0 +1,56 @@
+This is a collection of usefull functions and classes for the Arduino platorm.
+
+Home Page\+: \href{http://busyducks.com/}{\tt http\+://busyducks.\+com/}
+
+Graph Plotting\+:
+\begin{DoxyItemize}
+\item Supports sending G\+N\+U\+Plot commands to create graphs of your data.
+\item \#include $<$\hyperlink{_serial_graph_8h}{Serial\+Graph.\+h}$>$
+\item \#include $<$\hyperlink{_g_n_u_plot_8h}{G\+N\+U\+Plot.\+h}$>$
+\item see \hyperlink{class_serial_graph}{Serial\+Graph} as the base class.
+\item see \hyperlink{struct_line_apperance}{Line\+Apperance} for changing the apperance of a series. Included color schemes suitable for graphing.
+\begin{DoxyItemize}
+\item Strong, but balanced, colors for unrelated catagories \hyperlink{_line_apperance_8h_a1e42ce190c01f4415b1ea96e3f113c84}{Categorical\+Scheme\+Strong}
+\item Balanced colors for graphing \hyperlink{_line_apperance_8h_a6d48f70f76f6e9d41e4272b04dff1008}{Graph\+Colors\+Scheme\+Grey\+Scale}, \hyperlink{_line_apperance_8h_a277e168f3720b3d07131d9d402f28f33}{Graph\+Colors\+Scheme\+Red\+Scale}, \hyperlink{_line_apperance_8h_a0ab80737f9ec4bde245b67fd27a53d36}{Graph\+Colors\+Scheme\+Green\+Scale}, \hyperlink{_line_apperance_8h_a948426d1c597f9820a092fc49737bd7f}{Graph\+Colors\+Scheme\+Blue\+Scale}, \hyperlink{_line_apperance_8h_a73a0c1e1e60774d861f1887c24078ee9}{Graph\+Colors\+Scheme\+Orange\+Scale}, \hyperlink{_line_apperance_8h_a8462197caad1bdc2b174b46899e68793}{Graph\+Colors\+Scheme\+Purple\+Scale}
+\item Spectral colors for graphing on a white background \hyperlink{_line_apperance_8h_a250826c1d27d3626eb24afa95310041f}{Graph\+Colors\+Scheme\+Spectral}
+\item Colors for colorblind compatability \hyperlink{_line_apperance_8h_abc59bc8bf0930be7e1ced4a6ca602688}{Color\+Blind\+Safe}
+\end{DoxyItemize}
+\end{DoxyItemize}String validation
+\begin{DoxyItemize}
+\item For validating input strings and external data.
+\item \#include $<$\hyperlink{_string_validation_8h}{String\+Validation.\+h}$>$
+\item Allows filering of against a combination of flags, see String\+Validation\+Rules.
+\item Can operate in three modes\+: inplace, copy to another buffer, allocate a new buffer.
+\item {\itshape Not} intended to be a \char`\"{}security grade\char`\"{} validation to protect against various attacks.
+\end{DoxyItemize}Bit Arithmatic
+\begin{DoxyItemize}
+\item Helpers for dealing with bits and bytes
+\item \#include $<$\hyperlink{_bit_arithmatic_8h}{Bit\+Arithmatic.\+h}$>$
+\item \hyperlink{_bit_arithmatic_8h_aabbf277315ff3b8310a7741925b56bc7}{set\+Bits}(...) Stores a n bit number at given bit position
+\item \hyperlink{_bit_arithmatic_8h_a1131897261971e497cf6a4a83476fcdc}{get\+Bits}(...) Gets a n bit number at given bit position
+\item \hyperlink{_bit_arithmatic_8h_a07b9d02b23a7b5526117bd66036cc516}{print\+Hex\+Byte} \hyperlink{_bit_arithmatic_8h_a2b7e446093fa0d1d250eea3d908ea28f}{print\+Hex\+Int16} \hyperlink{_bit_arithmatic_8h_af2a2e4872a45c5012fa0a63053e63f20}{print\+Hex\+Int24} \hyperlink{_bit_arithmatic_8h_ae6e1c4ca3c19e4a1e97ade02f5c7667b}{print\+Hex\+Int32} output numbers as hex, with leading 0\textquotesingle{}s
+\item \hyperlink{_bit_arithmatic_8h_a1e55823ca5d6c66eba53036134820785}{bytes\+To32bit} \hyperlink{_bit_arithmatic_8h_aa0bec3f30220610f221e46f327d13bf9}{bytes\+To16bit} Assembles integers from bytes.
+\end{DoxyItemize}
+
+General Helpers
+\begin{DoxyItemize}
+\item \#include $<$\hyperlink{_sanity_8h}{Sanity.\+h}$>$
+\item \+::\+Arduino\+Baud\+Rates
+\item A few methods that fill the gap between \+\_\+\+\_\+\+Flash\+String\+Helper and general strings.
+\begin{DoxyItemize}
+\item eg. strcmp(my\+Str, F(\char`\"{}start\char`\"{})) is now possible.
+\end{DoxyItemize}
+\end{DoxyItemize}Capture Print
+\begin{DoxyItemize}
+\item \#include $<$\hyperlink{_capture_print_8h}{Capture\+Print.\+h}$>$
+\item Implements the Arduino Print class, re-\/directing all output to a buffer.
+\item Processes Print data one line at a time
+\item Great for\+:
+\begin{DoxyItemize}
+\item Grep like activites on lines of output.
+\item Employing the powerful Print functionality to format strings.
+\item Adding checksum calculations to output text.
+\item Unit testing print functions.
+\item Capturing stream output and sending to multiple other streams.
+\end{DoxyItemize}
+\end{DoxyItemize}
