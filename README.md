@@ -39,7 +39,7 @@ __Example__:
         plot.getLineApperance(2)->setMarkerStyle(LineMarkers::CircleMarker);  
         plot.getLineApperance(2)->setRGB(0x0000ff);  
         
-            //plot graph  
+        //plot graph  
         for(int i=0; i<=720; i+=5)  
         {  
             float c = cos(DEG_TO_RAD*(float)i);  
