@@ -50,4 +50,6 @@ __Example__:
         plot.plotDatumXYn(i, y1, y2, y3);  
     }  
     plot.finishGraph();  
-}  
+    }  
+  
+  
